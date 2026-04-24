@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="基于 ROS2 和 OpenVINS 实现无 GPS 环境下无人机集群高精度视觉惯性定位">
+<title>基于 OpenVINS 的无人机集群协同自定位系统</title>
+
+<link rel='canonical' href='http://localhost:1313/zh-cn/projects/openvins-uav-swarm/'>
+
+<link rel="stylesheet" href="/scss/style.min.5b61898c2be789d00f2cbea9c16d439e6d13e1cccf314bef88777926a9bc4357.css"><meta property='og:title' content="基于 OpenVINS 的无人机集群协同自定位系统">
+<meta property='og:description' content="基于 ROS2 和 OpenVINS 实现无 GPS 环境下无人机集群高精度视觉惯性定位">
+<meta property='og:url' content='http://localhost:1313/zh-cn/projects/openvins-uav-swarm/'>
+<meta property='og:site_name' content='Ricardo'>
+<meta property='og:type' content='article'><meta property='article:section' content='Projects' /><meta property='article:tag' content='ROS2' /><meta property='article:tag' content='OpenVINS' /><meta property='article:tag' content='VIO' /><meta property='article:tag' content='无人机' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:tag' content='计算机视觉' /><meta property='article:tag' content='SLAM' /><meta property='article:published_time' content='2024-04-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-24T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/demo_video_thumbnail.jpg' />
+<meta name="twitter:title" content="基于 OpenVINS 的无人机集群协同自定位系统">
+<meta name="twitter:description" content="基于 ROS2 和 OpenVINS 实现无 GPS 环境下无人机集群高精度视觉惯性定位"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/demo_video_thumbnail.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
+
+    </head>
+    <body class="
+    article-page">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/zh-cn/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu219957328215183393.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😁</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/zh-cn">Ricardo</a></h1>
+            <h2 class="site-description">Welcome to Ricardo&#39;s wedsite</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Ricardo-Guo'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/zh-cn/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于我</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/%E9%A1%B9%E7%9B%AE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+</svg>
+
+                
+                <span>项目</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" >English</option>
+                                
+                                    <option value="http://localhost:1313/zh-cn/" selected>中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#-项目概览">🎯 项目概览</a>
+      <ol>
+        <li><a href="#技术栈">技术栈</a></li>
+      </ol>
+    </li>
+    <li><a href="#-仿真环境展示">🖥️ 仿真环境展示</a>
+      <ol>
+        <li><a href="#gazebo-物理环境">Gazebo 物理环境</a></li>
+        <li><a href="#rviz2-可视化">RViz2 可视化</a></li>
+        <li><a href="#集群算法可视化">集群算法可视化</a></li>
+        <li><a href="#核心实现">核心实现</a></li>
+      </ol>
+    </li>
+    <li><a href="#-实机部署与硬件">🚁 实机部署与硬件</a>
+      <ol>
+        <li><a href="#传感器标定">传感器标定</a></li>
+        <li><a href="#硬件架构">硬件架构</a></li>
+        <li><a href="#实机数据流">实机数据流</a></li>
+        <li><a href="#飞行测试">飞行测试</a></li>
+      </ol>
+    </li>
+    <li><a href="#-技术深度挖掘">🔬 技术深度挖掘</a>
+      <ol>
+        <li><a href="#系统架构">系统架构</a></li>
+        <li><a href="#挑战与解决方案">挑战与解决方案</a>
+          <ol>
+            <li><a href="#挑战-1-ros2-跨设备通信延迟">挑战 1: ROS2 跨设备通信延迟</a></li>
+            <li><a href="#挑战-2-震动下的-imu-噪声">挑战 2: 震动下的 IMU 噪声</a></li>
+            <li><a href="#挑战-3-计算优化">挑战 3: 计算优化</a></li>
+          </ol>
+        </li>
+        <li><a href="#性能分析">性能分析</a></li>
+      </ol>
+    </li>
+    <li><a href="#-项目成果">📊 项目成果</a>
+      <ol>
+        <li><a href="#主要成就">主要成就</a></li>
+        <li><a href="#演示视频">演示视频</a></li>
+        <li><a href="#代码仓库">代码仓库</a></li>
+      </ol>
+    </li>
+    <li><a href="#-论文与参考文献">📚 论文与参考文献</a>
+      <ol>
+        <li><a href="#相关工作">相关工作</a></li>
+      </ol>
+    </li>
+    <li><a href="#-致谢">👥 致谢</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/zh-cn/projects/openvins-uav-swarm/">
+                
+                    <img src="/demo_video_thumbnail.jpg" loading="lazy" alt="Featured image of post 基于 OpenVINS 的无人机集群协同自定位系统" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/zh-cn/projects/openvins-uav-swarm/">基于 OpenVINS 的无人机集群协同自定位系统</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            基于 ROS2 和 OpenVINS 实现无 GPS 环境下无人机集群高精度视觉惯性定位
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 24, 2024</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+        <footer class="article-translations">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+            <div>
+                
+                    <a href="http://localhost:1313/projects/openvins-uav-swarm/" class="link">English</a>
+                
+            </div>
+        </footer>
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <div class="video-wrapper">
+    <video controls>
+        <source src="demo_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<h2 id="-项目概览">🎯 项目概览
+</h2><p><strong>解决无人机集群在无 GPS 环境下的漂移问题。</strong></p>
+<p>本项目实现了一套综合的视觉惯性里程计（VIO）系统，结合了 <strong>OpenVINS</strong>、<strong>ROS2 通信架构</strong> 和 <strong>集群协同算法</strong>，在仿真和真实环境下都能实现高精度的无人机集群定位。</p>
+<h3 id="技术栈">技术栈
+</h3><ul>
+<li><strong>中间件</strong>: ROS2 (Humble/Foxy)</li>
+<li><strong>编程语言</strong>: C++17/20, Python</li>
+<li><strong>VIO 引擎</strong>: OpenVINS</li>
+<li><strong>仿真</strong>: Gazebo Classic, PX4 SITL</li>
+<li><strong>飞控</strong>: PX4 Autopilot, MAVROS</li>
+<li><strong>计算机视觉</strong>: OpenCV, Eigen</li>
+<li><strong>优化库</strong>: Ceres Solver, g2o</li>
+<li><strong>可视化</strong>: RViz2, PlotJuggler</li>
+</ul>
+<hr>
+<h2 id="-仿真环境展示">🖥️ 仿真环境展示
+</h2><h3 id="gazebo-物理环境">Gazebo 物理环境
+</h3><p>我们搭建了高保真仿真环境，包括：</p>
+<ul>
+<li><strong>真实光照</strong> 和阴影渲染</li>
+<li><strong>复杂障碍场景</strong>（室内仓库、森林环境）</li>
+<li><strong>物理精确的</strong> 无人机动力学和传感器噪声模型</li>
+<li><strong>多机生成系统</strong> 带碰撞检测</li>
+</ul>
+<p><img src="/gazebo_simulation.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Gazebo 仿真截图"
+	
+	
+>
+<em>图：多无人机在复杂室内环境中协同探索</em></p>
+<h3 id="rviz2-可视化">RViz2 可视化
+</h3><p>我们的可视化流程显示：</p>
+<ul>
+<li><strong>轨迹跟踪</strong>（带颜色编码时间序列的路径消息）</li>
+<li><strong>3D 点云地图</strong> 来自双目视觉</li>
+<li><strong>TF 树</strong> 显示坐标系关系</li>
+<li><strong>实时位姿估计</strong> 带不确定性椭球</li>
+</ul>
+<p><img src="/rviz_visualization.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RViz 可视化"
+	
+	
+>
+<em>图：无人机位姿、轨迹和点云地图的实时可视化</em></p>
+<h3 id="集群算法可视化">集群算法可视化
+</h3><p><strong>分布式状态估计架构：</strong></p>
+<ul>
+<li>每架无人机运行独立的 OpenVINS 节点</li>
+<li>通过 UWB 或视觉标记进行机间相对测量</li>
+<li>集中式回环检测保证全局一致性</li>
+</ul>
+<p><img src="/swarm_architecture.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="集群架构"
+	
+	
+>
+<em>图：分布式估计与集中式优化</em></p>
+<h3 id="核心实现">核心实现
+</h3><p><strong>多机启动逻辑：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1"># 启动 3 架无人机的 OpenVINS</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> i in <span class="o">{</span>1..3<span class="o">}</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    ros2 launch openvins_uav openvins_node.launch.py <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>        uav_id:<span class="o">=</span><span class="nv">$i</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>        config_file:<span class="o">=</span>config/uav_<span class="nv">$i</span>.yaml <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>终端指令：</strong></p>
+<p><strong>1. 启动仿真：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 启动 Gazebo 与 3 架无人机</span>
+</span></span><span class="line"><span class="cl">ros2 launch uav_swarm_gazebo swarm_simulation.launch.py <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    num_uavs:<span class="o">=</span><span class="m">3</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    world:<span class="o">=</span>warehouse_complex
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>2. 运行 OpenVINS：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 启动所有无人机的 VIO</span>
+</span></span><span class="line"><span class="cl">ros2 launch openvins_uav swarm_vio.launch.py <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    num_uavs:<span class="o">=</span><span class="m">3</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    use_gpu:<span class="o">=</span><span class="nb">true</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>3. 触发集群行为：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 开始协同探索</span>
+</span></span><span class="line"><span class="cl">ros2 topic pub /swarm/command std_msgs/msg/String <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    <span class="s2">&#34;{data: &#39;start_exploration&#39;}&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="-实机部署与硬件">🚁 实机部署与硬件
+</h2><h3 id="传感器标定">传感器标定
+</h3><p><strong>使用 Kalibr 进行相机 -IMU 时空标定：</strong></p>
+<p>我们进行了严格的标定以确保精确的传感器融合：</p>
+<ol>
+<li><strong>数据采集</strong>: 捕获 10 分钟的标定板序列</li>
+<li><strong>内参标定</strong>: 相机参数重投影误差 &lt; 0.1 像素</li>
+<li><strong>外参标定</strong>: 相机 -IMU 变换矩阵</li>
+<li><strong>时间标定</strong>: 时间偏移估计（&lt; 5ms 精度）</li>
+</ol>
+<p><img src="/kalibr_residuals.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Kalibr 残差图"
+	
+	
+>
+<em>图：标定残差图显示亚像素精度</em></p>
+<p><strong>标定结果：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># 相机 -IMU 外参 (T_target_cam)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">rotation</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">[</span><span class="m">0.9999</span><span class="p">,</span><span class="w"> </span>-<span class="m">0.0012</span><span class="p">,</span><span class="w"> </span><span class="m">0.0123</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="m">0.0015</span><span class="p">,</span><span class="w"> </span><span class="m">0.9998</span><span class="p">,</span><span class="w"> </span>-<span class="m">0.0201</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>-<span class="m">0.0121</span><span class="p">,</span><span class="w"> </span><span class="m">0.0203</span><span class="p">,</span><span class="w"> </span><span class="m">0.9997</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">translation</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">0.0234</span><span class="p">,</span><span class="w"> </span>-<span class="m">0.0012</span><span class="p">,</span><span class="w"> </span><span class="m">0.0456</span><span class="p">]</span><span class="w">  </span><span class="c"># meters</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 时间偏移：2.3 ms</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="硬件架构">硬件架构
+</h3><p><strong>机载计算平台：</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>组件</th>
+<th>型号</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>飞控</strong></td>
+<td>Pixhawk 6X</td>
+<td>底层姿态控制</td>
+</tr>
+<tr>
+<td><strong>机载电脑</strong></td>
+<td>NVIDIA Jetson Orin NX</td>
+<td>OpenVINS 处理</td>
+</tr>
+<tr>
+<td><strong>相机</strong></td>
+<td>ZED 2 双目</td>
+<td>视觉惯性感知</td>
+</tr>
+<tr>
+<td><strong>IMU</strong></td>
+<td>ICM-42688-P</td>
+<td>高频（200Hz）</td>
+</tr>
+<tr>
+<td><strong>UWB</strong></td>
+<td>Decawave DWM1001</td>
+<td>机间测距</td>
+</tr>
+<tr>
+<td><strong>电源</strong></td>
+<td>6S LiPo 5000mAh</td>
+<td>25 分钟续航</td>
+</tr>
+</tbody>
+</table></div>
+<p><img src="/hardware_assembly.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="硬件组装"
+	
+	
+>
+<em>图：集成传感器套件的定制无人机</em></p>
+<h3 id="实机数据流">实机数据流
+</h3><p><strong>传感器数据流：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ZED 2 相机 → USB3.0 → Jetson Orin
+</span></span><span class="line"><span class="cl">                    ↓
+</span></span><span class="line"><span class="cl">              OpenVINS 节点
+</span></span><span class="line"><span class="cl">                    ↓
+</span></span><span class="line"><span class="cl">    位姿估计 → ROS2 话题 → 飞控
+</span></span><span class="line"><span class="cl">                    ↓
+</span></span><span class="line"><span class="cl">         点云 → 地面站
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/real_world_data.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="实机数据可视化"
+	
+	
+>
+<em>图：相机图像、IMU 数据和位姿估计的实时可视化</em></p>
+<h3 id="飞行测试">飞行测试
+</h3><p><strong>性能指标：</strong></p>
+<ul>
+<li>✅ <strong>稳定定位</strong> 在无 GPS 室内环境</li>
+<li>✅ <strong>抗震动</strong> 在剧烈机动期间</li>
+<li>✅ <strong>亚米级精度</strong> 超过 500m 飞行距离</li>
+<li>✅ <strong>实时性能</strong>: 20Hz 位姿估计</li>
+</ul>
+<p><img src="/flight_test.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="飞行测试"
+	
+	
+>
+<em>图：无人机集群在仓库中进行协同探索</em></p>
+<p><strong>轨迹对比：</strong>
+<img src="/trajectory_comparison.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="轨迹对比"
+	
+	
+>
+<em>图：估计轨迹（红色）vs. 真值（蓝色）</em></p>
+<hr>
+<h2 id="-技术深度挖掘">🔬 技术深度挖掘
+</h2><h3 id="系统架构">系统架构
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">graph TD
+</span></span><span class="line"><span class="cl">    A[双目相机] --&gt; B[OpenVINS 前端]
+</span></span><span class="line"><span class="cl">    C[IMU] --&gt; B
+</span></span><span class="line"><span class="cl">    B --&gt; D[特征跟踪]
+</span></span><span class="line"><span class="cl">    D --&gt; E[MSCKF 更新]
+</span></span><span class="line"><span class="cl">    E --&gt; F[状态估计]
+</span></span><span class="line"><span class="cl">    F --&gt; G[集群协调器]
+</span></span><span class="line"><span class="cl">    G --&gt; H[机间约束]
+</span></span><span class="line"><span class="cl">    H --&gt; I[集中式优化器]
+</span></span><span class="line"><span class="cl">    I --&gt; J[全局轨迹]
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    style A fill:#e1f5ff
+</span></span><span class="line"><span class="cl">    style C fill:#e1f5ff
+</span></span><span class="line"><span class="cl">    style B fill:#fff3cd
+</span></span><span class="line"><span class="cl">    style I fill:#d4edda
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>图：从传感器到集群协调的系统数据流</em></p>
+<h3 id="挑战与解决方案">挑战与解决方案
+</h3><h4 id="挑战-1-ros2-跨设备通信延迟">挑战 1: ROS2 跨设备通信延迟
+</h4><p><strong>问题</strong>: 网络延迟导致位姿更新延迟 50-100ms。</p>
+<p><strong>解决方案</strong>:</p>
+<ul>
+<li>实现基于 <strong>ZeroMQ</strong> 的高频位姿数据通道</li>
+<li>使用时间关键消息的 <strong>ROS2 QoS 策略</strong></li>
+<li>实现 <strong>&lt; 10ms</strong> 端到端延迟</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// 用于低延迟位姿传输的自定义 ZeroMQ 发布器
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">auto</span> <span class="n">publisher</span> <span class="o">=</span> <span class="n">zmq</span><span class="o">::</span><span class="n">socket_t</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">zmq</span><span class="o">::</span><span class="n">socket_style</span><span class="o">::</span><span class="n">pub</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">publisher</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="s">&#34;tcp://*:5555&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PoseMessage</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">get_latest_pose</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">publisher</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">zmq</span><span class="o">::</span><span class="n">buffer</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">serialize</span><span class="p">()),</span> <span class="n">zmq</span><span class="o">::</span><span class="n">send_flags</span><span class="o">::</span><span class="n">none</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="挑战-2-震动下的-imu-噪声">挑战 2: 震动下的 IMU 噪声
+</h4><p><strong>问题</strong>: 电机震动导致 IMU 尖峰，降低 VIO 精度。</p>
+<p><strong>解决方案</strong>:</p>
+<ul>
+<li><strong>硬件</strong>: 添加减震支架</li>
+<li><strong>软件</strong>: 自适应阈值异常值抑制</li>
+<li><strong>滤波器</strong>: 带震动检测的互补滤波器</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// 自适应 IMU 噪声模型
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">double</span> <span class="nf">get_adaptive_noise</span><span class="p">(</span><span class="kt">double</span> <span class="n">vibration_level</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">base_noise_</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">vibration_gain_</span> <span class="o">*</span> <span class="n">vibration_level</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 异常值抑制
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">accel_magnitude</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">reject_measurement</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag_vibration_detected</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="挑战-3-计算优化">挑战 3: 计算优化
+</h4><p><strong>问题</strong>: OpenVINS 处理每帧耗时 80ms，限制在 12Hz。</p>
+<p><strong>解决方案</strong>:</p>
+<ul>
+<li><strong>GPU 加速</strong>: 将特征跟踪移植到 CUDA</li>
+<li><strong>多线程</strong>: 多机并行 MSCKF 更新</li>
+<li><strong>代码优化</strong>: 矩阵运算的 SIMD 指令</li>
+</ul>
+<p><strong>性能提升：</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>优化</th>
+<th>处理时间</th>
+<th>频率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原始</td>
+<td>80ms</td>
+<td>12Hz</td>
+</tr>
+<tr>
+<td>+ 多线程</td>
+<td>45ms</td>
+<td>22Hz</td>
+</tr>
+<tr>
+<td>+ GPU 加速</td>
+<td><strong>25ms</strong></td>
+<td><strong>40Hz</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="性能分析">性能分析
+</h3><p><strong>绝对位姿误差 (APE) 评估：</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>序列</th>
+<th>长度</th>
+<th>APE (均值)</th>
+<th>APE (标准差)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>室内仓库</td>
+<td>120m</td>
+<td><strong>0.23m</strong></td>
+<td>0.08m</td>
+</tr>
+<tr>
+<td>室外森林</td>
+<td>250m</td>
+<td><strong>0.41m</strong></td>
+<td>0.15m</td>
+</tr>
+<tr>
+<td>多机协同</td>
+<td>180m</td>
+<td><strong>0.31m</strong></td>
+<td>0.11m</td>
+</tr>
+</tbody>
+</table></div>
+<p><img src="/ape_comparison.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="APE 对比图"
+	
+	
+>
+<em>图：与其他 VIO 系统的 APE 对比（ORB-SLAM3, VINS-Fusion）</em></p>
+<p><strong>相对位姿误差 (RPE):</strong></p>
+<ul>
+<li><strong>短期 (10m)</strong>: 0.05m 平均误差</li>
+<li><strong>中期 (50m)</strong>: 0.12m 平均误差</li>
+<li><strong>长期 (100m+)</strong>: 0.23m 平均误差</li>
+</ul>
+<hr>
+<h2 id="-项目成果">📊 项目成果
+</h2><h3 id="主要成就">主要成就
+</h3><p>✅ <strong>高精度</strong>: 500m+ 飞行亚米级定位<br>
+✅ <strong>实时性能</strong>: 嵌入式平台 40Hz 位姿估计<br>
+✅ <strong>可扩展性</strong>: 成功测试最多 5 架无人机<br>
+✅ <strong>鲁棒性</strong>: 在弱纹理、低光照环境下运行</p>
+<h3 id="演示视频">演示视频
+</h3><div class="video-wrapper">
+    <video controls>
+        <source src="indoor_flight_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="video-wrapper">
+    <video controls>
+        <source src="outdoor_flight_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<h3 id="代码仓库">代码仓库
+</h3><p>源代码和配置文件已在 GitHub 开源：</p>
+<p>🔗 <a class="link" href="https://github.com/yourusername/openvins-uav-swarm"  target="_blank" rel="noopener"
+    >github.com/yourusername/openvins-uav-swarm</a></p>
+<hr>
+<h2 id="-论文与参考文献">📚 论文与参考文献
+</h2><p>如使用本工作，请引用：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bibtex" data-lang="bibtex"><span class="line"><span class="cl"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">yourname2024openvins</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">title</span><span class="p">=</span><span class="s">{OpenVINS-based UAV Swarm Cooperative Self-Localization System}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">author</span><span class="p">=</span><span class="s">{Your Name and Others}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">booktitle</span><span class="p">=</span><span class="s">{IEEE International Conference on Robotics and Automation}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">year</span><span class="p">=</span><span class="s">{2024}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="相关工作">相关工作
+</h3><ul>
+<li><a class="link" href="https://github.com/rpng/openvins"  target="_blank" rel="noopener"
+    >OpenVINS: 视觉惯性估计研究平台</a></li>
+<li><a class="link" href="https://docs.ros.org/en/humble/"  target="_blank" rel="noopener"
+    >ROS2 文档</a></li>
+<li><a class="link" href="https://docs.px4.io/main/en/"  target="_blank" rel="noopener"
+    >PX4 飞控指南</a></li>
+</ul>
+<hr>
+<h2 id="-致谢">👥 致谢
+</h2><p>本项目在以下支持下完成：</p>
+<ul>
+<li>[你的大学/实验室名称]</li>
+<li>[导师姓名]</li>
+<li>[团队成员]</li>
+</ul>
+<p><strong>联系</strong>: <a class="link" href="mailto:your.email@example.com" >your.email@example.com</a></p>
+<hr>
+<p><em>最后更新：2024 年 4 月</em></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/zh-cn/tags/ros2/">ROS2</a>
+        
+            <a href="/zh-cn/tags/openvins/">OpenVINS</a>
+        
+            <a href="/zh-cn/tags/vio/">VIO</a>
+        
+            <a href="/zh-cn/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/">无人机</a>
+        
+            <a href="/zh-cn/tags/c&#43;&#43;/">C&#43;&#43;</a>
+        
+            <a href="/zh-cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a>
+        
+            <a href="/zh-cn/tags/slam/">SLAM</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+        <div class="project-repo">
+            <a href="https://github.com/yourusername/openvins-uav-swarm" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                View Source Code
+            </a>
+        </div>
+    
+
+    
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Ricardo
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

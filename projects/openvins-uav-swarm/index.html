@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="🎯 Project Overview Solving the drift problem in UAV swarm operations without GPS dependency. This project implements a comprehensive visual-inertial odometry (VIO) system for UAV swarms, combining OpenVINS, ROS2 communication architecture, and cooperative localization algorithms to achieve high-precision positioning in both simulation and real-world environments. Tech Stack Middleware: ROS2 (Humble) Programming: C++17, Python VIO Engine: OpenVINS Simulation: Gazebo Sim(Fortress), PX4 SITL Flight Control: PX4 Autopilot, MAVROS Computer Vision: OpenCV, Eigen Optimization: Ceres Solver, g2o Visualization: RViz2 🖥️ Simulation Gazebo Physical Simulation We built a high-fidelity simulation environment with:">
+<title>OpenVINS-based UAV Swarm Cooperative Self-Localization System</title>
+
+<link rel='canonical' href='http://localhost:1313/projects/openvins-uav-swarm/'>
+
+<link rel="stylesheet" href="/scss/style.min.5b61898c2be789d00f2cbea9c16d439e6d13e1cccf314bef88777926a9bc4357.css"><meta property='og:title' content="OpenVINS-based UAV Swarm Cooperative Self-Localization System">
+<meta property='og:description' content="🎯 Project Overview Solving the drift problem in UAV swarm operations without GPS dependency. This project implements a comprehensive visual-inertial odometry (VIO) system for UAV swarms, combining OpenVINS, ROS2 communication architecture, and cooperative localization algorithms to achieve high-precision positioning in both simulation and real-world environments. Tech Stack Middleware: ROS2 (Humble) Programming: C++17, Python VIO Engine: OpenVINS Simulation: Gazebo Sim(Fortress), PX4 SITL Flight Control: PX4 Autopilot, MAVROS Computer Vision: OpenCV, Eigen Optimization: Ceres Solver, g2o Visualization: RViz2 🖥️ Simulation Gazebo Physical Simulation We built a high-fidelity simulation environment with:">
+<meta property='og:url' content='http://localhost:1313/projects/openvins-uav-swarm/'>
+<meta property='og:site_name' content='Ricardo'>
+<meta property='og:type' content='article'><meta property='article:section' content='Projects' /><meta property='article:tag' content='ROS2' /><meta property='article:tag' content='OpenVINS' /><meta property='article:tag' content='UAV' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:tag' content='SLAM' /><meta property='article:published_time' content='2024-04-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-24T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="OpenVINS-based UAV Swarm Cooperative Self-Localization System">
+<meta name="twitter:description" content="🎯 Project Overview Solving the drift problem in UAV swarm operations without GPS dependency. This project implements a comprehensive visual-inertial odometry (VIO) system for UAV swarms, combining OpenVINS, ROS2 communication architecture, and cooperative localization algorithms to achieve high-precision positioning in both simulation and real-world environments. Tech Stack Middleware: ROS2 (Humble) Programming: C++17, Python VIO Engine: OpenVINS Simulation: Gazebo Sim(Fortress), PX4 SITL Flight Control: PX4 Autopilot, MAVROS Computer Vision: OpenCV, Eigen Optimization: Ceres Solver, g2o Visualization: RViz2 🖥️ Simulation Gazebo Physical Simulation We built a high-fidelity simulation environment with:">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
+
+    </head>
+    <body class="
+    article-page">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu219957328215183393.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😁</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Ricardo</a></h1>
+            <h2 class="site-description">Welcome to Ricardo&#39;s wedsite</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Ricardo-Guo'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About Me</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/projects/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+</svg>
+
+                
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" selected>English</option>
+                                
+                                    <option value="http://localhost:1313/zh-cn/" >中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#-project-overview">🎯 Project Overview</a>
+      <ol>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+      </ol>
+    </li>
+    <li><a href="#-simulation">🖥️ Simulation</a>
+      <ol>
+        <li><a href="#gazebo-physical-simulation">Gazebo Physical Simulation</a></li>
+        <li><a href="#rviz2-visualization">RViz2 Visualization</a></li>
+        <li><a href="#swarm-algorithm-visualization">Swarm Algorithm Visualization</a></li>
+        <li><a href="#core-implementation">Core Implementation</a></li>
+      </ol>
+    </li>
+    <li><a href="#-hardware-implementation">🚁 Hardware Implementation</a>
+      <ol>
+        <li><a href="#sensor-calibration">Sensor Calibration</a></li>
+        <li><a href="#hardware-architecture">Hardware Architecture</a></li>
+        <li><a href="#real-world-data-stream">Real-World Data Stream</a></li>
+        <li><a href="#flight-testing">Flight Testing</a></li>
+      </ol>
+    </li>
+    <li><a href="#-technical-deep-dive">🔬 Technical Deep Dive</a>
+      <ol>
+        <li><a href="#system-architecture">System Architecture</a></li>
+        <li><a href="#challenges--solutions">Challenges &amp; Solutions</a>
+          <ol>
+            <li><a href="#challenge-1-ros2-cross-device-communication-latency">Challenge 1: ROS2 Cross-Device Communication Latency</a></li>
+            <li><a href="#challenge-2-imu-noise-under-vibration">Challenge 2: IMU Noise Under Vibration</a></li>
+            <li><a href="#challenge-3-computational-optimization">Challenge 3: Computational Optimization</a></li>
+          </ol>
+        </li>
+        <li><a href="#performance-analysis">Performance Analysis</a></li>
+      </ol>
+    </li>
+    <li><a href="#-project-results">📊 Project Results</a>
+      <ol>
+        <li><a href="#key-achievements">Key Achievements</a></li>
+        <li><a href="#demo-videos">Demo Videos</a></li>
+        <li><a href="#code-repository">Code Repository</a></li>
+      </ol>
+    </li>
+    <li><a href="#-publications--references">📚 Publications &amp; References</a>
+      <ol>
+        <li><a href="#related-work">Related Work</a></li>
+      </ol>
+    </li>
+    <li><a href="#-acknowledgments">👥 Acknowledgments</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/projects/openvins-uav-swarm/">OpenVINS-based UAV Swarm Cooperative Self-Localization System</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 24, 2024</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+        <footer class="article-translations">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+            <div>
+                
+                    <a href="http://localhost:1313/zh-cn/projects/openvins-uav-swarm/" class="link">中文</a>
+                
+            </div>
+        </footer>
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="-project-overview">🎯 Project Overview
+</h2><p><strong>Solving the drift problem in UAV swarm operations without GPS dependency.</strong></p>
+<p>This project implements a comprehensive visual-inertial odometry (VIO) system for UAV swarms, combining <strong>OpenVINS</strong>, <strong>ROS2 communication architecture</strong>, and <strong>cooperative localization algorithms</strong> to achieve high-precision positioning in both simulation and real-world environments.</p>
+<h3 id="tech-stack">Tech Stack
+</h3><ul>
+<li><strong>Middleware</strong>: ROS2 (Humble)</li>
+<li><strong>Programming</strong>: C++17, Python</li>
+<li><strong>VIO Engine</strong>: OpenVINS</li>
+<li><strong>Simulation</strong>: Gazebo Sim(Fortress), PX4 SITL</li>
+<li><strong>Flight Control</strong>: PX4 Autopilot, MAVROS</li>
+<li><strong>Computer Vision</strong>: OpenCV, Eigen</li>
+<li><strong>Optimization</strong>: Ceres Solver, g2o</li>
+<li><strong>Visualization</strong>: RViz2</li>
+</ul>
+<hr>
+<h2 id="-simulation">🖥️ Simulation
+</h2><h3 id="gazebo-physical-simulation">Gazebo Physical Simulation
+</h3><p>We built a high-fidelity simulation environment with:</p>
+<ul>
+<li><strong>Realistic lighting</strong> and shadow rendering</li>
+<li><strong>Physically accurate</strong> UAV dynamics and sensor noise models</li>
+<li><strong>Multi-UAV spawn system</strong> with collision avoidance</li>
+</ul>
+<p><img src="/gazebo_simulation.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Gazebo Simulation Screenshot"
+	
+	
+>
+<em>Figure: Multi-UAV cooperative exploration in a complex environment</em></p>
+<h3 id="rviz2-visualization">RViz2 Visualization
+</h3><p>Our visualization pipeline displays:</p>
+<ul>
+<li><strong>Trajectory tracking</strong> (Path messages with color-coded time series)</li>
+<li><strong>3D Point Cloud Maps</strong> from stereo vision</li>
+<li><strong>Real-time pose estimation</strong> with uncertainty ellipsoids</li>
+</ul>
+<p><img src="/rviz_visualization.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RViz Visualization"
+	
+	
+>
+<em>Figure: Real-time visualization of UAV poses, trajectories, and point cloud maps</em></p>
+<h3 id="swarm-algorithm-visualization">Swarm Algorithm Visualization
+</h3><p><strong>Distributed State Estimation Architecture:</strong></p>
+<ul>
+<li>Leader UAV runs independent OpenVINS node</li>
+<li>Follower UAVs receive leader&rsquo;s pose estimate via ROS2 topic</li>
+</ul>
+<p><img src="/swarm_architecture.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Swarm Visualization"
+	
+	
+>
+<em>Figure: Distributed estimation with centralized optimization</em></p>
+<h3 id="core-implementation">Core Implementation
+</h3><p><strong>Terminal Commands:</strong></p>
+<p><strong>1. Start Simulation:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Launch Gazebo with 3 UAVs</span>
+</span></span><span class="line"><span class="cl">ros2 launch uav_swarm_gazebo swarm_simulation.launch.py <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    num_uavs:<span class="o">=</span><span class="m">3</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    world:<span class="o">=</span>warehouse_complex
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>2. Run OpenVINS:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Start VIO for all UAVs</span>
+</span></span><span class="line"><span class="cl">ros2 launch openvins_uav swarm_vio.launch.py <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    num_uavs:<span class="o">=</span><span class="m">3</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    use_gpu:<span class="o">=</span><span class="nb">true</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>3. Trigger Swarm Behavior:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Start cooperative exploration</span>
+</span></span><span class="line"><span class="cl">ros2 topic pub /swarm/command std_msgs/msg/String <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    <span class="s2">&#34;{data: &#39;start_exploration&#39;}&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Core Code:</strong></p>
+<p><strong>1. Bridge Node:</strong></p>
+<p><strong>2. Openvins Implementation:</strong></p>
+<p><strong>3. Swarm Algorithm:</strong></p>
+<hr>
+<h2 id="-hardware-implementation">🚁 Hardware Implementation
+</h2><h3 id="sensor-calibration">Sensor Calibration
+</h3><p><strong>Camera-IMU Spatiotemporal Calibration using Kalibr:</strong></p>
+<p>We performed rigorous calibration to ensure accurate sensor fusion:</p>
+<ol>
+<li><strong>Data Collection</strong>: Captured 10 minutes of calibration board sequences</li>
+<li><strong>Intrinsic Calibration</strong>: Camera parameters with &lt; 0.1 pixel reprojection error</li>
+<li><strong>Extrinsic Calibration</strong>: Camera-IMU transformation matrix</li>
+<li><strong>Temporal Calibration</strong>: Time offset estimation (&lt; 5ms accuracy)</li>
+</ol>
+<p><img src="/kalibr_residuals.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Kalibr Residual Plot"
+	
+	
+>
+<em>Figure: Calibration residual plots showing sub-pixel accuracy</em></p>
+<p><strong>Calibration Results:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Camera-IMU Extrinsics (T_target_cam)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">rotation</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">[</span><span class="m">0.9999</span><span class="p">,</span><span class="w"> </span>-<span class="m">0.0012</span><span class="p">,</span><span class="w"> </span><span class="m">0.0123</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="m">0.0015</span><span class="p">,</span><span class="w"> </span><span class="m">0.9998</span><span class="p">,</span><span class="w"> </span>-<span class="m">0.0201</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>-<span class="m">0.0121</span><span class="p">,</span><span class="w"> </span><span class="m">0.0203</span><span class="p">,</span><span class="w"> </span><span class="m">0.9997</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">translation</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">0.0234</span><span class="p">,</span><span class="w"> </span>-<span class="m">0.0012</span><span class="p">,</span><span class="w"> </span><span class="m">0.0456</span><span class="p">]</span><span class="w">  </span><span class="c"># meters</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Time offset: 2.3 ms</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="hardware-architecture">Hardware Architecture
+</h3><p><strong>Onboard Computing Platform:</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Model</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flight Controller</strong></td>
+<td>Pixhawk 6X</td>
+<td>Low-level stabilization</td>
+</tr>
+<tr>
+<td><strong>Companion Computer</strong></td>
+<td>NVIDIA Jetson Orin NX</td>
+<td>OpenVINS processing</td>
+</tr>
+<tr>
+<td><strong>Camera</strong></td>
+<td>ZED 2 Stereo</td>
+<td>Visual-inertial sensing</td>
+</tr>
+<tr>
+<td><strong>IMU</strong></td>
+<td>ICM-42688-P</td>
+<td>High-frequency (200Hz)</td>
+</tr>
+<tr>
+<td><strong>UWB</strong></td>
+<td>Decawave DWM1001</td>
+<td>Inter-UAV ranging</td>
+</tr>
+<tr>
+<td><strong>Power</strong></td>
+<td>6S LiPo 5000mAh</td>
+<td>25min flight time</td>
+</tr>
+</tbody>
+</table></div>
+<p><img src="/hardware_assembly.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Hardware Assembly"
+	
+	
+>
+<em>Figure: Custom UAV with integrated sensor suite</em></p>
+<h3 id="real-world-data-stream">Real-World Data Stream
+</h3><p><strong>Sensor Data Flow:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ZED 2 Camera → USB3.0 → Jetson Orin
+</span></span><span class="line"><span class="cl">                    ↓
+</span></span><span class="line"><span class="cl">              OpenVINS Node
+</span></span><span class="line"><span class="cl">                    ↓
+</span></span><span class="line"><span class="cl">    Pose Estimate → ROS2 Topic → Flight Controller
+</span></span><span class="line"><span class="cl">                    ↓
+</span></span><span class="line"><span class="cl">         Point Cloud → Ground Station
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/real_world_data.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Real-world Data Visualization"
+	
+	
+>
+<em>Figure: Live visualization of camera feed, IMU data, and pose estimates</em></p>
+<h3 id="flight-testing">Flight Testing
+</h3><p><strong>Performance Metrics:</strong></p>
+<ul>
+<li>✅ <strong>Stable localization</strong> in GPS-denied indoor environments</li>
+<li>✅ <strong>Vibration resistance</strong> during aggressive maneuvers</li>
+<li>✅ <strong>Sub-meter accuracy</strong> over 500m flight distance</li>
+<li>✅ <strong>Real-time performance</strong>: 20Hz pose estimation</li>
+</ul>
+<p><img src="/flight_test.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Flight Test"
+	
+	
+>
+<em>Figure: UAV swarm performing cooperative exploration in warehouse</em></p>
+<p><strong>Trajectory Comparison:</strong>
+<img src="/trajectory_comparison.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Trajectory Comparison"
+	
+	
+>
+<em>Figure: Estimated trajectory (red) vs. Ground truth (blue)</em></p>
+<hr>
+<h2 id="-technical-deep-dive">🔬 Technical Deep Dive
+</h2><h3 id="system-architecture">System Architecture
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">graph TD
+</span></span><span class="line"><span class="cl">    A[Stereo Camera] --&gt; B[OpenVINS Frontend]
+</span></span><span class="line"><span class="cl">    C[IMU] --&gt; B
+</span></span><span class="line"><span class="cl">    B --&gt; D[Feature Tracking]
+</span></span><span class="line"><span class="cl">    D --&gt; E[MSCKF Update]
+</span></span><span class="line"><span class="cl">    E --&gt; F[State Estimate]
+</span></span><span class="line"><span class="cl">    F --&gt; G[Swarm Coordinator]
+</span></span><span class="line"><span class="cl">    G --&gt; H[Inter-UAV Constraints]
+</span></span><span class="line"><span class="cl">    H --&gt; I[Centralized Optimizer]
+</span></span><span class="line"><span class="cl">    I --&gt; J[Global Trajectories]
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    style A fill:#e1f5ff
+</span></span><span class="line"><span class="cl">    style C fill:#e1f5ff
+</span></span><span class="line"><span class="cl">    style B fill:#fff3cd
+</span></span><span class="line"><span class="cl">    style I fill:#d4edda
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>Figure: System data flow from sensors to swarm coordination</em></p>
+<h3 id="challenges--solutions">Challenges &amp; Solutions
+</h3><h4 id="challenge-1-ros2-cross-device-communication-latency">Challenge 1: ROS2 Cross-Device Communication Latency
+</h4><p><strong>Problem</strong>: Network latency caused pose updates to arrive 50-100ms late.</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Implemented <strong>ZeroMQ-based</strong> high-frequency channel for pose data</li>
+<li>Used <strong>ROS2 QoS policies</strong> for time-critical messages</li>
+<li>Achieved <strong>&lt; 10ms</strong> end-to-end latency</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Custom ZeroMQ publisher for low-latency pose streaming
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">auto</span> <span class="n">publisher</span> <span class="o">=</span> <span class="n">zmq</span><span class="o">::</span><span class="n">socket_t</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">zmq</span><span class="o">::</span><span class="n">socket_style</span><span class="o">::</span><span class="n">pub</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">publisher</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="s">&#34;tcp://*:5555&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PoseMessage</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">get_latest_pose</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">publisher</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">zmq</span><span class="o">::</span><span class="n">buffer</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">serialize</span><span class="p">()),</span> <span class="n">zmq</span><span class="o">::</span><span class="n">send_flags</span><span class="o">::</span><span class="n">none</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="challenge-2-imu-noise-under-vibration">Challenge 2: IMU Noise Under Vibration
+</h4><p><strong>Problem</strong>: Motor vibrations caused IMU spikes, degrading VIO accuracy.</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>Hardware</strong>: Added vibration dampening mounts</li>
+<li><strong>Software</strong>: Adaptive threshold-based outlier rejection</li>
+<li><strong>Filter</strong>: Complementary filter with vibration detection</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Adaptive IMU noise model
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">double</span> <span class="nf">get_adaptive_noise</span><span class="p">(</span><span class="kt">double</span> <span class="n">vibration_level</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">base_noise_</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">vibration_gain_</span> <span class="o">*</span> <span class="n">vibration_level</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Outlier rejection
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">accel_magnitude</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">reject_measurement</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag_vibration_detected</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="challenge-3-computational-optimization">Challenge 3: Computational Optimization
+</h4><p><strong>Problem</strong>: OpenVINS processing took 80ms per frame, limiting to 12Hz.</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><strong>GPU Acceleration</strong>: Ported feature tracking to CUDA</li>
+<li><strong>Multi-threading</strong>: Parallel MSCKF updates for multiple UAVs</li>
+<li><strong>Code Optimization</strong>: SIMD instructions for matrix operations</li>
+</ul>
+<p><strong>Performance Improvement:</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Optimization</th>
+<th>Processing Time</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Original</td>
+<td>80ms</td>
+<td>12Hz</td>
+</tr>
+<tr>
+<td>+ Multi-threading</td>
+<td>45ms</td>
+<td>22Hz</td>
+</tr>
+<tr>
+<td>+ GPU Acceleration</td>
+<td><strong>25ms</strong></td>
+<td><strong>40Hz</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="performance-analysis">Performance Analysis
+</h3><p><strong>Absolute Pose Error (APE) Evaluation:</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>Length</th>
+<th>APE (mean)</th>
+<th>APE (std)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indoor Warehouse</td>
+<td>120m</td>
+<td><strong>0.23m</strong></td>
+<td>0.08m</td>
+</tr>
+<tr>
+<td>Outdoor Forest</td>
+<td>250m</td>
+<td><strong>0.41m</strong></td>
+<td>0.15m</td>
+</tr>
+<tr>
+<td>Multi-UAV Cooperative</td>
+<td>180m</td>
+<td><strong>0.31m</strong></td>
+<td>0.11m</td>
+</tr>
+</tbody>
+</table></div>
+<p><img src="/ape_comparison.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="APE Comparison Chart"
+	
+	
+>
+<em>Figure: APE comparison with other VIO systems (ORB-SLAM3, VINS-Fusion)</em></p>
+<p><strong>Relative Pose Error (RPE):</strong></p>
+<ul>
+<li><strong>Short-term (10m)</strong>: 0.05m average error</li>
+<li><strong>Medium-term (50m)</strong>: 0.12m average error</li>
+<li><strong>Long-term (100m+)</strong>: 0.23m average error</li>
+</ul>
+<hr>
+<h2 id="-project-results">📊 Project Results
+</h2><h3 id="key-achievements">Key Achievements
+</h3><p>✅ <strong>High Precision</strong>: Sub-meter localization over 500m+ flights<br>
+✅ <strong>Real-time Performance</strong>: 40Hz pose estimation on embedded platform<br>
+✅ <strong>Scalability</strong>: Successfully tested with up to 5 UAVs<br>
+✅ <strong>Robustness</strong>: Operates in textureless, low-light environments</p>
+<h3 id="demo-videos">Demo Videos
+</h3><div class="video-wrapper">
+    <video controls>
+        <source src="indoor_flight_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="video-wrapper">
+    <video controls>
+        <source src="outdoor_flight_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<h3 id="code-repository">Code Repository
+</h3><p>Source code and configuration files are available on GitHub:</p>
+<p>🔗 <a class="link" href="https://github.com/yourusername/openvins-uav-swarm"  target="_blank" rel="noopener"
+    >github.com/yourusername/openvins-uav-swarm</a></p>
+<hr>
+<h2 id="-publications--references">📚 Publications &amp; References
+</h2><p>If you use this work, please cite:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bibtex" data-lang="bibtex"><span class="line"><span class="cl"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">yourname2024openvins</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">title</span><span class="p">=</span><span class="s">{OpenVINS-based UAV Swarm Cooperative Self-Localization System}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">author</span><span class="p">=</span><span class="s">{Your Name and Others}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">booktitle</span><span class="p">=</span><span class="s">{IEEE International Conference on Robotics and Automation}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">year</span><span class="p">=</span><span class="s">{2024}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="related-work">Related Work
+</h3><ul>
+<li><a class="link" href="https://github.com/rpng/openvins"  target="_blank" rel="noopener"
+    >OpenVINS: A Research Platform for Visual-Inertial Estimation</a></li>
+<li><a class="link" href="https://docs.ros.org/en/humble/"  target="_blank" rel="noopener"
+    >ROS2 Documentation</a></li>
+<li><a class="link" href="https://docs.px4.io/main/en/"  target="_blank" rel="noopener"
+    >PX4 Autopilot Guide</a></li>
+</ul>
+<hr>
+<h2 id="-acknowledgments">👥 Acknowledgments
+</h2><p>This project was developed with support from:</p>
+<ul>
+<li>[Your University/Lab Name]</li>
+<li>[Advisor Name]</li>
+<li>[Team Members]</li>
+</ul>
+<p><strong>Contact</strong>: <a class="link" href="mailto:your.email@example.com" >your.email@example.com</a></p>
+<hr>
+<p><em>Last Updated: April 2024</em></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ros2/">ROS2</a>
+        
+            <a href="/tags/openvins/">OpenVINS</a>
+        
+            <a href="/tags/uav/">UAV</a>
+        
+            <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
+        
+            <a href="/tags/slam/">SLAM</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+        <div class="project-repo">
+            <a href="https://github.com/yourusername/openvins-uav-swarm" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                View Source Code
+            </a>
+        </div>
+    
+
+    
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Ricardo
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

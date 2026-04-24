@@ -2,138 +2,189 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zh-cn/tags/c&#43;&#43;/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Ricardo-Guo.github.io/ar/"
+                href="http://localhost:1313/tags/c&#43;&#43;/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/"
+                href="http://localhost:1313/zh-cn/tags/c&#43;&#43;/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zh-cn/tags/openvins/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Ricardo-Guo.github.io/ar/categories/"
+                href="http://localhost:1313/tags/openvins/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/categories/"
+                href="http://localhost:1313/zh-cn/tags/openvins/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zh-cn/projects/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/p/test-chinese/"
+                href="http://localhost:1313/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/p/test-chinese/"
+                href="http://localhost:1313/zh-cn/projects/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/post/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zh-cn/tags/ros2/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Ricardo-Guo.github.io/ar/post/"
+                href="http://localhost:1313/tags/ros2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/post/"
+                href="http://localhost:1313/zh-cn/tags/ros2/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zh-cn/tags/slam/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/categories/test/"
+                href="http://localhost:1313/tags/slam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/categories/test/"
+                href="http://localhost:1313/zh-cn/tags/slam/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zh-cn/tags/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/categories/%E6%B5%8B%E8%AF%95/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/categories/%E6%B5%8B%E8%AF%95/"
+                href="http://localhost:1313/zh-cn/tags/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/page/</loc>
+    <loc>http://localhost:1313/zh-cn/tags/vio/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/page/"
+                href="http://localhost:1313/tags/vio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/page/"
+                href="http://localhost:1313/zh-cn/tags/vio/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/tags/</loc>
+    <loc>http://localhost:1313/zh-cn/projects/openvins-uav-swarm/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Ricardo-Guo.github.io/ar/tags/"
+                href="http://localhost:1313/projects/openvins-uav-swarm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/tags/"
+                href="http://localhost:1313/zh-cn/projects/openvins-uav-swarm/"
                 />
   </url><url>
-    <loc>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</loc>
+    <loc>http://localhost:1313/zh-cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/</loc>
+    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ricardo-Guo.github.io/about/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E/"
+                href="http://localhost:1313/zh-cn/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/page/</loc>
+    <lastmod>2024-03-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/page/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</loc>
+    <lastmod>2024-03-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about-me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/search/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/%E9%A1%B9%E7%9B%AE/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/%E9%A1%B9%E7%9B%AE/"
                 />
   </url>
 </urlset>

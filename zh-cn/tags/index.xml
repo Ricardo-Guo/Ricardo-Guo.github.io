@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on 演示站点</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/tags/</link>
-        <description>Recent content in Tags on 演示站点</description>
+        <title>Tags on Ricardo</title>
+        <link>http://localhost:1313/zh-cn/tags/</link>
+        <description>Recent content in Tags on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Ricardo</copyright><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>Ricardo</copyright>
+        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C&#43;&#43;</title>
+        <link>http://localhost:1313/zh-cn/tags/c&#43;&#43;/</link>
+        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/tags/c&#43;&#43;/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>OpenVINS</title>
+        <link>http://localhost:1313/zh-cn/tags/openvins/</link>
+        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/tags/openvins/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ROS2</title>
+        <link>http://localhost:1313/zh-cn/tags/ros2/</link>
+        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/tags/ros2/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>SLAM</title>
+        <link>http://localhost:1313/zh-cn/tags/slam/</link>
+        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/tags/slam/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>VIO</title>
+        <link>http://localhost:1313/zh-cn/tags/vio/</link>
+        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/tags/vio/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>计算机视觉</title>
+        <link>http://localhost:1313/zh-cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</link>
+        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>无人机</title>
+        <link>http://localhost:1313/zh-cn/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/</link>
+        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>

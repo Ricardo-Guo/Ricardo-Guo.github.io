@@ -2,53 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/page/</link>
+        <link>http://localhost:1313/page/</link>
         <description>Recent content in Pages on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Archives</title>
-        <link>https://Ricardo-Guo.github.io/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        <lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About Me</title>
+        <link>http://localhost:1313/about-me/</link>
+        <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://Ricardo-Guo.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>https://Ricardo-Guo.github.io/about/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/about/</guid>
-        <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache License 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
+        <guid>http://localhost:1313/about-me/</guid>
+        <description>&lt;h2 id=&#34;-hello&#34;&gt;👋 Hello!
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m Ricardo, a Robotics student passionate about SLAM. This page contains more detailed information about my background and experience.&lt;/p&gt;
+&lt;h2 id=&#34;-education&#34;&gt;🎓 Education
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Bachelor of Science in Robotics&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Southern University of Science and Technology&lt;/em&gt; | Expected Graduation: 2027&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuin/goldmark&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/alecthomas/chroma&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/muesli/smartcrop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/viper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GPA: 3.74/4.0&lt;/li&gt;
+&lt;li&gt;Relevant Coursework: Robot drive system, mechatronics, control engineering fundamentals, Robot Modeling and Control&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;
-&lt;p&gt;Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p&gt;
-&lt;p&gt;Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p&gt;
-&lt;p&gt;Learn more and contribute on &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;-technical-skills&#34;&gt;💻 Technical Skills
+&lt;/h2&gt;&lt;h3 id=&#34;programming-languages&#34;&gt;Programming Languages
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;C++, Python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;frameworks--libraries&#34;&gt;Frameworks &amp;amp; Libraries
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;SLAM: ORB_SLAM3, OpenVins, 3D Reconstruction&lt;/li&gt;
+&lt;li&gt;C++:&lt;/li&gt;
+&lt;li&gt;Python:&lt;/li&gt;
+&lt;li&gt;Deep Learning:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tools--technologies&#34;&gt;Tools &amp;amp; Technologies
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Git, Docker, Linux(Ubuntu)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-honors--awards&#34;&gt;🏆 Honors &amp;amp; Awards
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;National Scholarship (2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;ACM Programming Contest - First Place (2022) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Dean&amp;rsquo;s List (2022, 2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-resume&#34;&gt;📄 Resume
+&lt;/h2&gt;&lt;p&gt;📥 &lt;a class=&#34;link&#34; href=&#34;path/to/your/resume.pdf&#34; &gt;Download Resume (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-interests&#34;&gt;🌐 Interests
+&lt;/h2&gt;&lt;p&gt;When I&amp;rsquo;m not coding, you can find me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📚 Reading about latest tech trends&lt;/li&gt;
+&lt;li&gt;🎮 Playing video games&lt;/li&gt;
+&lt;li&gt;🏀 Playing basketball&lt;/li&gt;
+&lt;li&gt;📷 Photography&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Feel free to reach out if you&amp;rsquo;d like to collaborate on a project or just chat about technology!&lt;/em&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
+        <title>Archives</title>
+        <link>http://localhost:1313/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/archives/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Links</title>
-        <link>https://Ricardo-Guo.github.io/links/</link>
+        <link>http://localhost:1313/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Ricardo-Guo.github.io/links/</guid>
+        <guid>http://localhost:1313/links/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -79,11 +102,20 @@
 </description>
         </item>
         <item>
-        <title>Search</title>
-        <link>https://Ricardo-Guo.github.io/search/</link>
+        <title>Projects</title>
+        <link>http://localhost:1313/projects/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Ricardo-Guo.github.io/search/</guid>
+        <guid>http://localhost:1313/projects/</guid>
+        <description>&lt;p&gt;Welcome to my projects showcase! Here you can find my personal projects, code repositories, and creative work.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>http://localhost:1313/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         

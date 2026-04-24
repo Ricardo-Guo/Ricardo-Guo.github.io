@@ -1,18 +1,80 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Pages on 演示站点</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/page/</link>
-        <description>Recent content in Pages on 演示站点</description>
+        <title>Pages on Ricardo</title>
+        <link>http://localhost:1313/zh-cn/page/</link>
+        <description>Recent content in Pages on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Ricardo</copyright><atom:link href="https://Ricardo-Guo.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>关于</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link>
+        <copyright>Ricardo</copyright>
+        <lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于我</title>
+        <link>http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
+        <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+        <description>&lt;h2 id=&#34;-你好&#34;&gt;👋 你好！
+&lt;/h2&gt;&lt;p&gt;我是 Ricardo，一名热爱技术和创新的计算机科学专业学生。这个页面包含了我更详细的背景和经验信息。&lt;/p&gt;
+&lt;h2 id=&#34;-教育背景&#34;&gt;🎓 教育背景
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;计算机科学学士&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;你的大学名称&lt;/em&gt; | 预计毕业：2026 年&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GPA: X.X/4.0（如果成绩好可以写）&lt;/li&gt;
+&lt;li&gt;相关课程：数据结构、算法、机器学习、Web 开发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-技术技能&#34;&gt;💻 技术技能
+&lt;/h2&gt;&lt;h3 id=&#34;编程语言&#34;&gt;编程语言
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Python, JavaScript, C++, Java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;框架和库&#34;&gt;框架和库
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;TensorFlow, PyTorch, React, Node.js, Django&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;工具和技术&#34;&gt;工具和技术
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Git, Docker, AWS, Linux, MySQL, MongoDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-荣誉与奖项&#34;&gt;🏆 荣誉与奖项
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;国家奖学金 (2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;ACM 程序设计竞赛 - 一等奖 (2022) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;院长名单 (2022, 2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-证书&#34;&gt;📜 证书
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;AWS 认证云从业者 - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;TensorFlow 开发者证书 - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-简历&#34;&gt;📄 简历
+&lt;/h2&gt;&lt;p&gt;📥 &lt;a class=&#34;link&#34; href=&#34;path/to/your/resume.pdf&#34; &gt;下载简历 (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-兴趣爱好&#34;&gt;🌐 兴趣爱好
+&lt;/h2&gt;&lt;p&gt;不写代码的时候，我喜欢：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📚 阅读最新的技术趋势&lt;/li&gt;
+&lt;li&gt;🎮 玩电子游戏&lt;/li&gt;
+&lt;li&gt;🏀 打篮球&lt;/li&gt;
+&lt;li&gt;📷 摄影&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;如果你想合作项目或者聊聊技术，欢迎随时联系我！&lt;/em&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>http://localhost:1313/zh-cn/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <guid>http://localhost:1313/zh-cn/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>项目</title>
+        <link>http://localhost:1313/zh-cn/%E9%A1%B9%E7%9B%AE/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/zh-cn/%E9%A1%B9%E7%9B%AE/</guid>
+        <description>&lt;p&gt;欢迎访问我的项目展示页面！在这里你可以找到我的个人项目、代码仓库和创意作品。&lt;/p&gt;
 </description>
         </item>
         
