@@ -2,6 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/zh-cn/projects/octopod-biomimetic-robot/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/projects/octopod-biomimetic-robot/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/projects/octopod-biomimetic-robot/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/projects/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/projects/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E6%AD%A5%E6%80%81%E8%A7%84%E5%88%92/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E4%BB%BF%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%8E%A7%E5%88%B6/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/"
+                />
+  </url><url>
     <loc>http://localhost:1313/zh-cn/tags/c&#43;&#43;/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -26,19 +93,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh-cn/tags/openvins/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/projects/</loc>
-    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/projects/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/projects/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh-cn/tags/ros2/</loc>
@@ -67,32 +121,6 @@
                 href="http://localhost:1313/zh-cn/tags/slam/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/</loc>
-    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/vio/</loc>
-    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/vio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/vio/"
-                />
-  </url><url>
     <loc>http://localhost:1313/zh-cn/projects/openvins-uav-swarm/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -106,24 +134,8 @@
                 href="http://localhost:1313/zh-cn/projects/openvins-uav-swarm/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</loc>
-    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/zh-cn/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/</loc>
-    <lastmod>2024-04-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/"
-                />
   </url><url>
     <loc>http://localhost:1313/zh-cn/page/</loc>
     <lastmod>2024-03-23T00:00:00+00:00</lastmod>
@@ -175,7 +187,7 @@
                 href="http://localhost:1313/zh-cn/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>http://localhost:1313/zh-cn/projects/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -184,7 +196,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/%E9%A1%B9%E7%9B%AE/"
+                href="http://localhost:1313/zh-cn/projects/"
                 />
   </url>
 </urlset>

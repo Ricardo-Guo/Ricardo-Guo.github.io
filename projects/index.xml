@@ -7,40 +7,102 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>8-Legged Biomimetic Robot</title>
+        <link>http://localhost:1313/projects/octopod-biomimetic-robot/</link>
+        <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/projects/octopod-biomimetic-robot/</guid>
+        <description>&lt;img src="http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg" alt="Featured image of post 8-Legged Biomimetic Robot" /&gt;&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview
+&lt;/h2&gt;&lt;p&gt;This demo presents an 8-legged biomimetic robot prototype built to explore stable multi-leg walking, compact mechanical transmission, and low-level motion control. The current version focuses on making the walking gait readable and repeatable before adding more advanced perception or autonomy.&lt;/p&gt;
+&lt;p&gt;The project is useful as a robotics portfolio piece because it combines physical design, actuator coordination, and embedded software into one visible system. Even from a short video, the viewer can understand the core challenge: turning a set of repeated leg motions into a stable forward gait.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-built&#34;&gt;What I Built
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;A physical 8-legged walking mechanism with coordinated leg movement.&lt;/li&gt;
+&lt;li&gt;A basic control pipeline for repeatable stepping and speed adjustment.&lt;/li&gt;
+&lt;li&gt;A prototype test setup for observing gait stability, body vibration, and turning behavior.&lt;/li&gt;
+&lt;li&gt;A media-first project page so the result is visible before the technical details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg&#34;
+	width=&#34;4096&#34;
+	height=&#34;2304&#34;
+	srcset=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;8-legged biomimetic robot prototype&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Area&lt;/th&gt;
+&lt;th&gt;Tools / Methods&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Mechanical design&lt;/td&gt;
+&lt;td&gt;Linkage structure, leg layout, chassis integration&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;Gait timing, motor coordination, simple feedback tuning&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Embedded system&lt;/td&gt;
+&lt;td&gt;Microcontroller-based actuation control&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Testing&lt;/td&gt;
+&lt;td&gt;Video observation, gait iteration, stability checks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;design-notes&#34;&gt;Design Notes
+&lt;/h2&gt;&lt;p&gt;The robot&amp;rsquo;s key design problem is rhythm. With eight legs, the system needs a gait pattern that keeps enough contact points on the ground while avoiding visible dragging or fighting between legs. The prototype uses repeated gait cycles so the motion can be tested quickly and improved through mechanical and control adjustments.&lt;/p&gt;
+&lt;p&gt;Future iterations could add sensor feedback, closed-loop speed control, and a cleaner turning behavior. A later version could also compare multiple gait patterns and visualize their stability on the project page.&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo
+&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;video controls&gt;
+        &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
+        Your browser does not support the video tag.
+    &lt;/video&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        <item>
         <title>OpenVINS-based UAV Swarm Cooperative Self-Localization System</title>
         <link>http://localhost:1313/projects/openvins-uav-swarm/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/projects/openvins-uav-swarm/</guid>
-        <description>&lt;img src="http://localhost:1313/demo_video_thumbnail.jpg" alt="Featured image of post OpenVINS-based UAV Swarm Cooperative Self-Localization System" /&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;video controls&gt;
-        &lt;source src=&#34;demo_video.mp4&#34; type=&#34;video/mp4&#34;&gt;
-        Your browser does not support the video tag.
-    &lt;/video&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;-project-overview&#34;&gt;🎯 Project Overview
+        <description>&lt;img src="http://localhost:1313/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post OpenVINS-based UAV Swarm Cooperative Self-Localization System" /&gt;&lt;h2 id=&#34;-project-overview&#34;&gt;🎯 Project Overview
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Solving the drift problem in UAV swarm operations without GPS dependency.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This project implements a comprehensive visual-inertial odometry (VIO) system for UAV swarms, combining &lt;strong&gt;OpenVINS&lt;/strong&gt;, &lt;strong&gt;ROS2 communication architecture&lt;/strong&gt;, and &lt;strong&gt;cooperative localization algorithms&lt;/strong&gt; to achieve high-precision positioning in both simulation and real-world environments.&lt;/p&gt;
 &lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Middleware&lt;/strong&gt;: ROS2 (Humble/Foxy)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Programming&lt;/strong&gt;: C++17/20, Python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Middleware&lt;/strong&gt;: ROS2 (Humble)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Programming&lt;/strong&gt;: C++17, Python&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;VIO Engine&lt;/strong&gt;: OpenVINS&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Simulation&lt;/strong&gt;: Gazebo Classic, PX4 SITL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simulation&lt;/strong&gt;: Gazebo Sim(Fortress), PX4 SITL&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Flight Control&lt;/strong&gt;: PX4 Autopilot, MAVROS&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Computer Vision&lt;/strong&gt;: OpenCV, Eigen&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Optimization&lt;/strong&gt;: Ceres Solver, g2o&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Visualization&lt;/strong&gt;: RViz2, PlotJuggler&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visualization&lt;/strong&gt;: RViz2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-simulation-environment&#34;&gt;🖥️ Simulation Environment
+&lt;h2 id=&#34;-simulation&#34;&gt;🖥️ Simulation
 &lt;/h2&gt;&lt;h3 id=&#34;gazebo-physical-simulation&#34;&gt;Gazebo Physical Simulation
 &lt;/h3&gt;&lt;p&gt;We built a high-fidelity simulation environment with:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Realistic lighting&lt;/strong&gt; and shadow rendering&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Complex obstacle scenarios&lt;/strong&gt; (indoor warehouses, forest environments)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Physically accurate&lt;/strong&gt; UAV dynamics and sensor noise models&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Multi-UAV spawn system&lt;/strong&gt; with collision avoidance&lt;/li&gt;
 &lt;/ul&gt;
@@ -54,13 +116,12 @@
 	
 	
 &gt;
-&lt;em&gt;Figure: Multi-UAV cooperative exploration in a complex indoor environment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Figure: Multi-UAV cooperative exploration in a complex environment&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;rviz2-visualization&#34;&gt;RViz2 Visualization
 &lt;/h3&gt;&lt;p&gt;Our visualization pipeline displays:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Trajectory tracking&lt;/strong&gt; (Path messages with color-coded time series)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;3D Point Cloud Maps&lt;/strong&gt; from stereo vision&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TF Tree&lt;/strong&gt; showing coordinate frame relationships&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Real-time pose estimation&lt;/strong&gt; with uncertainty ellipsoids&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/rviz_visualization.jpg&#34;
@@ -77,9 +138,8 @@
 &lt;h3 id=&#34;swarm-algorithm-visualization&#34;&gt;Swarm Algorithm Visualization
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Distributed State Estimation Architecture:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Each UAV runs independent OpenVINS nodes&lt;/li&gt;
-&lt;li&gt;Inter-UAV relative measurements via UWB or visual markers&lt;/li&gt;
-&lt;li&gt;Centralized loop closure detection for global consistency&lt;/li&gt;
+&lt;li&gt;Leader UAV runs independent OpenVINS node&lt;/li&gt;
+&lt;li&gt;Follower UAVs receive leader&amp;rsquo;s pose estimate via ROS2 topic&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/swarm_architecture.jpg&#34;
 	
@@ -87,34 +147,13 @@
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Swarm Architecture&#34;
+		alt=&#34;Swarm Visualization&#34;
 	
 	
 &gt;
 &lt;em&gt;Figure: Distributed estimation with centralized optimization&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;core-implementation&#34;&gt;Core Implementation
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Multi-UAV Launch Logic:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# Launch 3 UAVs with OpenVINS&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; i in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;1..3&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ros2 launch openvins_uav openvins_node.launch.py &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        uav_id:&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        config_file:&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;config/uav_&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;.yaml &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Terminal Commands:&lt;/strong&gt;&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Terminal Commands:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. Start Simulation:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -158,7 +197,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;{data: &amp;#39;start_exploration&amp;#39;}&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Core Code:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Bridge Node:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Openvins Implementation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Swarm Algorithm:&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;-hardware-implementation&#34;&gt;🚁 Hardware Implementation
 &lt;/h2&gt;&lt;h3 id=&#34;sensor-calibration&#34;&gt;Sensor Calibration
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Camera-IMU Spatiotemporal Calibration using Kalibr:&lt;/strong&gt;&lt;/p&gt;

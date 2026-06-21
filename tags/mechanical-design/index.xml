@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mechanical Design on Ricardo</title>
+        <link>http://localhost:1313/tags/mechanical-design/</link>
+        <description>Recent content in Mechanical Design on Ricardo</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Ricardo</copyright>
+        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mechanical-design/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>8-Legged Biomimetic Robot</title>
+        <link>http://localhost:1313/projects/octopod-biomimetic-robot/</link>
+        <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/projects/octopod-biomimetic-robot/</guid>
+        <description>&lt;img src="http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg" alt="Featured image of post 8-Legged Biomimetic Robot" /&gt;&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview
+&lt;/h2&gt;&lt;p&gt;This demo presents an 8-legged biomimetic robot prototype built to explore stable multi-leg walking, compact mechanical transmission, and low-level motion control. The current version focuses on making the walking gait readable and repeatable before adding more advanced perception or autonomy.&lt;/p&gt;
+&lt;p&gt;The project is useful as a robotics portfolio piece because it combines physical design, actuator coordination, and embedded software into one visible system. Even from a short video, the viewer can understand the core challenge: turning a set of repeated leg motions into a stable forward gait.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-built&#34;&gt;What I Built
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;A physical 8-legged walking mechanism with coordinated leg movement.&lt;/li&gt;
+&lt;li&gt;A basic control pipeline for repeatable stepping and speed adjustment.&lt;/li&gt;
+&lt;li&gt;A prototype test setup for observing gait stability, body vibration, and turning behavior.&lt;/li&gt;
+&lt;li&gt;A media-first project page so the result is visible before the technical details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg&#34;
+	width=&#34;4096&#34;
+	height=&#34;2304&#34;
+	srcset=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;8-legged biomimetic robot prototype&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Area&lt;/th&gt;
+&lt;th&gt;Tools / Methods&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Mechanical design&lt;/td&gt;
+&lt;td&gt;Linkage structure, leg layout, chassis integration&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;Gait timing, motor coordination, simple feedback tuning&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Embedded system&lt;/td&gt;
+&lt;td&gt;Microcontroller-based actuation control&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Testing&lt;/td&gt;
+&lt;td&gt;Video observation, gait iteration, stability checks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;design-notes&#34;&gt;Design Notes
+&lt;/h2&gt;&lt;p&gt;The robot&amp;rsquo;s key design problem is rhythm. With eight legs, the system needs a gait pattern that keeps enough contact points on the ground while avoiding visible dragging or fighting between legs. The prototype uses repeated gait cycles so the motion can be tested quickly and improved through mechanical and control adjustments.&lt;/p&gt;
+&lt;p&gt;Future iterations could add sensor feedback, closed-loop speed control, and a cleaner turning behavior. A later version could also compare multiple gait patterns and visualize their stability on the project page.&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo
+&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;video controls&gt;
+        &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
+        Your browser does not support the video tag.
+    &lt;/video&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        
+    </channel>
+</rss>

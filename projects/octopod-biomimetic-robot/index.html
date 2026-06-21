@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A compact walking robot prototype focused on leg coordination, mechanical rhythm, and embedded control.">
+<title>8-Legged Biomimetic Robot</title>
+
+<link rel='canonical' href='http://localhost:1313/projects/octopod-biomimetic-robot/'>
+
+<link rel="stylesheet" href="/scss/style.min.c6c2c2af392665a5b1e95cbb3e3b4b5947cf521c906501b8743707d306724836.css"><meta property='og:title' content="8-Legged Biomimetic Robot">
+<meta property='og:description' content="A compact walking robot prototype focused on leg coordination, mechanical rhythm, and embedded control.">
+<meta property='og:url' content='http://localhost:1313/projects/octopod-biomimetic-robot/'>
+<meta property='og:site_name' content='Ricardo'>
+<meta property='og:type' content='article'><meta property='article:section' content='Projects' /><meta property='article:tag' content='Biomimetics' /><meta property='article:tag' content='Robotics' /><meta property='article:tag' content='Embedded Control' /><meta property='article:tag' content='Mechanical Design' /><meta property='article:tag' content='Motion Planning' /><meta property='article:published_time' content='2026-06-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-06-21T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg' />
+<meta name="twitter:title" content="8-Legged Biomimetic Robot">
+<meta name="twitter:description" content="A compact walking robot prototype focused on leg coordination, mechanical rhythm, and embedded control."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
+
+    </head>
+    <body class="article-page project-detail-page">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/portrait_hu12116240459114078048.jpg" width="300"
+                            height="169" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😁</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Ricardo</a></h1>
+            <h2 class="site-description">AI, robotics, and software projects</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/resume.pdf' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" selected>English</option>
+                                
+                                    <option value="http://localhost:1313/zh-cn/" >中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    
+    <article class="project-detail">
+        <header class="project-hero-detail">
+            <div class="project-hero-copy">
+                <p class="eyebrow">Project case study</p>
+                <h1>8-Legged Biomimetic Robot</h1>
+                <p>A compact walking robot prototype focused on leg coordination, mechanical rhythm, and embedded control.</p>
+                
+            </div>
+        </header>
+
+        
+            <div class="project-meta-strip">
+                <span>Biomimetics</span><span>Robotics</span><span>Embedded Control</span><span>Mechanical Design</span><span>Motion Planning</span>
+            </div>
+        
+
+        <section class="article-content">
+    
+    
+    <h2 id="project-overview">Project Overview
+</h2><p>This demo presents an 8-legged biomimetic robot prototype built to explore stable multi-leg walking, compact mechanical transmission, and low-level motion control. The current version focuses on making the walking gait readable and repeatable before adding more advanced perception or autonomy.</p>
+<p>The project is useful as a robotics portfolio piece because it combines physical design, actuator coordination, and embedded software into one visible system. Even from a short video, the viewer can understand the core challenge: turning a set of repeated leg motions into a stable forward gait.</p>
+<h2 id="what-i-built">What I Built
+</h2><ul>
+<li>A physical 8-legged walking mechanism with coordinated leg movement.</li>
+<li>A basic control pipeline for repeatable stepping and speed adjustment.</li>
+<li>A prototype test setup for observing gait stability, body vibration, and turning behavior.</li>
+<li>A media-first project page so the result is visible before the technical details.</li>
+</ul>
+<p><img src="/projects/octopod-biomimetic-robot/cover.jpg"
+	width="4096"
+	height="2304"
+	srcset="/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, /projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w"
+	loading="lazy"
+	
+		alt="8-legged biomimetic robot prototype"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<h2 id="technical-stack">Technical Stack
+</h2><div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Tools / Methods</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mechanical design</td>
+<td>Linkage structure, leg layout, chassis integration</td>
+</tr>
+<tr>
+<td>Control</td>
+<td>Gait timing, motor coordination, simple feedback tuning</td>
+</tr>
+<tr>
+<td>Embedded system</td>
+<td>Microcontroller-based actuation control</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Video observation, gait iteration, stability checks</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="design-notes">Design Notes
+</h2><p>The robot&rsquo;s key design problem is rhythm. With eight legs, the system needs a gait pattern that keeps enough contact points on the ground while avoiding visible dragging or fighting between legs. The prototype uses repeated gait cycles so the motion can be tested quickly and improved through mechanical and control adjustments.</p>
+<p>Future iterations could add sensor feedback, closed-loop speed control, and a cleaner turning behavior. A later version could also compare multiple gait patterns and visualize their stability on the project page.</p>
+<h2 id="demo">Demo
+</h2><div class="video-wrapper">
+    <video controls>
+        <source src="demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+</section>
+
+    </article>
+
+    
+
+    
+        
+    
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Ricardo
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

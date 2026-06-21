@@ -13,34 +13,26 @@
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/projects/openvins-uav-swarm/</guid>
-        <description>&lt;img src="http://localhost:1313/demo_video_thumbnail.jpg" alt="Featured image of post OpenVINS-based UAV Swarm Cooperative Self-Localization System" /&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;video controls&gt;
-        &lt;source src=&#34;demo_video.mp4&#34; type=&#34;video/mp4&#34;&gt;
-        Your browser does not support the video tag.
-    &lt;/video&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;-project-overview&#34;&gt;🎯 Project Overview
+        <description>&lt;img src="http://localhost:1313/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post OpenVINS-based UAV Swarm Cooperative Self-Localization System" /&gt;&lt;h2 id=&#34;-project-overview&#34;&gt;🎯 Project Overview
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Solving the drift problem in UAV swarm operations without GPS dependency.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This project implements a comprehensive visual-inertial odometry (VIO) system for UAV swarms, combining &lt;strong&gt;OpenVINS&lt;/strong&gt;, &lt;strong&gt;ROS2 communication architecture&lt;/strong&gt;, and &lt;strong&gt;cooperative localization algorithms&lt;/strong&gt; to achieve high-precision positioning in both simulation and real-world environments.&lt;/p&gt;
 &lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Middleware&lt;/strong&gt;: ROS2 (Humble/Foxy)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Programming&lt;/strong&gt;: C++17/20, Python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Middleware&lt;/strong&gt;: ROS2 (Humble)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Programming&lt;/strong&gt;: C++17, Python&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;VIO Engine&lt;/strong&gt;: OpenVINS&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Simulation&lt;/strong&gt;: Gazebo Classic, PX4 SITL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simulation&lt;/strong&gt;: Gazebo Sim(Fortress), PX4 SITL&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Flight Control&lt;/strong&gt;: PX4 Autopilot, MAVROS&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Computer Vision&lt;/strong&gt;: OpenCV, Eigen&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Optimization&lt;/strong&gt;: Ceres Solver, g2o&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Visualization&lt;/strong&gt;: RViz2, PlotJuggler&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visualization&lt;/strong&gt;: RViz2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-simulation-environment&#34;&gt;🖥️ Simulation Environment
+&lt;h2 id=&#34;-simulation&#34;&gt;🖥️ Simulation
 &lt;/h2&gt;&lt;h3 id=&#34;gazebo-physical-simulation&#34;&gt;Gazebo Physical Simulation
 &lt;/h3&gt;&lt;p&gt;We built a high-fidelity simulation environment with:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Realistic lighting&lt;/strong&gt; and shadow rendering&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Complex obstacle scenarios&lt;/strong&gt; (indoor warehouses, forest environments)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Physically accurate&lt;/strong&gt; UAV dynamics and sensor noise models&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Multi-UAV spawn system&lt;/strong&gt; with collision avoidance&lt;/li&gt;
 &lt;/ul&gt;
@@ -54,13 +46,12 @@
 	
 	
 &gt;
-&lt;em&gt;Figure: Multi-UAV cooperative exploration in a complex indoor environment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Figure: Multi-UAV cooperative exploration in a complex environment&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;rviz2-visualization&#34;&gt;RViz2 Visualization
 &lt;/h3&gt;&lt;p&gt;Our visualization pipeline displays:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Trajectory tracking&lt;/strong&gt; (Path messages with color-coded time series)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;3D Point Cloud Maps&lt;/strong&gt; from stereo vision&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TF Tree&lt;/strong&gt; showing coordinate frame relationships&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Real-time pose estimation&lt;/strong&gt; with uncertainty ellipsoids&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/rviz_visualization.jpg&#34;
@@ -77,9 +68,8 @@
 &lt;h3 id=&#34;swarm-algorithm-visualization&#34;&gt;Swarm Algorithm Visualization
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Distributed State Estimation Architecture:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Each UAV runs independent OpenVINS nodes&lt;/li&gt;
-&lt;li&gt;Inter-UAV relative measurements via UWB or visual markers&lt;/li&gt;
-&lt;li&gt;Centralized loop closure detection for global consistency&lt;/li&gt;
+&lt;li&gt;Leader UAV runs independent OpenVINS node&lt;/li&gt;
+&lt;li&gt;Follower UAVs receive leader&amp;rsquo;s pose estimate via ROS2 topic&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/swarm_architecture.jpg&#34;
 	
@@ -87,34 +77,13 @@
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Swarm Architecture&#34;
+		alt=&#34;Swarm Visualization&#34;
 	
 	
 &gt;
 &lt;em&gt;Figure: Distributed estimation with centralized optimization&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;core-implementation&#34;&gt;Core Implementation
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Multi-UAV Launch Logic:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# Launch 3 UAVs with OpenVINS&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; i in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;1..3&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ros2 launch openvins_uav openvins_node.launch.py &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        uav_id:&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        config_file:&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;config/uav_&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;.yaml &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Terminal Commands:&lt;/strong&gt;&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Terminal Commands:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. Start Simulation:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -158,7 +127,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;{data: &amp;#39;start_exploration&amp;#39;}&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Core Code:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Bridge Node:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Openvins Implementation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Swarm Algorithm:&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;-hardware-implementation&#34;&gt;🚁 Hardware Implementation
 &lt;/h2&gt;&lt;h3 id=&#34;sensor-calibration&#34;&gt;Sensor Calibration
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Camera-IMU Spatiotemporal Calibration using Kalibr:&lt;/strong&gt;&lt;/p&gt;
