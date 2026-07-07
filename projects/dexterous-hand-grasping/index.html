@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A five-finger dexterous-hand system that learns vision-guided grasping policies in Isaac Gym and transfers them to embedded hardware.">
+<title>Vision-Based Dexterous-Hand Grasping with Reinforcement Learning</title>
+
+<link rel='canonical' href='https://Ricardo-Guo.github.io/projects/dexterous-hand-grasping/'>
+
+<link rel="stylesheet" href="/scss/style.min.9f984c8410ac572358735d85ba593fabab94553c815a4b96725cc5d36505bc9b.css"><meta property='og:title' content="Vision-Based Dexterous-Hand Grasping with Reinforcement Learning">
+<meta property='og:description' content="A five-finger dexterous-hand system that learns vision-guided grasping policies in Isaac Gym and transfers them to embedded hardware.">
+<meta property='og:url' content='https://Ricardo-Guo.github.io/projects/dexterous-hand-grasping/'>
+<meta property='og:site_name' content='Ricardo'>
+<meta property='og:type' content='article'><meta property='article:section' content='Projects' /><meta property='article:tag' content='Reinforcement Learning' /><meta property='article:tag' content='Isaac Gym' /><meta property='article:tag' content='RGB-D' /><meta property='article:tag' content='PyTorch' /><meta property='article:tag' content='Jetson' /><meta property='article:published_time' content='2026-07-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-07-06T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Vision-Based Dexterous-Hand Grasping with Reinforcement Learning">
+<meta name="twitter:description" content="A five-finger dexterous-hand system that learns vision-guided grasping policies in Isaac Gym and transfers them to embedded hardware.">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
+
+    </head>
+    <body class="article-page project-detail-page">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/portrait_hu12116240459114078048.jpg" width="300"
+                            height="169" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😁</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Ricardo</a></h1>
+            <h2 class="site-description">Robotics, perception, and learning</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/resume-en.pdf' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="/" selected>English</option>
+                                
+                                    <option value="/zh-cn/" >中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    
+    <article class="project-detail">
+        <header class="project-hero-detail">
+            <div class="project-hero-copy">
+                <p class="eyebrow">Project case study</p>
+                <h1>Vision-Based Dexterous-Hand Grasping with Reinforcement Learning</h1>
+                <p>A five-finger dexterous-hand system that learns vision-guided grasping policies in Isaac Gym and transfers them to embedded hardware.</p>
+                
+            </div>
+        </header>
+
+        
+            <div class="project-meta-strip">
+                <span>Reinforcement Learning</span><span>Isaac Gym</span><span>RGB-D</span><span>PyTorch</span><span>Jetson</span>
+            </div>
+        
+
+        <section class="article-content">
+    
+    
+    <h2 id="project-overview">Project Overview
+</h2><p>This project explores vision-guided robotic grasping with a five-finger dexterous hand and a reconfigurable palm. The goal is to connect mechanical hand design, RGB-D perception, reinforcement-learning simulation, and physical motor control in one end-to-end system.</p>
+<p>Working with four teammates, I helped establish a training pipeline based on UniDexGrasp++ and prepared the perception and embedded-control components needed for physical validation.</p>
+<h2 id="what-i-built">What I Built
+</h2><ul>
+<li>Contributed to the concept of a five-finger hand with a reconfigurable palm surface.</li>
+<li>Built an Isaac Gym simulation environment for grasp-policy training.</li>
+<li>Processed RGB-D observations and back-projected depth maps into point-cloud inputs.</li>
+<li>Debugged an Arduino-based multi-motor control interface.</li>
+<li>Deployed trained policies on Jetson Nano Super for physical-system validation.</li>
+</ul>
+<h2 id="system-pipeline">System Pipeline
+</h2><p>The workflow begins with RGB-D observations, converts depth measurements into a spatial point representation, and feeds that representation into the learned grasping policy. Actions produced by the policy are then mapped to the hand&rsquo;s motor-control interface for simulation and hardware testing.</p>
+<h2 id="technical-stack">Technical Stack
+</h2><div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Tools / Methods</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Learning</td>
+<td>Reinforcement learning, UniDexGrasp++</td>
+</tr>
+<tr>
+<td>Simulation</td>
+<td>Isaac Gym</td>
+</tr>
+<tr>
+<td>Perception</td>
+<td>RGB-D processing, depth back-projection, point clouds</td>
+</tr>
+<tr>
+<td>Embedded control</td>
+<td>Arduino, multi-motor control</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>Jetson Nano Super, PyTorch</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="project-status">Project Status
+</h2><p>The project received national-level innovation-program support in 2026. Images, simulation recordings, and physical grasping demonstrations will be added in a later update.</p>
+
+</section>
+
+    </article>
+
+    
+
+    
+        
+    
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Ricardo
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

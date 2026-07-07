@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>C&#43;&#43; on Ricardo</title>
-        <link>http://localhost:1313/zh-cn/tags/c&#43;&#43;/</link>
+        <link>https://Ricardo-Guo.github.io/zh-cn/tags/c&#43;&#43;/</link>
         <description>Recent content in C&#43;&#43; on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/tags/c++/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/c++/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>基于 OpenVINS 的无人机集群协同自定位系统</title>
-        <link>http://localhost:1313/zh-cn/projects/openvins-uav-swarm/</link>
+        <link>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/zh-cn/projects/openvins-uav-swarm/</guid>
-        <description>&lt;img src="http://localhost:1313/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post 基于 OpenVINS 的无人机集群协同自定位系统" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
+        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</guid>
+        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post 基于 OpenVINS 的无人机集群协同自定位系统" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
 &lt;/h2&gt;&lt;p&gt;这个项目围绕无人机集群在无 GPS 环境下的定位漂移问题展开，使用 OpenVINS、ROS2 通信架构和协同定位思路，构建一套视觉惯性里程计系统。&lt;/p&gt;
 &lt;p&gt;项目重点包括多机位姿估计、跨设备通信、仿真环境验证和后续硬件部署。当前页面先保留核心说明，后续可以继续补充真实实验视频、误差曲线和代码片段。&lt;/p&gt;
 &lt;h2 id=&#34;技术栈&#34;&gt;技术栈

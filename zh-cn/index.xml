@@ -2,18 +2,262 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>主页 on Ricardo</title>
-        <link>http://localhost:1313/zh-cn/</link>
+        <link>https://Ricardo-Guo.github.io/zh-cn/</link>
         <description>Recent content in 主页 on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于我</title>
+        <link>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+        <description>&lt;h2 id=&#34;个人简介&#34;&gt;个人简介
+&lt;/h2&gt;&lt;p&gt;我是郭一凡，南方科技大学机器人学本科生。目前的工作涵盖机器人感知、强化学习、嵌入式控制与机械样机设计。&lt;/p&gt;
+&lt;h2 id=&#34;教育背景&#34;&gt;教育背景
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;机器人学理学学士&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;南方科技大学，中国深圳&lt;/em&gt; | 预计 2027 年 6 月毕业&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GPA：3.77/4.00；平均分：90.87/100&lt;/li&gt;
+&lt;li&gt;相关课程：Machine Learning、Control Engineering、Robot Modeling and Control、Mechatronics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;科研经历&#34;&gt;科研经历
+&lt;/h2&gt;&lt;h3 id=&#34;视觉-激光雷达融合的目标三维定位与运动估计&#34;&gt;视觉-激光雷达融合的目标三维定位与运动估计
+&lt;/h3&gt;&lt;p&gt;构建融合 YOLO、Livox 点云投影、聚类及 2D-3D 关联的同步感知流程。以动作捕捉系统为真值进行验证，5 米内 95% 的检测结果三维定位误差低于 10 厘米。&lt;/p&gt;
+&lt;h3 id=&#34;基于强化学习的视觉灵巧手抓取&#34;&gt;基于强化学习的视觉灵巧手抓取
+&lt;/h3&gt;&lt;p&gt;搭建基于 Isaac Gym 和 UniDexGrasp++ 的抓取训练流程，将 RGB-D 观测转换为点云输入，调试 Arduino 多电机控制，并将训练策略部署至 Jetson Nano Super。&lt;/p&gt;
+&lt;h3 id=&#34;基于变胞结构的可变构飞行器&#34;&gt;基于变胞结构的可变构飞行器
+&lt;/h3&gt;&lt;p&gt;参与可在飞艇与固定翼构型之间切换的飞行器机械与控制系统设计，搭建 Gazebo/ROS 2 仿真环境，并使用 Pixhawk、QGroundControl、STM32 与 Arduino 完成系统开发。&lt;/p&gt;
+&lt;h2 id=&#34;技术技能&#34;&gt;技术技能
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;编程：&lt;/strong&gt; C++、Python、Linux/Ubuntu、Git、Docker、PyTorch&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;机器人系统：&lt;/strong&gt; ROS 2、Gazebo、Isaac Gym、Pixhawk、QGroundControl、STM32、Arduino、NVIDIA Jetson&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;感知：&lt;/strong&gt; OpenCV、YOLO、RGB-D 处理、点云处理、LiDAR-相机标定、三维定位&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;学习与控制：&lt;/strong&gt; 强化学习、机器人抓取、嵌入式电机控制&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设计：&lt;/strong&gt; SolidWorks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;荣誉奖项与资助&#34;&gt;荣誉、奖项与资助
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;国家级大学生创新创业训练计划资助项目，2026 年&lt;/li&gt;
+&lt;li&gt;全国大学生机械创新设计大赛国家三等奖，2026 年&lt;/li&gt;
+&lt;li&gt;全国大学生机械创新设计大赛仿生蝴蝶赛道省级一等奖，2026 年&lt;/li&gt;
+&lt;li&gt;广东省工程创客大赛省级一等奖；团队在该类别总排名第二，2025 年&lt;/li&gt;
+&lt;li&gt;南方科技大学攀登计划科研资助 20,000 元，2025 年&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;专利申请&#34;&gt;专利申请
+&lt;/h2&gt;&lt;p&gt;变胞飞行器，中国发明专利申请号 2026102057666；共同发明人、第三发明人；已获国家知识产权局受理。&lt;/p&gt;
+&lt;h2 id=&#34;简历&#34;&gt;简历
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://Ricardo-Guo.github.io/resume-cn.pdf&#34; &gt;查看中文简历&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>视觉-激光雷达融合的目标三维定位</title>
+        <link>https://Ricardo-Guo.github.io/zh-cn/projects/vision-lidar-fusion/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/vision-lidar-fusion/</guid>
+        <description>&lt;h2 id=&#34;项目概述&#34;&gt;项目概述
+&lt;/h2&gt;&lt;p&gt;本项目构建了一套视觉-激光雷达融合感知流程，用于球形目标的三维定位与运动估计。系统将图像中的目标检测结果与投影后的激光雷达点云进行关联，把相机提供的语义信息和激光雷达提供的深度信息统一为空间坐标。&lt;/p&gt;
+&lt;p&gt;系统面向实时机器人感知场景，而不是离线数据分析。全局快门相机与 Livox LiDAR 通过硬件同步采集数据，完整流程在 NVIDIA Jetson 平台上进行测试。&lt;/p&gt;
+&lt;h2 id=&#34;我完成的工作&#34;&gt;我完成的工作
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;将基于 YOLO 的目标检测与激光雷达点云投影流程集成。&lt;/li&gt;
+&lt;li&gt;实现点云聚类以及图像检测框与三维点云之间的 2D-3D 关联。&lt;/li&gt;
+&lt;li&gt;完成全局快门相机与 Livox LiDAR 的硬件同步。&lt;/li&gt;
+&lt;li&gt;根据连续的三维目标观测结果估计目标运动状态。&lt;/li&gt;
+&lt;li&gt;使用动作捕捉系统作为真值验证定位精度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;实验结果&#34;&gt;实验结果
+&lt;/h2&gt;&lt;p&gt;在 5 米范围内，以动作捕捉系统为真值，95% 的检测结果三维定位误差低于 10 厘米。&lt;/p&gt;
+&lt;h2 id=&#34;技术栈&#34;&gt;技术栈
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模块&lt;/th&gt;
+&lt;th&gt;工具 / 方法&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;目标检测&lt;/td&gt;
+&lt;td&gt;YOLO、全局快门相机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;三维感知&lt;/td&gt;
+&lt;td&gt;Livox LiDAR、点云投影与聚类&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;传感器融合&lt;/td&gt;
+&lt;td&gt;相机-激光雷达标定、2D-3D 关联&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;部署平台&lt;/td&gt;
+&lt;td&gt;NVIDIA Jetson、Python/C++、OpenCV&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;精度验证&lt;/td&gt;
+&lt;td&gt;动作捕捉系统真值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;后续计划&#34;&gt;后续计划
+&lt;/h2&gt;&lt;p&gt;项目图片、系统流程图和演示视频将在实验资料整理完成后补充。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>基于强化学习的视觉灵巧手抓取</title>
+        <link>https://Ricardo-Guo.github.io/zh-cn/projects/dexterous-hand-grasping/</link>
+        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/dexterous-hand-grasping/</guid>
+        <description>&lt;h2 id=&#34;项目概述&#34;&gt;项目概述
+&lt;/h2&gt;&lt;p&gt;本项目探索基于视觉感知的五指灵巧手抓取，并采用可重构掌面设计。项目希望将机械结构、RGB-D 感知、强化学习仿真和实机电机控制连接成一套完整系统。&lt;/p&gt;
+&lt;p&gt;我与四名团队成员共同推进项目，参与搭建基于 UniDexGrasp++ 的训练流程，并负责实机验证所需的感知处理与嵌入式控制工作。&lt;/p&gt;
+&lt;h2 id=&#34;我完成的工作&#34;&gt;我完成的工作
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参与提出具有可重构掌面的五指灵巧手结构方案。&lt;/li&gt;
+&lt;li&gt;搭建用于抓取策略训练的 Isaac Gym 仿真环境。&lt;/li&gt;
+&lt;li&gt;处理 RGB-D 观测，并将深度图反投影为点云输入。&lt;/li&gt;
+&lt;li&gt;调试基于 Arduino 的多电机控制接口。&lt;/li&gt;
+&lt;li&gt;将训练策略部署至 Jetson Nano Super 进行实机验证。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统流程&#34;&gt;系统流程
+&lt;/h2&gt;&lt;p&gt;系统从 RGB-D 观测开始，将深度信息转换为空间点云表示，再输入强化学习抓取策略。策略输出随后映射至灵巧手的电机控制接口，用于仿真测试和实机验证。&lt;/p&gt;
+&lt;h2 id=&#34;技术栈&#34;&gt;技术栈
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模块&lt;/th&gt;
+&lt;th&gt;工具 / 方法&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;学习算法&lt;/td&gt;
+&lt;td&gt;强化学习、UniDexGrasp++&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;仿真环境&lt;/td&gt;
+&lt;td&gt;Isaac Gym&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;视觉感知&lt;/td&gt;
+&lt;td&gt;RGB-D 处理、深度反投影、点云&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;嵌入式控制&lt;/td&gt;
+&lt;td&gt;Arduino、多电机控制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;部署平台&lt;/td&gt;
+&lt;td&gt;Jetson Nano Super、PyTorch&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;项目状态&#34;&gt;项目状态
+&lt;/h2&gt;&lt;p&gt;项目于 2026 年获得国家级大学生创新创业训练计划支持。后续将补充项目图片、仿真录屏与实机抓取演示。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>基于变胞结构的可变构飞行器</title>
+        <link>https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/</link>
+        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/</guid>
+        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png" alt="Featured image of post 基于变胞结构的可变构飞行器" /&gt;&lt;h2 id=&#34;项目概述&#34;&gt;项目概述
+&lt;/h2&gt;&lt;p&gt;本项目面向长航时低空探索，研究一种能够改变自身结构的变胞飞行器。飞行器可在飞艇构型与双旋翼固定翼构型之间切换，并通过绕线机构控制机架的张开与闭合。&lt;/p&gt;
+&lt;p&gt;项目重点验证机械变形、飞控硬件与嵌入式执行系统如何集成到同一平台中。该项目获得南方科技大学攀登计划 20,000 元科研资助。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png&#34;
+	width=&#34;1204&#34;
+	height=&#34;586&#34;
+	srcset=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover_hu3397321452867605892.png 480w, https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover_hu7017057831516779415.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;变胞飞行器概念与样机&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;493px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;我完成的工作&#34;&gt;我完成的工作
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参与可变构机架与绕线变形机构的机械设计。&lt;/li&gt;
+&lt;li&gt;搭建用于构型切换的控制系统与机电执行系统。&lt;/li&gt;
+&lt;li&gt;建立 Gazebo 与 ROS 2 仿真环境。&lt;/li&gt;
+&lt;li&gt;调试 Pixhawk 与 QGroundControl 之间的通信。&lt;/li&gt;
+&lt;li&gt;基于 STM32 和 Arduino 实现电机与舵机控制。&lt;/li&gt;
+&lt;li&gt;完成功能样机及地面构型切换演示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;构型切换原理&#34;&gt;构型切换原理
+&lt;/h2&gt;&lt;p&gt;核心机构通过绕线组件协调飞行器机架的张开与闭合。机架展开时对应固定翼飞行构型，收拢后向紧凑的飞艇构型切换。当前样机主要用于验证变胞结构和控制方案的可行性。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype.jpg&#34;
+	width=&#34;1201&#34;
+	height=&#34;1602&#34;
+	srcset=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype_hu9677849289250911092.jpg 480w, https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype_hu11538031209623093174.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;变胞飞行器结构样机&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;74&#34;
+		data-flex-basis=&#34;179px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;技术栈&#34;&gt;技术栈
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模块&lt;/th&gt;
+&lt;th&gt;工具 / 方法&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;机械设计&lt;/td&gt;
+&lt;td&gt;SolidWorks、变胞结构、绕线机构&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;仿真环境&lt;/td&gt;
+&lt;td&gt;Gazebo、ROS 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;飞行控制&lt;/td&gt;
+&lt;td&gt;Pixhawk、QGroundControl&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;嵌入式控制&lt;/td&gt;
+&lt;td&gt;STM32、Arduino、电机与舵机执行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;样机验证&lt;/td&gt;
+&lt;td&gt;功能样机、地面构型切换演示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;设计迭代&#34;&gt;设计迭代
+&lt;/h2&gt;&lt;p&gt;项目从结构图纸和机构方案逐步推进至实体样机。通过 CAD 设计与硬件装配之间的多轮迭代，重点解决绕线路径、机架同步、执行器行程以及构型切换重复性等问题。&lt;/p&gt;
+&lt;div class=&#34;project-image-pair&#34;&gt;
+  &lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/drawing-1.png&#34; alt=&#34;变胞飞行器结构设计图&#34;&gt;
+  &lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/detail-1.png&#34; alt=&#34;变形机构局部结构&#34;&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;专利与资助&#34;&gt;专利与资助
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;中国发明专利申请号 2026102057666，已获国家知识产权局受理；本人为共同发明人、第三发明人。&lt;/li&gt;
+&lt;li&gt;南方科技大学攀登计划科研资助：20,000 元。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>8 足仿生机器人</title>
-        <link>http://localhost:1313/zh-cn/projects/octopod-biomimetic-robot/</link>
+        <link>https://Ricardo-Guo.github.io/zh-cn/projects/octopod-biomimetic-robot/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/zh-cn/projects/octopod-biomimetic-robot/</guid>
-        <description>&lt;img src="http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg" alt="Featured image of post 8 足仿生机器人" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
+        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/octopod-biomimetic-robot/</guid>
+        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover.jpg" alt="Featured image of post 8 足仿生机器人" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
 &lt;/h2&gt;&lt;p&gt;这个项目是一个 8 足仿生机器人原型，目标是探索多足行走时的步态稳定性、机械传动节奏以及底层控制逻辑。当前版本优先让机器人能够稳定、重复地完成基础行走，再逐步加入更复杂的传感反馈和自主控制。&lt;/p&gt;
 &lt;p&gt;作为作品集项目，它能够直接展示机械结构、执行器协调和嵌入式控制之间的配合关系。通过视频和图片，读者可以很快理解核心问题：如何把重复的腿部运动组织成一个稳定的前进步态。&lt;/p&gt;
 &lt;h2 id=&#34;我完成的内容&#34;&gt;我完成的内容
@@ -23,10 +267,10 @@
 &lt;li&gt;通过视频观察行走稳定性、机身振动和转向表现。&lt;/li&gt;
 &lt;li&gt;将项目整理为带媒体预览的 case study 页面，方便展示结果和技术细节。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover.jpg&#34;
 	width=&#34;4096&#34;
 	height=&#34;2304&#34;
-	srcset=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w&#34;
+	srcset=&#34;https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;8 足仿生机器人原型&#34;
@@ -79,11 +323,11 @@
         </item>
         <item>
         <title>基于 OpenVINS 的无人机集群协同自定位系统</title>
-        <link>http://localhost:1313/zh-cn/projects/openvins-uav-swarm/</link>
+        <link>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/zh-cn/projects/openvins-uav-swarm/</guid>
-        <description>&lt;img src="http://localhost:1313/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post 基于 OpenVINS 的无人机集群协同自定位系统" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
+        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</guid>
+        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post 基于 OpenVINS 的无人机集群协同自定位系统" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
 &lt;/h2&gt;&lt;p&gt;这个项目围绕无人机集群在无 GPS 环境下的定位漂移问题展开，使用 OpenVINS、ROS2 通信架构和协同定位思路，构建一套视觉惯性里程计系统。&lt;/p&gt;
 &lt;p&gt;项目重点包括多机位姿估计、跨设备通信、仿真环境验证和后续硬件部署。当前页面先保留核心说明，后续可以继续补充真实实验视频、误差曲线和代码片段。&lt;/p&gt;
 &lt;h2 id=&#34;技术栈&#34;&gt;技术栈
@@ -128,72 +372,19 @@
 </description>
         </item>
         <item>
-        <title>关于我</title>
-        <link>http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
-        <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
-        <description>&lt;h2 id=&#34;-你好&#34;&gt;👋 你好！
-&lt;/h2&gt;&lt;p&gt;我是 Ricardo，一名热爱技术和创新的计算机科学专业学生。这个页面包含了我更详细的背景和经验信息。&lt;/p&gt;
-&lt;h2 id=&#34;-教育背景&#34;&gt;🎓 教育背景
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;计算机科学学士&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;你的大学名称&lt;/em&gt; | 预计毕业：2026 年&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GPA: X.X/4.0（如果成绩好可以写）&lt;/li&gt;
-&lt;li&gt;相关课程：数据结构、算法、机器学习、Web 开发&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;-技术技能&#34;&gt;💻 技术技能
-&lt;/h2&gt;&lt;h3 id=&#34;编程语言&#34;&gt;编程语言
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Python, JavaScript, C++, Java&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;框架和库&#34;&gt;框架和库
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;TensorFlow, PyTorch, React, Node.js, Django&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;工具和技术&#34;&gt;工具和技术
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Git, Docker, AWS, Linux, MySQL, MongoDB&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;-荣誉与奖项&#34;&gt;🏆 荣誉与奖项
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;国家奖学金 (2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;ACM 程序设计竞赛 - 一等奖 (2022) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;院长名单 (2022, 2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;-证书&#34;&gt;📜 证书
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;AWS 认证云从业者 - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;TensorFlow 开发者证书 - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;-简历&#34;&gt;📄 简历
-&lt;/h2&gt;&lt;p&gt;📥 &lt;a class=&#34;link&#34; href=&#34;path/to/your/resume.pdf&#34; &gt;下载简历 (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;-兴趣爱好&#34;&gt;🌐 兴趣爱好
-&lt;/h2&gt;&lt;p&gt;不写代码的时候，我喜欢：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;📚 阅读最新的技术趋势&lt;/li&gt;
-&lt;li&gt;🎮 玩电子游戏&lt;/li&gt;
-&lt;li&gt;🏀 打篮球&lt;/li&gt;
-&lt;li&gt;📷 摄影&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;如果你想合作项目或者聊聊技术，欢迎随时联系我！&lt;/em&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>搜索</title>
-        <link>http://localhost:1313/zh-cn/search/</link>
+        <link>https://Ricardo-Guo.github.io/zh-cn/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/zh-cn/search/</guid>
+        <guid>https://Ricardo-Guo.github.io/zh-cn/search/</guid>
         <description></description>
         </item>
         <item>
         <title>项目</title>
-        <link>http://localhost:1313/zh-cn/projects/</link>
+        <link>https://Ricardo-Guo.github.io/zh-cn/projects/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/zh-cn/projects/</guid>
+        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/</guid>
         <description>&lt;p&gt;这里汇总我的项目原型、技术栈和实现记录。&lt;/p&gt;
 </description>
         </item>

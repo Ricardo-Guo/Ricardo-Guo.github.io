@@ -2,89 +2,209 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Ricardo</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>https://Ricardo-Guo.github.io/tags/</link>
         <description>Recent content in Tags on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Livox LiDAR</title>
+        <link>https://Ricardo-Guo.github.io/tags/livox-lidar/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/livox-lidar/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>NVIDIA Jetson</title>
+        <link>https://Ricardo-Guo.github.io/tags/nvidia-jetson/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/nvidia-jetson/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>OpenCV</title>
+        <link>https://Ricardo-Guo.github.io/tags/opencv/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/opencv/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Sensor Fusion</title>
+        <link>https://Ricardo-Guo.github.io/tags/sensor-fusion/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/sensor-fusion/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>YOLO</title>
+        <link>https://Ricardo-Guo.github.io/tags/yolo/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/yolo/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Isaac Gym</title>
+        <link>https://Ricardo-Guo.github.io/tags/isaac-gym/</link>
+        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/isaac-gym/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Jetson</title>
+        <link>https://Ricardo-Guo.github.io/tags/jetson/</link>
+        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/jetson/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>PyTorch</title>
+        <link>https://Ricardo-Guo.github.io/tags/pytorch/</link>
+        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/pytorch/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Reinforcement Learning</title>
+        <link>https://Ricardo-Guo.github.io/tags/reinforcement-learning/</link>
+        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/reinforcement-learning/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>RGB-D</title>
+        <link>https://Ricardo-Guo.github.io/tags/rgb-d/</link>
+        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/rgb-d/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Gazebo</title>
+        <link>https://Ricardo-Guo.github.io/tags/gazebo/</link>
+        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/gazebo/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pixhawk</title>
+        <link>https://Ricardo-Guo.github.io/tags/pixhawk/</link>
+        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/pixhawk/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ROS 2</title>
+        <link>https://Ricardo-Guo.github.io/tags/ros-2/</link>
+        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/ros-2/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>SolidWorks</title>
+        <link>https://Ricardo-Guo.github.io/tags/solidworks/</link>
+        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/solidworks/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>STM32</title>
+        <link>https://Ricardo-Guo.github.io/tags/stm32/</link>
+        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/tags/stm32/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Biomimetics</title>
-        <link>http://localhost:1313/tags/biomimetics/</link>
+        <link>https://Ricardo-Guo.github.io/tags/biomimetics/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/biomimetics/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/biomimetics/</guid>
         <description></description>
         </item>
         <item>
         <title>Embedded Control</title>
-        <link>http://localhost:1313/tags/embedded-control/</link>
+        <link>https://Ricardo-Guo.github.io/tags/embedded-control/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/embedded-control/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/embedded-control/</guid>
         <description></description>
         </item>
         <item>
         <title>Mechanical Design</title>
-        <link>http://localhost:1313/tags/mechanical-design/</link>
+        <link>https://Ricardo-Guo.github.io/tags/mechanical-design/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/mechanical-design/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/mechanical-design/</guid>
         <description></description>
         </item>
         <item>
         <title>Motion Planning</title>
-        <link>http://localhost:1313/tags/motion-planning/</link>
+        <link>https://Ricardo-Guo.github.io/tags/motion-planning/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/motion-planning/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/motion-planning/</guid>
         <description></description>
         </item>
         <item>
         <title>Robotics</title>
-        <link>http://localhost:1313/tags/robotics/</link>
+        <link>https://Ricardo-Guo.github.io/tags/robotics/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/robotics/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/robotics/</guid>
         <description></description>
         </item>
         <item>
         <title>C&#43;&#43;</title>
-        <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+        <link>https://Ricardo-Guo.github.io/tags/c&#43;&#43;/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/c&#43;&#43;/</guid>
         <description></description>
         </item>
         <item>
         <title>OpenVINS</title>
-        <link>http://localhost:1313/tags/openvins/</link>
+        <link>https://Ricardo-Guo.github.io/tags/openvins/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/openvins/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/openvins/</guid>
         <description></description>
         </item>
         <item>
         <title>ROS2</title>
-        <link>http://localhost:1313/tags/ros2/</link>
+        <link>https://Ricardo-Guo.github.io/tags/ros2/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/ros2/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/ros2/</guid>
         <description></description>
         </item>
         <item>
         <title>SLAM</title>
-        <link>http://localhost:1313/tags/slam/</link>
+        <link>https://Ricardo-Guo.github.io/tags/slam/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/slam/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/slam/</guid>
         <description></description>
         </item>
         <item>
         <title>UAV</title>
-        <link>http://localhost:1313/tags/uav/</link>
+        <link>https://Ricardo-Guo.github.io/tags/uav/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/uav/</guid>
+        <guid>https://Ricardo-Guo.github.io/tags/uav/</guid>
         <description></description>
         </item>
         

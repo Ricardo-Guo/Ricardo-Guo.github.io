@@ -2,206 +2,420 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/octopod-biomimetic-robot/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <loc>https://Ricardo-Guo.github.io/about-me/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/projects/octopod-biomimetic-robot/"
+                href="https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/projects/octopod-biomimetic-robot/"
+                href="https://Ricardo-Guo.github.io/about-me/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/biomimetics/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/embedded-control/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <loc>https://Ricardo-Guo.github.io/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/"
+                href="https://Ricardo-Guo.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://Ricardo-Guo.github.io/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/mechanical-design/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/motion-planning/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <loc>https://Ricardo-Guo.github.io/tags/livox-lidar/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/projects/"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/livox-lidar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/projects/"
+                href="https://Ricardo-Guo.github.io/tags/livox-lidar/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/robotics/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <loc>https://Ricardo-Guo.github.io/tags/nvidia-jetson/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/nvidia-jetson/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://Ricardo-Guo.github.io/tags/nvidia-jetson/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
+    <loc>https://Ricardo-Guo.github.io/tags/opencv/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/opencv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/opencv/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/page/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/page/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/projects/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/projects/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/sensor-fusion/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/projects/vision-lidar-fusion/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/projects/vision-lidar-fusion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/projects/vision-lidar-fusion/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/yolo/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/yolo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/yolo/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/isaac-gym/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/isaac-gym/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/isaac-gym/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/jetson/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/jetson/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/jetson/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/pytorch/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/pytorch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/pytorch/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/reinforcement-learning/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/rgb-d/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/rgb-d/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/rgb-d/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/projects/dexterous-hand-grasping/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/projects/dexterous-hand-grasping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/projects/dexterous-hand-grasping/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/gazebo/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/gazebo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/gazebo/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/pixhawk/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/pixhawk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/pixhawk/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/ros-2/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/ros-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/ros-2/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/solidworks/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/solidworks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/solidworks/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/stm32/</loc>
+    <lastmod>2026-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/stm32/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/tags/stm32/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ricardo-Guo.github.io/zh-cn/projects/octopod-biomimetic-robot/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/"
+                />
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/biomimetics/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/embedded-control/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/mechanical-design/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/motion-planning/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/robotics/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Ricardo-Guo.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/c&#43;&#43;/"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/c&#43;&#43;/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/c&#43;&#43;/"
+                href="https://Ricardo-Guo.github.io/tags/c&#43;&#43;/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/openvins/</loc>
+    <loc>https://Ricardo-Guo.github.io/tags/openvins/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/openvins/"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/openvins/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/openvins/"
+                href="https://Ricardo-Guo.github.io/tags/openvins/"
                 />
   </url><url>
-    <loc>http://localhost:1313/projects/openvins-uav-swarm/</loc>
+    <loc>https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/projects/openvins-uav-swarm/"
+                href="https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/projects/openvins-uav-swarm/"
+                href="https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/ros2/</loc>
+    <loc>https://Ricardo-Guo.github.io/tags/ros2/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/ros2/"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/ros2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/ros2/"
+                href="https://Ricardo-Guo.github.io/tags/ros2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/slam/</loc>
+    <loc>https://Ricardo-Guo.github.io/tags/slam/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/slam/"
+                href="https://Ricardo-Guo.github.io/zh-cn/tags/slam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/slam/"
+                href="https://Ricardo-Guo.github.io/tags/slam/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/uav/</loc>
+    <loc>https://Ricardo-Guo.github.io/tags/uav/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about-me/</loc>
-    <lastmod>2024-03-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about-me/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/page/</loc>
-    <lastmod>2024-03-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/page/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://Ricardo-Guo.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://Ricardo-Guo.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/categories/"
+                href="https://Ricardo-Guo.github.io/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://Ricardo-Guo.github.io/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/links/</loc>
+    <loc>https://Ricardo-Guo.github.io/links/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://Ricardo-Guo.github.io/projects/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/projects/"
+                href="https://Ricardo-Guo.github.io/zh-cn/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/projects/"
+                href="https://Ricardo-Guo.github.io/projects/"
                 />
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://Ricardo-Guo.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/search/"
+                href="https://Ricardo-Guo.github.io/zh-cn/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/search/"
+                href="https://Ricardo-Guo.github.io/search/"
                 />
   </url>
 </urlset>

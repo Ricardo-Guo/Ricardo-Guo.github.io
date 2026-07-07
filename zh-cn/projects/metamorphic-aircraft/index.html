@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="面向长航时低空探索，在飞艇与固定翼构型之间切换的变胞飞行器机械与控制系统。">
+<title>基于变胞结构的可变构飞行器</title>
+
+<link rel='canonical' href='https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/'>
+
+<link rel="stylesheet" href="/scss/style.min.9f984c8410ac572358735d85ba593fabab94553c815a4b96725cc5d36505bc9b.css"><meta property='og:title' content="基于变胞结构的可变构飞行器">
+<meta property='og:description' content="面向长航时低空探索，在飞艇与固定翼构型之间切换的变胞飞行器机械与控制系统。">
+<meta property='og:url' content='https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/'>
+<meta property='og:site_name' content='Ricardo'>
+<meta property='og:type' content='article'><meta property='article:section' content='Projects' /><meta property='article:tag' content='ROS 2' /><meta property='article:tag' content='Gazebo' /><meta property='article:tag' content='Pixhawk' /><meta property='article:tag' content='STM32' /><meta property='article:tag' content='SolidWorks' /><meta property='article:published_time' content='2026-07-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-07-05T00:00:00&#43;00:00'/><meta property='og:image' content='https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png' />
+<meta name="twitter:title" content="基于变胞结构的可变构飞行器">
+<meta name="twitter:description" content="面向长航时低空探索，在飞艇与固定翼构型之间切换的变胞飞行器机械与控制系统。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
+
+    </head>
+    <body class="article-page project-detail-page">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/zh-cn/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/portrait_hu12116240459114078048.jpg" width="300"
+                            height="169" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😁</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/zh-cn">Ricardo</a></h1>
+            <h2 class="site-description">机器人、感知与学习</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/zh-cn/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/resume-cn.pdf' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>简历</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="/" >English</option>
+                                
+                                    <option value="/zh-cn/" selected>中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    
+    <article class="project-detail">
+        <header class="project-hero-detail">
+            <div class="project-hero-copy">
+                <p class="eyebrow">项目案例</p>
+                <h1>基于变胞结构的可变构飞行器</h1>
+                <p>面向长航时低空探索，在飞艇与固定翼构型之间切换的变胞飞行器机械与控制系统。</p>
+                
+            </div>
+        </header>
+
+        
+            <div class="project-meta-strip">
+                <span>ROS 2</span><span>Gazebo</span><span>Pixhawk</span><span>STM32</span><span>SolidWorks</span>
+            </div>
+        
+
+        <section class="article-content">
+    
+    
+    <h2 id="项目概述">项目概述
+</h2><p>本项目面向长航时低空探索，研究一种能够改变自身结构的变胞飞行器。飞行器可在飞艇构型与双旋翼固定翼构型之间切换，并通过绕线机构控制机架的张开与闭合。</p>
+<p>项目重点验证机械变形、飞控硬件与嵌入式执行系统如何集成到同一平台中。该项目获得南方科技大学攀登计划 20,000 元科研资助。</p>
+<p><img src="/projects/metamorphic-aircraft/cover.png"
+	width="1204"
+	height="586"
+	srcset="/projects/metamorphic-aircraft/cover_hu3397321452867605892.png 480w, /projects/metamorphic-aircraft/cover_hu7017057831516779415.png 1024w"
+	loading="lazy"
+	
+		alt="变胞飞行器概念与样机"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="205"
+		data-flex-basis="493px"
+	
+></p>
+<h2 id="我完成的工作">我完成的工作
+</h2><ul>
+<li>参与可变构机架与绕线变形机构的机械设计。</li>
+<li>搭建用于构型切换的控制系统与机电执行系统。</li>
+<li>建立 Gazebo 与 ROS 2 仿真环境。</li>
+<li>调试 Pixhawk 与 QGroundControl 之间的通信。</li>
+<li>基于 STM32 和 Arduino 实现电机与舵机控制。</li>
+<li>完成功能样机及地面构型切换演示。</li>
+</ul>
+<h2 id="构型切换原理">构型切换原理
+</h2><p>核心机构通过绕线组件协调飞行器机架的张开与闭合。机架展开时对应固定翼飞行构型，收拢后向紧凑的飞艇构型切换。当前样机主要用于验证变胞结构和控制方案的可行性。</p>
+<p><img src="/projects/metamorphic-aircraft/prototype.jpg"
+	width="1201"
+	height="1602"
+	srcset="/projects/metamorphic-aircraft/prototype_hu9677849289250911092.jpg 480w, /projects/metamorphic-aircraft/prototype_hu11538031209623093174.jpg 1024w"
+	loading="lazy"
+	
+		alt="变胞飞行器结构样机"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="74"
+		data-flex-basis="179px"
+	
+></p>
+<h2 id="技术栈">技术栈
+</h2><div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>模块</th>
+<th>工具 / 方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>机械设计</td>
+<td>SolidWorks、变胞结构、绕线机构</td>
+</tr>
+<tr>
+<td>仿真环境</td>
+<td>Gazebo、ROS 2</td>
+</tr>
+<tr>
+<td>飞行控制</td>
+<td>Pixhawk、QGroundControl</td>
+</tr>
+<tr>
+<td>嵌入式控制</td>
+<td>STM32、Arduino、电机与舵机执行</td>
+</tr>
+<tr>
+<td>样机验证</td>
+<td>功能样机、地面构型切换演示</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="设计迭代">设计迭代
+</h2><p>项目从结构图纸和机构方案逐步推进至实体样机。通过 CAD 设计与硬件装配之间的多轮迭代，重点解决绕线路径、机架同步、执行器行程以及构型切换重复性等问题。</p>
+<div class="project-image-pair">
+  <img src="/projects/metamorphic-aircraft/drawing-1.png" alt="变胞飞行器结构设计图">
+  <img src="/projects/metamorphic-aircraft/detail-1.png" alt="变形机构局部结构">
+</div>
+<h2 id="专利与资助">专利与资助
+</h2><ul>
+<li>中国发明专利申请号 2026102057666，已获国家知识产权局受理；本人为共同发明人、第三发明人。</li>
+<li>南方科技大学攀登计划科研资助：20,000 元。</li>
+</ul>
+
+</section>
+
+    </article>
+
+    
+
+    
+        
+    
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Ricardo
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

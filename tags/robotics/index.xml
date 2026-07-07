@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Robotics on Ricardo</title>
-        <link>http://localhost:1313/tags/robotics/</link>
+        <link>https://Ricardo-Guo.github.io/tags/robotics/</link>
         <description>Recent content in Robotics on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/robotics/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>8-Legged Biomimetic Robot</title>
-        <link>http://localhost:1313/projects/octopod-biomimetic-robot/</link>
+        <link>https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/</link>
         <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/projects/octopod-biomimetic-robot/</guid>
-        <description>&lt;img src="http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg" alt="Featured image of post 8-Legged Biomimetic Robot" /&gt;&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview
+        <guid>https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/</guid>
+        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover.jpg" alt="Featured image of post 8-Legged Biomimetic Robot" /&gt;&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview
 &lt;/h2&gt;&lt;p&gt;This demo presents an 8-legged biomimetic robot prototype built to explore stable multi-leg walking, compact mechanical transmission, and low-level motion control. The current version focuses on making the walking gait readable and repeatable before adding more advanced perception or autonomy.&lt;/p&gt;
 &lt;p&gt;The project is useful as a robotics portfolio piece because it combines physical design, actuator coordination, and embedded software into one visible system. Even from a short video, the viewer can understand the core challenge: turning a set of repeated leg motions into a stable forward gait.&lt;/p&gt;
 &lt;h2 id=&#34;what-i-built&#34;&gt;What I Built
@@ -23,10 +23,10 @@
 &lt;li&gt;A prototype test setup for observing gait stability, body vibration, and turning behavior.&lt;/li&gt;
 &lt;li&gt;A media-first project page so the result is visible before the technical details.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover.jpg&#34;
 	width=&#34;4096&#34;
 	height=&#34;2304&#34;
-	srcset=&#34;http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, http://localhost:1313/projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w&#34;
+	srcset=&#34;https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;8-legged biomimetic robot prototype&#34;

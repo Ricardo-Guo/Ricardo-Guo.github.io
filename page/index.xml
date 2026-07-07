@@ -2,76 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Ricardo</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://Ricardo-Guo.github.io/page/</link>
         <description>Recent content in Pages on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>About Me</title>
-        <link>http://localhost:1313/about-me/</link>
-        <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+        <link>https://Ricardo-Guo.github.io/about-me/</link>
+        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/about-me/</guid>
-        <description>&lt;h2 id=&#34;-hello&#34;&gt;👋 Hello!
-&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m Ricardo, a Robotics student passionate about SLAM. This page contains more detailed information about my background and experience.&lt;/p&gt;
-&lt;h2 id=&#34;-education&#34;&gt;🎓 Education
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Bachelor of Science in Robotics&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Southern University of Science and Technology&lt;/em&gt; | Expected Graduation: 2027&lt;/p&gt;
+        <guid>https://Ricardo-Guo.github.io/about-me/</guid>
+        <description>&lt;h2 id=&#34;profile&#34;&gt;Profile
+&lt;/h2&gt;&lt;p&gt;I am Yifan Guo, a Robotics undergraduate at Southern University of Science and Technology (SUSTech). My work spans robotic perception, reinforcement learning, embedded control, and mechanical prototyping.&lt;/p&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;B.S. in Robotics&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Southern University of Science and Technology, Shenzhen, China&lt;/em&gt; | Expected June 2027&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;GPA: 3.74/4.0&lt;/li&gt;
-&lt;li&gt;Relevant Coursework: Robot drive system, mechatronics, control engineering fundamentals, Robot Modeling and Control&lt;/li&gt;
+&lt;li&gt;GPA: 3.77/4.00; average: 90.87/100&lt;/li&gt;
+&lt;li&gt;Relevant coursework: Machine Learning, Control Engineering, Robot Modeling and Control, Mechatronics&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;-technical-skills&#34;&gt;💻 Technical Skills
-&lt;/h2&gt;&lt;h3 id=&#34;programming-languages&#34;&gt;Programming Languages
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;C++, Python&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;frameworks--libraries&#34;&gt;Frameworks &amp;amp; Libraries
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;SLAM: ORB_SLAM3, OpenVins, 3D Reconstruction&lt;/li&gt;
-&lt;li&gt;C++:&lt;/li&gt;
-&lt;li&gt;Python:&lt;/li&gt;
-&lt;li&gt;Deep Learning:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;tools--technologies&#34;&gt;Tools &amp;amp; Technologies
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Git, Docker, Linux(Ubuntu)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;-honors--awards&#34;&gt;🏆 Honors &amp;amp; Awards
+&lt;h2 id=&#34;research-experience&#34;&gt;Research Experience
+&lt;/h2&gt;&lt;h3 id=&#34;vision-lidar-fusion-for-3d-target-localization&#34;&gt;Vision-LiDAR Fusion for 3D Target Localization
+&lt;/h3&gt;&lt;p&gt;Built a synchronized perception pipeline combining YOLO, Livox point-cloud projection, clustering, and 2D-3D association. Validation against motion-capture ground truth showed that 95% of detections within 5 m had 3D localization error below 10 cm.&lt;/p&gt;
+&lt;h3 id=&#34;vision-based-dexterous-hand-grasping&#34;&gt;Vision-Based Dexterous-Hand Grasping
+&lt;/h3&gt;&lt;p&gt;Built an Isaac Gym and UniDexGrasp++-based grasp-training pipeline, processed RGB-D observations into point-cloud inputs, debugged Arduino multi-motor control, and deployed trained policies on Jetson Nano Super.&lt;/p&gt;
+&lt;h3 id=&#34;metamorphic-structure-reconfigurable-aircraft&#34;&gt;Metamorphic-Structure Reconfigurable Aircraft
+&lt;/h3&gt;&lt;p&gt;Participated in the mechanical and control design of an aircraft that switches between airship and fixed-wing configurations. Built the Gazebo/ROS 2 simulation environment and worked with Pixhawk, QGroundControl, STM32, and Arduino.&lt;/p&gt;
+&lt;h2 id=&#34;technical-skills&#34;&gt;Technical Skills
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;National Scholarship (2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;ACM Programming Contest - First Place (2022) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Dean&amp;rsquo;s List (2022, 2023) - &lt;em&gt;如果有的话&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Programming:&lt;/strong&gt; C++, Python, Linux/Ubuntu, Git, Docker, PyTorch&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robotics systems:&lt;/strong&gt; ROS 2, Gazebo, Isaac Gym, Pixhawk, QGroundControl, STM32, Arduino, NVIDIA Jetson&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perception:&lt;/strong&gt; OpenCV, YOLO, RGB-D processing, point-cloud processing, LiDAR-camera calibration, 3D localization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning and control:&lt;/strong&gt; Reinforcement learning, robotic grasping, embedded motor control&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Design:&lt;/strong&gt; SolidWorks&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;-resume&#34;&gt;📄 Resume
-&lt;/h2&gt;&lt;p&gt;📥 &lt;a class=&#34;link&#34; href=&#34;path/to/your/resume.pdf&#34; &gt;Download Resume (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;-interests&#34;&gt;🌐 Interests
-&lt;/h2&gt;&lt;p&gt;When I&amp;rsquo;m not coding, you can find me:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;📚 Reading about latest tech trends&lt;/li&gt;
-&lt;li&gt;🎮 Playing video games&lt;/li&gt;
-&lt;li&gt;🏀 Playing basketball&lt;/li&gt;
-&lt;li&gt;📷 Photography&lt;/li&gt;
+&lt;h2 id=&#34;honors-awards-and-funding&#34;&gt;Honors, Awards, and Funding
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;National-level Funded Project, College Student Innovation and Entrepreneurship Training Program, 2026&lt;/li&gt;
+&lt;li&gt;National Third Prize, National College Student Mechanical Innovation Competition, 2026&lt;/li&gt;
+&lt;li&gt;Provincial First Prize, National College Student Mechanical Innovation Competition, Bionic Butterfly Track, 2026&lt;/li&gt;
+&lt;li&gt;Provincial First Prize, Guangdong Engineering Maker Competition; team ranked second overall in category, 2025&lt;/li&gt;
+&lt;li&gt;SUSTech Climbing Program Research Grant, RMB 20,000, 2025&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Feel free to reach out if you&amp;rsquo;d like to collaborate on a project or just chat about technology!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;patent-application&#34;&gt;Patent Application
+&lt;/h2&gt;&lt;p&gt;Metamorphic Aircraft, Chinese Invention Patent Application No. 2026102057666; co-inventor, third listed; accepted by CNIPA.&lt;/p&gt;
+&lt;h2 id=&#34;resume&#34;&gt;Resume
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://Ricardo-Guo.github.io/resume-en.pdf&#34; &gt;View English resume&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Archives</title>
-        <link>http://localhost:1313/archives/</link>
+        <link>https://Ricardo-Guo.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/archives/</guid>
+        <guid>https://Ricardo-Guo.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Links</title>
-        <link>http://localhost:1313/links/</link>
+        <link>https://Ricardo-Guo.github.io/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/links/</guid>
+        <guid>https://Ricardo-Guo.github.io/links/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -103,19 +96,19 @@
         </item>
         <item>
         <title>Projects</title>
-        <link>http://localhost:1313/projects/</link>
+        <link>https://Ricardo-Guo.github.io/projects/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/projects/</guid>
+        <guid>https://Ricardo-Guo.github.io/projects/</guid>
         <description>&lt;p&gt;Project snapshots with media previews, technical summaries, and detailed implementation notes.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/search/</link>
+        <link>https://Ricardo-Guo.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/search/</guid>
+        <guid>https://Ricardo-Guo.github.io/search/</guid>
         <description></description>
         </item>
         

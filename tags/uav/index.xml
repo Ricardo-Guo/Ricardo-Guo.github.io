@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>UAV on Ricardo</title>
-        <link>http://localhost:1313/tags/uav/</link>
+        <link>https://Ricardo-Guo.github.io/tags/uav/</link>
         <description>Recent content in UAV on Ricardo</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ricardo</copyright>
-        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/uav/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/uav/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>OpenVINS-based UAV Swarm Cooperative Self-Localization System</title>
-        <link>http://localhost:1313/projects/openvins-uav-swarm/</link>
+        <link>https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/</link>
         <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/projects/openvins-uav-swarm/</guid>
-        <description>&lt;img src="http://localhost:1313/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post OpenVINS-based UAV Swarm Cooperative Self-Localization System" /&gt;&lt;h2 id=&#34;-project-overview&#34;&gt;🎯 Project Overview
+        <guid>https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/</guid>
+        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post OpenVINS-based UAV Swarm Cooperative Self-Localization System" /&gt;&lt;h2 id=&#34;-project-overview&#34;&gt;🎯 Project Overview
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Solving the drift problem in UAV swarm operations without GPS dependency.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This project implements a comprehensive visual-inertial odometry (VIO) system for UAV swarms, combining &lt;strong&gt;OpenVINS&lt;/strong&gt;, &lt;strong&gt;ROS2 communication architecture&lt;/strong&gt;, and &lt;strong&gt;cooperative localization algorithms&lt;/strong&gt; to achieve high-precision positioning in both simulation and real-world environments.&lt;/p&gt;
 &lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack
@@ -36,7 +36,7 @@
 &lt;li&gt;&lt;strong&gt;Physically accurate&lt;/strong&gt; UAV dynamics and sensor noise models&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Multi-UAV spawn system&lt;/strong&gt; with collision avoidance&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/gazebo_simulation.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/gazebo_simulation.jpg&#34;
 	
 	
 	
@@ -54,7 +54,7 @@
 &lt;li&gt;&lt;strong&gt;3D Point Cloud Maps&lt;/strong&gt; from stereo vision&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Real-time pose estimation&lt;/strong&gt; with uncertainty ellipsoids&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/rviz_visualization.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/rviz_visualization.jpg&#34;
 	
 	
 	
@@ -71,7 +71,7 @@
 &lt;li&gt;Leader UAV runs independent OpenVINS node&lt;/li&gt;
 &lt;li&gt;Follower UAVs receive leader&amp;rsquo;s pose estimate via ROS2 topic&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/swarm_architecture.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/swarm_architecture.jpg&#34;
 	
 	
 	
@@ -142,7 +142,7 @@
 &lt;li&gt;&lt;strong&gt;Extrinsic Calibration&lt;/strong&gt;: Camera-IMU transformation matrix&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Temporal Calibration&lt;/strong&gt;: Time offset estimation (&amp;lt; 5ms accuracy)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/kalibr_residuals.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/kalibr_residuals.jpg&#34;
 	
 	
 	
@@ -219,7 +219,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/hardware_assembly.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/hardware_assembly.jpg&#34;
 	
 	
 	
@@ -252,7 +252,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         Point Cloud → Ground Station
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/real_world_data.jpg&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/real_world_data.jpg&#34;
 	
 	
 	
@@ -271,7 +271,7 @@
 &lt;li&gt;✅ &lt;strong&gt;Sub-meter accuracy&lt;/strong&gt; over 500m flight distance&lt;/li&gt;
 &lt;li&gt;✅ &lt;strong&gt;Real-time performance&lt;/strong&gt;: 20Hz pose estimation&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/flight_test.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/flight_test.jpg&#34;
 	
 	
 	
@@ -283,7 +283,7 @@
 &gt;
 &lt;em&gt;Figure: UAV swarm performing cooperative exploration in warehouse&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Trajectory Comparison:&lt;/strong&gt;
-&lt;img src=&#34;http://localhost:1313/trajectory_comparison.png&#34;
+&lt;img src=&#34;https://Ricardo-Guo.github.io/trajectory_comparison.png&#34;
 	
 	
 	
@@ -466,7 +466,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/ape_comparison.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/ape_comparison.png&#34;
 	
 	
 	

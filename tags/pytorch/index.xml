@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>PyTorch on Ricardo</title>
+        <link>https://Ricardo-Guo.github.io/tags/pytorch/</link>
+        <description>Recent content in PyTorch on Ricardo</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Ricardo</copyright>
+        <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/pytorch/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Vision-Based Dexterous-Hand Grasping with Reinforcement Learning</title>
+        <link>https://Ricardo-Guo.github.io/projects/dexterous-hand-grasping/</link>
+        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ricardo-Guo.github.io/projects/dexterous-hand-grasping/</guid>
+        <description>&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview
+&lt;/h2&gt;&lt;p&gt;This project explores vision-guided robotic grasping with a five-finger dexterous hand and a reconfigurable palm. The goal is to connect mechanical hand design, RGB-D perception, reinforcement-learning simulation, and physical motor control in one end-to-end system.&lt;/p&gt;
+&lt;p&gt;Working with four teammates, I helped establish a training pipeline based on UniDexGrasp++ and prepared the perception and embedded-control components needed for physical validation.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-built&#34;&gt;What I Built
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Contributed to the concept of a five-finger hand with a reconfigurable palm surface.&lt;/li&gt;
+&lt;li&gt;Built an Isaac Gym simulation environment for grasp-policy training.&lt;/li&gt;
+&lt;li&gt;Processed RGB-D observations and back-projected depth maps into point-cloud inputs.&lt;/li&gt;
+&lt;li&gt;Debugged an Arduino-based multi-motor control interface.&lt;/li&gt;
+&lt;li&gt;Deployed trained policies on Jetson Nano Super for physical-system validation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;system-pipeline&#34;&gt;System Pipeline
+&lt;/h2&gt;&lt;p&gt;The workflow begins with RGB-D observations, converts depth measurements into a spatial point representation, and feeds that representation into the learned grasping policy. Actions produced by the policy are then mapped to the hand&amp;rsquo;s motor-control interface for simulation and hardware testing.&lt;/p&gt;
+&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Area&lt;/th&gt;
+&lt;th&gt;Tools / Methods&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Learning&lt;/td&gt;
+&lt;td&gt;Reinforcement learning, UniDexGrasp++&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Simulation&lt;/td&gt;
+&lt;td&gt;Isaac Gym&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Perception&lt;/td&gt;
+&lt;td&gt;RGB-D processing, depth back-projection, point clouds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Embedded control&lt;/td&gt;
+&lt;td&gt;Arduino, multi-motor control&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Deployment&lt;/td&gt;
+&lt;td&gt;Jetson Nano Super, PyTorch&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;project-status&#34;&gt;Project Status
+&lt;/h2&gt;&lt;p&gt;The project received national-level innovation-program support in 2026. Images, simulation recordings, and physical grasping demonstrations will be added in a later update.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
