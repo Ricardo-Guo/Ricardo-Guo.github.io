@@ -1,407 +1,54 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-	<meta name="generator" content="Hugo 0.131.0"><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Yifan Guo's robotics, perception, and learning portfolio.">
-<title>Pager 2 - Ricardo</title>
-
-<link rel='canonical' href='https://Ricardo-Guo.github.io/'>
-
-<link rel="stylesheet" href="/scss/style.min.d07b741d2920a7730e0684066f9a3648f613d5f5cdee1ccbd341235a9954093e.css"><meta property='og:title' content="Ricardo">
-<meta property='og:description' content="Yifan Guo's robotics, perception, and learning portfolio.">
-<meta property='og:url' content='https://Ricardo-Guo.github.io/'>
-<meta property='og:site_name' content='Ricardo'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-07-07T00:00:00&#43;00:00 '/>
-<meta name="twitter:title" content="Ricardo">
-<meta name="twitter:description" content="Yifan Guo's robotics, perception, and learning portfolio."><link rel="alternate" type="application/rss&#43;xml" href="https://Ricardo-Guo.github.io/index.xml">
-    <link rel="shortcut icon" href="/favicon.ico" />
-
-  
-
-
-    </head>
-    <body class="portfolio-home">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/portrait_hu12116240459114078048.jpg" width="300"
-                            height="169" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-                    <span class="emoji">😁</span>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">Ricardo</a></h1>
-            <h2 class="site-description">Robotics, perception, and learning</h2>
-        </div>
-    </header><ol class="menu" id="main-menu">
-        
-        
-        
-        <li  class='current' >
-            <a href='/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/resume-en.pdf' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>Resume</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-                    
-                        <li id="i18n-switch">  
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
-                                
-                                    <option value="/" selected>English</option>
-                                
-                                    <option value="/zh-cn/" >中文</option>
-                                
-                            </select>
-                        </li>
-                    
-                
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>Dark Mode</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-            <main class="main full-width">
-    
-    
-    
-    
-
-    <section class="portfolio-hero">
-        <div class="hero-copy">
-            <h1>Hi, I'm Ricardo.</h1>
-            <p class="hero-lede">
-                
-                    I am a Robotics undergraduate at SUSTech, working across robotic perception,
-                    reinforcement learning, and embedded control.
-                
-            </p>
-            <div class="hero-actions">
-                <a class="button primary" href="#projects">View projects</a>
-            </div>
-        </div>
-
-        <div class="hero-portrait" aria-label="Ricardo portrait">
-            <div class="portrait-frame">
-                <img src="/img/portrait.jpg" alt="Portrait of Ricardo">
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio-section skills-section" id="skills">
-        <div class="section-heading project-heading-simple">
-            <h2>Skills</h2>
-        </div>
-        <div class="skills-grid" aria-label="Skills">
-            
-            
-                <div class="skill-chip">C&#43;&#43;</div>
-            
-                <div class="skill-chip">Python</div>
-            
-                <div class="skill-chip">PyTorch</div>
-            
-                <div class="skill-chip">ROS 2</div>
-            
-                <div class="skill-chip">Gazebo</div>
-            
-                <div class="skill-chip">Isaac Gym</div>
-            
-                <div class="skill-chip">OpenCV</div>
-            
-                <div class="skill-chip">YOLO</div>
-            
-                <div class="skill-chip">RGB-D</div>
-            
-                <div class="skill-chip">Point Clouds</div>
-            
-                <div class="skill-chip">Pixhawk</div>
-            
-                <div class="skill-chip">STM32</div>
-            
-                <div class="skill-chip">Arduino</div>
-            
-                <div class="skill-chip">NVIDIA Jetson</div>
-            
-                <div class="skill-chip">SolidWorks</div>
-            
-        </div>
-    </section>
-
-    <section class="portfolio-section" id="projects">
-        <div class="section-heading project-heading-simple">
-            <h2>Projects</h2>
-        </div>
-
-        <div class="showcase-grid">
-            
-                
-
-<article class="project-card">
-    <a href="/projects/vision-lidar-fusion/" aria-label="Open Vision-LiDAR Fusion for 3D Target Localization">
-        <div class="project-media">
-            
-                <div class="project-media-fallback">
-                    <span>V</span>
-                </div>
-            
-            <span class="project-status">Research in progress</span>
-        </div>
-        <div class="project-card-body">
-            <h3>Vision-LiDAR Fusion for 3D Target Localization</h3>
-            <p>A synchronized perception pipeline that combines YOLO detections with Livox point clouds for accurate 3D localization and motion estimation.</p>
-            
-                <div class="project-tags">
-                    <span>YOLO</span><span>Livox LiDAR</span><span>OpenCV</span><span>NVIDIA Jetson</span><span>Sensor Fusion</span>
-                </div>
-            
-            <span class="project-link">Read case study</span>
-        </div>
-    </a>
-</article>
-
-            
-                
-
-<article class="project-card">
-    <a href="/projects/dexterous-hand-grasping/" aria-label="Open Vision-Based Dexterous-Hand Grasping with Reinforcement Learning">
-        <div class="project-media">
-            
-                <div class="project-media-fallback">
-                    <span>V</span>
-                </div>
-            
-            <span class="project-status">Research in progress</span>
-        </div>
-        <div class="project-card-body">
-            <h3>Vision-Based Dexterous-Hand Grasping with Reinforcement Learning</h3>
-            <p>A five-finger dexterous-hand system that learns vision-guided grasping policies in Isaac Gym and transfers them to embedded hardware.</p>
-            
-                <div class="project-tags">
-                    <span>Reinforcement Learning</span><span>Isaac Gym</span><span>RGB-D</span><span>PyTorch</span><span>Jetson</span>
-                </div>
-            
-            <span class="project-link">Read case study</span>
-        </div>
-    </a>
-</article>
-
-            
-                
-
-<article class="project-card">
-    <a href="/projects/metamorphic-aircraft/" aria-label="Open Metamorphic-Structure Reconfigurable Aircraft">
-        <div class="project-media project-media-contain">
-            
-                
-                    
-                    
-                        
-                        
-                    
-                    <img src="/projects/metamorphic-aircraft/cover_hu1689762593784116688.png" alt="Metamorphic-Structure Reconfigurable Aircraft" loading="lazy">
-                
-            
-            
-        </div>
-        <div class="project-card-body">
-            <h3>Metamorphic-Structure Reconfigurable Aircraft</h3>
-            <p>A long-endurance aircraft prototype that transforms between airship and fixed-wing configurations through an integrated mechanical and control system.</p>
-            
-                <div class="project-tags">
-                    <span>ROS 2</span><span>Gazebo</span><span>Pixhawk</span><span>STM32</span><span>SolidWorks</span>
-                </div>
-            
-            <span class="project-link">Read case study</span>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </section>
-
-    <section class="portfolio-section experience-section" id="experience">
-        <div class="section-heading project-heading-simple">
-            <h2>Experience</h2>
-        </div>
-        <div class="timeline">
-            <article class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <span class="timeline-date">2023 - 2027</span>
-                    <h3>Southern University of Science and Technology</h3>
-                    <p>B.S. in Robotics, expected June 2027. GPA: 3.77/4.00; average: 90.87/100.</p>
-                </div>
-            </article>
-            <article class="timeline-item timeline-item-empty">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <span class="timeline-date">Ongoing</span>
-                    <h3>The next chapter is in progress</h3>
-                    <p>New learning, research, and practical experience will be added here.</p>
-                </div>
-            </article>
-        </div>
-    </section><footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-        2026 Ricardo
-    </section>
-    
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
-</footer>
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
-</html>
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.131.0"><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="Yifan Guo's robotics, perception, and learning portfolio."><title>Pager 2 - Ricardo</title>
+<link rel=canonical href=https://Ricardo-Guo.github.io/><link rel=stylesheet href=/scss/style.min.538bc730357fd4873edaf7df4576529d8517e5c2b25109bf673e759cde80f7ab.css><meta property='og:title' content="Ricardo"><meta property='og:description' content="Yifan Guo's robotics, perception, and learning portfolio."><meta property='og:url' content='https://Ricardo-Guo.github.io/'><meta property='og:site_name' content='Ricardo'><meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-10-04T00:00:00+00:00 '><meta name=twitter:title content="Ricardo"><meta name=twitter:description content="Yifan Guo's robotics, perception, and learning portfolio."><link rel=alternate type=application/rss+xml href=https://Ricardo-Guo.github.io/index.xml><link rel="shortcut icon" href=/favicon.ico><link rel=stylesheet href=/scss/fakevla-feature.min.7b06ef123a4bac86edf9acc618151560eaa8cc317ae7825005f72356206b2682.css><script src=/js/fakevla-feature.min.3548f176838618f2172ca5d0d2ee74a587f59d8cf1dd44b889cf47fe37ce4c88.js defer></script><link rel=stylesheet href=/scss/rrr-feature.min.b2e81be4f8a7a2c037d2a5c4d560d07b64e2da648688e0b565837ef73b17ee0a.css><script src=/js/rrr-feature.min.b5e3398969da7fbe8be27d734193b5f65d15be93ffd88d0d061524e9bfd46a1a.js defer></script></head><body class=portfolio-home><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/portrait_hu12116240459114078048.jpg width=300 height=169 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>😁</span></figure><div class=site-meta><h1 class=site-name><a href=/>Ricardo</a></h1><h2 class=site-description>Robotics, perception, and learning</h2></div></header><ol class=menu id=main-menu><li class=current><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span></a></li><li><a href=/#projects><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+<span>Projects</span></a></li><li><a href=/resume-en.pdf><svg class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>Resume</span></a></li><li class=menu-bottom-section><ol class=menu><li id=i18n-switch><svg class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+<select name=language title=language onchange="window.location.href=this.selectedOptions[0].value"><option value=/ selected>English</option><option value=/zh-cn/>中文</option></select></li><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>Dark Mode</span></li></ol></li></ol></aside><main class="main full-width"><section class=portfolio-hero><div class=hero-copy><h1>Hi, I'm Ricardo.</h1><p class=hero-lede>I am a Robotics undergraduate at SUSTech, working across robotic perception,
+reinforcement learning, and embedded control.</p><div class=hero-actions><a class="button primary" href=#projects>View projects</a></div></div><div class=hero-portrait aria-label="Portrait of Ricardo"><div class=portrait-frame><img src=/img/portrait.jpg alt="Portrait of Ricardo"></div></div></section><section class="portfolio-section skills-section" id=skills data-scroll-reveal><div class="section-heading project-heading-simple"><h2>Skills</h2></div><div class=skills-grid aria-label=Skills><div class=skill-chip>Python</div><div class=skill-chip>ROS 2</div><div class=skill-chip>Reinforcement Learning</div><div class=skill-chip>C++</div><div class=skill-chip>MuJoCo</div><div class=skill-chip>SLAM</div><div class=skill-chip>Docker</div><div class=skill-chip>PyTorch</div><div class=skill-chip>3D Reconstruction</div><div class=skill-chip>Isaac Gym</div><div class=skill-chip>Imitation Learning</div><div class=skill-chip>Gazebo</div><div class=skill-chip>NVIDIA Jetson</div><div class=skill-chip>Raspberry Pi</div><div class=skill-chip>STM32</div><div class=skill-chip>Pixhawk</div><div class=skill-chip>SolidWorks</div><div class=skill-chip>3D Printing</div></div></section><section class="portfolio-section work-showcase" id=projects data-scroll-reveal><header class=work-showcase-heading><h2>Things I <span class=work-showcase-title-mark>Built</span></h2><p>Some projects need a full case study. Others are easier to understand through prototypes, videos, and team photographs.</p></header><div class=case-study-grid aria-label="Full case studies"><a class=fakevla-feature href=/projects/fakevla/ data-fakevla-feature aria-labelledby=fakevla-feature-title><div class=fakevla-feature-copy><p class=fakevla-feature-eyebrow>Featured Project <span aria-hidden=true>/ 01</span></p><h3 id=fakevla-feature-title>FakeVLA</h3><p class=fakevla-feature-descriptor>Robust manipulation under unreliable vision.</p><p class=fakevla-feature-description>A temporal VLA for closed-loop WidowX control under disturbed visual observations.</p><p class=fakevla-feature-meta>4 Tasks · 52 Robustness Tests</p><span class=fakevla-feature-action>Explore the interactive results <span aria-hidden=true>↗</span></span></div><div class=fakevla-feature-media><img src=/media/fakevla/homepage-eggplant-grasp-poster.jpg alt="WidowX grasping an eggplant; preview shows successful manipulation under partial occlusion" width=640 height=480 loading=lazy decoding=async>
+<video muted playsinline preload=none data-preview-src=/media/fakevla/hero-eggplant-partial-disturbed.mp4 aria-hidden=true tabindex=-1></video></div></a><a class=rrr-feature href=/projects/rrr-real2sim2real/ data-rrr-feature aria-labelledby=rrr-feature-title><div class=rrr-feature-copy><p class=rrr-feature-eyebrow>Robot Learning</p><h3 id=rrr-feature-title><span>Rebuild ·</span> <span>Relearn ·</span> <span>Re-Execute</span></h3><p class=rrr-feature-descriptor>Closed-loop Real-to-Sim-to-Real learning.</p><p class=rrr-feature-description>The robot rebuilds its local twin and the next learning problem from what actually happened in the real world.</p><span class=rrr-feature-action>Explore the closed loop <span aria-hidden=true>↗</span></span></div><div class=rrr-feature-media><img src=/media/rrr/clarity/hero-grasp-lift.webp alt="SO-101 grasping and lifting a block from the checkerboard" width=780 height=520 loading=lazy decoding=async>
+<video muted loop playsinline preload=none data-preview-src=/media/rrr/clarity/hero-grasp-lift.mp4 aria-hidden=true tabindex=-1></video></div></a><a class="case-study-card case-study-card-secondary" href=/projects/vision-lidar-fusion/><div class=case-study-media><div class="media-placeholder media-placeholder-sensor"><strong>Vision + LiDAR</strong>
+<span>System photograph or localization result to be added</span></div></div><div class=case-study-copy><span class=case-study-type>Full case study</span><h3>Vision-LiDAR Fusion for 3D Target Localization</h3><p>A synchronized perception pipeline that combines YOLO detections with Livox point clouds for accurate 3D localization and motion estimation.</p><span class=case-study-action>Open case study <span aria-hidden=true>→</span></span></div></a></div><section class=artifact-cabinet data-artifact-cabinet aria-labelledby=artifact-cabinet-title><header class=artifact-cabinet-heading><h3 id=artifact-cabinet-title>Project Artifacts</h3><p>Choose a project and pull its videos, prototypes, and process material to the front.</p></header><div class=artifact-project-tabs role=tablist aria-label="Choose a project"><button type=button role=tab id=artifact-tab-butterfly aria-controls=artifact-panel-butterfly aria-selected=true data-artifact-tab=butterfly>
+<span>Biomimetic Butterfly</span>
+<small>Competition project</small>
+</button>
+<button type=button role=tab id=artifact-tab-aircraft aria-controls=artifact-panel-aircraft aria-selected=false tabindex=-1 data-artifact-tab=aircraft>
+<span>Metamorphic Aircraft</span>
+<small>Prototype and patent application</small>
+</button>
+<button type=button role=tab id=artifact-tab-balance aria-controls=artifact-panel-balance aria-selected=false tabindex=-1 data-artifact-tab=balance>
+<span>Two-Wheel Balancing Robot</span>
+<small>Embedded motion prototype</small>
+</button>
+<button type=button role=tab id=artifact-tab-octopod aria-controls=artifact-panel-octopod aria-selected=false tabindex=-1 data-artifact-tab=octopod>
+<span>8-Legged Biomimetic Robot</span>
+<small>Single-motor mechanical gait</small></button></div><div class=artifact-panels><article class=artifact-panel id=artifact-panel-butterfly role=tabpanel aria-labelledby=artifact-tab-butterfly data-artifact-panel=butterfly><div class=artifact-media-stage><div class=artifact-media-frame><div class="artifact-media-item is-active" data-media-item=butterfly-video><video controls playsinline preload=metadata poster=/artifacts/butterfly/prototype.jpg>
+<source src=/artifacts/butterfly/takeoff.mp4 type=video/mp4></video>
+<span class=artifact-media-caption>Takeoff test</span></div><div class=artifact-media-item data-media-item=butterfly-prototype hidden><img src=/artifacts/butterfly/prototype.jpg alt="Complete biomimetic butterfly prototype" loading=lazy>
+<span class=artifact-media-caption>Complete prototype</span></div><div class=artifact-media-item data-media-item=butterfly-team hidden><img src=/artifacts/butterfly/team.jpg alt="Team photograph at the mechanical innovation competition" loading=lazy>
+<span class=artifact-media-caption>Competition team</span></div><div class=artifact-media-item data-media-item=butterfly-certificate hidden><img src=/artifacts/butterfly/detail.jpg alt="Close view of the butterfly flapping mechanism" loading=lazy>
+<span class=artifact-media-caption>Flapping mechanism</span></div></div><div class=artifact-media-switcher role=group aria-label="Butterfly project media"><button type=button class=is-active aria-pressed=true data-media-button=butterfly-video>Video</button>
+<button type=button aria-pressed=false data-media-button=butterfly-prototype>Prototype</button>
+<button type=button aria-pressed=false data-media-button=butterfly-team>Team</button>
+<button type=button aria-pressed=false data-media-button=butterfly-certificate>Mechanism</button></div></div><div class=artifact-story><div class=artifact-story-heading><span>2026</span><h4>Biomimetic Butterfly</h4><p>A biomimetic robotics project built around a lightweight flapping mechanism and physical takeoff tests.</p></div><dl class=artifact-facts><div><dt>What to notice</dt><dd>The physical chain from the transparent wing frame and drive assembly to takeoff.</dd></div><div><dt>In this archive</dt><dd>A takeoff video, full prototype, mechanism close-up, and competition team photograph.</dd></div></dl><p class=artifact-recognition>National Third Prize, National College Student Mechanical Innovation Competition</p></div></article><article class=artifact-panel id=artifact-panel-aircraft role=tabpanel aria-labelledby=artifact-tab-aircraft data-artifact-panel=aircraft hidden><div class=artifact-media-stage><div class=artifact-media-frame><div class="artifact-media-item is-active" data-media-item=aircraft-prototype><img src=/artifacts/aircraft/prototype-open.jpg alt="Metamorphic aircraft prototype in its open configuration" loading=lazy>
+<span class=artifact-media-caption>Open configuration</span></div><div class=artifact-media-item data-media-item=aircraft-drawing hidden><img src=/artifacts/aircraft/cad-wide.png alt="CAD view of the metamorphic aircraft in its open configuration" loading=lazy>
+<span class=artifact-media-caption>Open configuration CAD</span></div><div class=artifact-media-item data-media-item=aircraft-demo hidden><img src=/artifacts/aircraft/prototype-folded.jpg alt="Metamorphic aircraft prototype in its folded configuration" loading=lazy>
+<span class=artifact-media-caption>Folded configuration</span></div><div class=artifact-media-item data-media-item=aircraft-patent hidden><img src=/artifacts/aircraft/cad-folded.png alt="CAD view of the folded metamorphic aircraft" loading=lazy>
+<span class=artifact-media-caption>Folded configuration CAD</span></div></div><div class=artifact-media-switcher role=group aria-label="Metamorphic aircraft media"><button type=button class=is-active aria-pressed=true data-media-button=aircraft-prototype>Prototype</button>
+<button type=button aria-pressed=false data-media-button=aircraft-drawing>Drawing</button>
+<button type=button aria-pressed=false data-media-button=aircraft-demo>Folded</button>
+<button type=button aria-pressed=false data-media-button=aircraft-patent>CAD</button></div></div><div class=artifact-story><div class=artifact-story-heading><span>2025-2026</span><h4>Metamorphic Aircraft</h4><p>A reconfigurable aircraft prototype that switches between airship and fixed-wing configurations through mechanical, embedded-control, and simulation work.</p></div><dl class=artifact-facts><div><dt>The project</dt><dd>A transforming frame, cable-driven actuation, flight-control integration, and ground configuration switching.</dd></div><div><dt>My work</dt><dd>Mechanical design participation, control and actuation, ROS 2 and Gazebo simulation, plus Pixhawk and embedded-system integration.</dd></div></dl><p class=artifact-recognition>Chinese Invention Patent Application No. 2026102057666, third of eight listed inventors</p></div></article><article class=artifact-panel id=artifact-panel-balance role=tabpanel aria-labelledby=artifact-tab-balance data-artifact-panel=balance hidden><div class=artifact-media-stage><div class=artifact-media-frame><div class="artifact-media-item is-active" data-media-item=balance-motion><video controls playsinline preload=metadata poster=/artifacts/balance-car/prototype-front.jpg>
+<source src=/artifacts/balance-car/motion.mp4 type=video/mp4></video>
+<span class=artifact-media-caption>Motion test</span></div><div class=artifact-media-item data-media-item=balance-front hidden><img src=/artifacts/balance-car/prototype-front.jpg alt="Front view of the two-wheel balancing robot" loading=lazy>
+<span class=artifact-media-caption>Complete assembly</span></div><div class=artifact-media-item data-media-item=balance-back hidden><img src=/artifacts/balance-car/prototype-back.jpg alt="Control boards and wiring on the balancing robot" loading=lazy>
+<span class=artifact-media-caption>Control electronics</span></div></div><div class="artifact-media-switcher artifact-media-switcher-three" role=group aria-label="Balancing robot media"><button type=button class=is-active aria-pressed=true data-media-button=balance-motion>Motion</button>
+<button type=button aria-pressed=false data-media-button=balance-front>Assembly</button>
+<button type=button aria-pressed=false data-media-button=balance-back>Electronics</button></div></div><div class=artifact-story><div class=artifact-story-heading><span>2026</span><h4>Two-Wheel Balancing Robot</h4><p>A compact experimental platform combining onboard vision, embedded control, and two-wheel motion.</p></div><dl class=artifact-facts><div><dt>What to notice</dt><dd>How exposed wiring, control boards, and motion hardware fit into a small chassis.</dd></div><div><dt>In this archive</dt><dd>A motion video, full assembly view, and close look at the electronics.</dd></div></dl><p class=artifact-recognition>Physical motion and interaction prototype</p></div></article><article class=artifact-panel id=artifact-panel-octopod role=tabpanel aria-labelledby=artifact-tab-octopod data-artifact-panel=octopod hidden><div class=artifact-media-stage><div class=artifact-media-frame><div class="artifact-media-item is-active" data-media-item=octopod-motion><video controls playsinline preload=metadata poster=/artifacts/octopod/prototype.jpg>
+<source src=/artifacts/octopod/motion.mp4 type=video/mp4></video>
+<span class=artifact-media-caption>Walking test</span></div><div class=artifact-media-item data-media-item=octopod-prototype hidden><img src=/artifacts/octopod/prototype.jpg alt="Mechanical linkage structure of the eight-legged robot" loading=lazy>
+<span class=artifact-media-caption>Linkage mechanism</span></div></div><div class="artifact-media-switcher artifact-media-switcher-two" role=group aria-label="Eight-legged robot media"><button type=button class=is-active aria-pressed=true data-media-button=octopod-motion>Walking</button>
+<button type=button aria-pressed=false data-media-button=octopod-prototype>Mechanism</button></div></div><div class=artifact-story><div class=artifact-story-heading><span>2026</span><h4>8-Legged Biomimetic Robot</h4><p>A course project that drives eight legs from one motor input, focusing on mechanical rhythm and stable forward motion.</p></div><dl class=artifact-facts><div><dt>What to notice</dt><dd>How one input becomes a coordinated gait through repeated linkages.</dd></div><div><dt>In this archive</dt><dd>A walking video and a prototype image that exposes the transmission clearly.</dd></div></dl><p class=artifact-recognition>Five-person mechanical course project</p></div></article></div></section></section><script>(()=>{const t=window.matchMedia("(prefers-reduced-motion: reduce)").matches;document.querySelectorAll("[data-artifact-cabinet]").forEach(e=>{const t=Array.from(e.querySelectorAll("[data-artifact-tab]")),o=Array.from(e.querySelectorAll("[data-artifact-panel]")),n=[{x:0,y:0,rotate:0,scale:1,z:4},{x:12,y:2,rotate:2.5,scale:.96,z:3},{x:-10,y:4,rotate:-3.2,scale:.92,z:2},{x:4,y:6,rotate:1.5,scale:.88,z:1}],s=(e,t)=>{const i=Array.from(e.querySelectorAll("[data-media-button]")),s=Array.from(e.querySelectorAll("[data-media-item]")),o=Math.max(0,s.findIndex(e=>e.dataset.mediaItem===t));i.forEach(e=>{const n=e.dataset.mediaButton===t;e.classList.toggle("is-active",n),e.setAttribute("aria-pressed",String(n))}),s.forEach((e,t)=>{e.hidden=!1;const a=t===o,i=n[(t-o+s.length)%s.length]||n[n.length-1];e.classList.toggle("is-active",a),e.setAttribute("aria-hidden",String(!a)),e.style.setProperty("--artifact-x",`${i.x}%`),e.style.setProperty("--artifact-y",`${i.y}%`),e.style.setProperty("--artifact-rotate",`${i.rotate}deg`),e.style.setProperty("--artifact-scale",i.scale),e.style.zIndex=i.z;const r=e.querySelector("video");r&&(r.controls=a,a||r.pause())})},i=(e,n=!1)=>{t.forEach(t=>{const s=t.dataset.artifactTab===e;t.setAttribute("aria-selected",String(s)),t.tabIndex=s?0:-1,s&&n&&t.focus()}),o.forEach(t=>{const n=t.dataset.artifactPanel===e;t.hidden=!n,n||t.querySelectorAll("video").forEach(e=>e.pause())})};t.forEach((e,n)=>{e.addEventListener("click",()=>i(e.dataset.artifactTab)),e.addEventListener("keydown",e=>{if(!["ArrowLeft","ArrowRight","Home","End"].includes(e.key))return;e.preventDefault();let s=n;e.key==="ArrowLeft"&&(s=(n-1+t.length)%t.length),e.key==="ArrowRight"&&(s=(n+1)%t.length),e.key==="Home"&&(s=0),e.key==="End"&&(s=t.length-1),i(t[s].dataset.artifactTab,!0)})}),o.forEach(e=>{const t=Array.from(e.querySelectorAll("[data-media-button]")),n=Array.from(e.querySelectorAll("[data-media-item]")),o=t.find(e=>e.classList.contains("is-active"))?.dataset.mediaButton||n[0]?.dataset.mediaItem;o&&s(e,o),t.forEach(t=>{t.addEventListener("click",()=>s(e,t.dataset.mediaButton))}),n.forEach(t=>{t.addEventListener("click",n=>{if(t.classList.contains("is-active")||n.target.closest("video"))return;s(e,t.dataset.mediaItem)})})})});const e=Array.from(document.querySelectorAll("[data-scroll-reveal]"));if(!t&&"IntersectionObserver"in window){e.forEach(e=>e.classList.add("can-reveal"));const t=new IntersectionObserver(e=>{e.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("is-visible"),t.unobserve(e.target)})},{threshold:.12});e.forEach(e=>t.observe(e))}else e.forEach(e=>e.classList.add("is-visible"))})()</script><section class="portfolio-section experience-section" id=experience data-scroll-reveal><div class="section-heading project-heading-simple"><h2>Experience</h2></div><div class=timeline><article class=timeline-item><div class=timeline-marker></div><div class=timeline-card><span class=timeline-date>2023 - 2027</span><h3>Southern University of Science and Technology</h3><p>B.S. in Robotics, expected June 2027. GPA: 3.77/4.00; average: 90.87/100.</p></div></article><article class="timeline-item timeline-item-empty"><div class=timeline-marker></div><div class=timeline-card><span class=timeline-date>Ongoing</span><h3>The next chapter is in progress</h3><p>New learning, research, and practical experience will be added here.</p></div></article></div></section><footer class=site-footer><section class=copyright>&copy;
+2026 Ricardo</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.26.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

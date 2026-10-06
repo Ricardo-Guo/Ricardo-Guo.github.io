@@ -1,62 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>C&#43;&#43; on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/tags/c&#43;&#43;/</link>
-        <description>Recent content in C&#43;&#43; on Ricardo</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>Ricardo</copyright>
-        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/c++/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>基于 OpenVINS 的无人机集群协同自定位系统</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</link>
-        <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</guid>
-        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post 基于 OpenVINS 的无人机集群协同自定位系统" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
-&lt;/h2&gt;&lt;p&gt;这个项目围绕无人机集群在无 GPS 环境下的定位漂移问题展开，使用 OpenVINS、ROS2 通信架构和协同定位思路，构建一套视觉惯性里程计系统。&lt;/p&gt;
-&lt;p&gt;项目重点包括多机位姿估计、跨设备通信、仿真环境验证和后续硬件部署。当前页面先保留核心说明，后续可以继续补充真实实验视频、误差曲线和代码片段。&lt;/p&gt;
-&lt;h2 id=&#34;技术栈&#34;&gt;技术栈
-&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;模块&lt;/th&gt;
-&lt;th&gt;工具 / 方法&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;中间件&lt;/td&gt;
-&lt;td&gt;ROS2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;视觉惯性估计&lt;/td&gt;
-&lt;td&gt;OpenVINS, OpenCV, Eigen&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;仿真&lt;/td&gt;
-&lt;td&gt;Gazebo, PX4 SITL&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;飞控&lt;/td&gt;
-&lt;td&gt;PX4 Autopilot, MAVROS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;优化&lt;/td&gt;
-&lt;td&gt;Ceres Solver, g2o&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;关键挑战&#34;&gt;关键挑战
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;多机通信中的时延会影响位姿融合，需要对消息频率和 QoS 策略进行优化。&lt;/li&gt;
-&lt;li&gt;IMU 在振动环境下容易产生噪声尖峰，需要结合机械减振和软件异常值剔除。&lt;/li&gt;
-&lt;li&gt;嵌入式平台算力有限，需要优化特征跟踪和滤波更新流程。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;项目结果&#34;&gt;项目结果
-&lt;/h2&gt;&lt;p&gt;该系统的目标是在室内、仓库等无 GPS 场景中实现稳定定位，并为后续的无人机集群探索、协同建图和任务分配打基础。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on Ricardo</title><link>https://Ricardo-Guo.github.io/zh-cn/tags/c++/</link><description>Recent content in C++ on Ricardo</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Ricardo</copyright><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>基于 OpenVINS 的无人机集群协同自定位系统</title><link>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/zh-cn/projects/openvins-uav-swarm/</guid><description>&lt;img src="https://Ricardo-Guo.github.io/projects/openvins-uav-swarm/openvins-cover.svg" alt="Featured image of post 基于 OpenVINS 的无人机集群协同自定位系统" />&lt;h2 id="项目概览">项目概览
+&lt;/h2>&lt;p>这个项目围绕无人机集群在无 GPS 环境下的定位漂移问题展开，使用 OpenVINS、ROS2 通信架构和协同定位思路，构建一套视觉惯性里程计系统。&lt;/p>
+&lt;p>项目重点包括多机位姿估计、跨设备通信、仿真环境验证和后续硬件部署。当前页面先保留核心说明，后续可以继续补充真实实验视频、误差曲线和代码片段。&lt;/p>
+&lt;h2 id="技术栈">技术栈
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模块&lt;/th>
+&lt;th>工具 / 方法&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>中间件&lt;/td>
+&lt;td>ROS2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>视觉惯性估计&lt;/td>
+&lt;td>OpenVINS, OpenCV, Eigen&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>仿真&lt;/td>
+&lt;td>Gazebo, PX4 SITL&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>飞控&lt;/td>
+&lt;td>PX4 Autopilot, MAVROS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>优化&lt;/td>
+&lt;td>Ceres Solver, g2o&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="关键挑战">关键挑战
+&lt;/h2>&lt;ul>
+&lt;li>多机通信中的时延会影响位姿融合，需要对消息频率和 QoS 策略进行优化。&lt;/li>
+&lt;li>IMU 在振动环境下容易产生噪声尖峰，需要结合机械减振和软件异常值剔除。&lt;/li>
+&lt;li>嵌入式平台算力有限，需要优化特征跟踪和滤波更新流程。&lt;/li>
+&lt;/ul>
+&lt;h2 id="项目结果">项目结果
+&lt;/h2>&lt;p>该系统的目标是在室内、仓库等无 GPS 场景中实现稳定定位，并为后续的无人机集群探索、协同建图和任务分配打基础。&lt;/p></description></item></channel></rss>

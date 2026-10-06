@@ -1,104 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>STM32 on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/tags/stm32/</link>
-        <description>Recent content in STM32 on Ricardo</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>Ricardo</copyright>
-        <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/stm32/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>基于变胞结构的可变构飞行器</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/</link>
-        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/</guid>
-        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png" alt="Featured image of post 基于变胞结构的可变构飞行器" /&gt;&lt;h2 id=&#34;项目概述&#34;&gt;项目概述
-&lt;/h2&gt;&lt;p&gt;本项目面向长航时低空探索，研究一种能够改变自身结构的变胞飞行器。飞行器可在飞艇构型与双旋翼固定翼构型之间切换，并通过绕线机构控制机架的张开与闭合。&lt;/p&gt;
-&lt;p&gt;项目重点验证机械变形、飞控硬件与嵌入式执行系统如何集成到同一平台中。该项目获得南方科技大学攀登计划 20,000 元科研资助。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png&#34;
-	width=&#34;1204&#34;
-	height=&#34;586&#34;
-	srcset=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover_hu3397321452867605892.png 480w, https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover_hu7017057831516779415.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;变胞飞行器概念与样机&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;205&#34;
-		data-flex-basis=&#34;493px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;我完成的工作&#34;&gt;我完成的工作
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;参与可变构机架与绕线变形机构的机械设计。&lt;/li&gt;
-&lt;li&gt;搭建用于构型切换的控制系统与机电执行系统。&lt;/li&gt;
-&lt;li&gt;建立 Gazebo 与 ROS 2 仿真环境。&lt;/li&gt;
-&lt;li&gt;调试 Pixhawk 与 QGroundControl 之间的通信。&lt;/li&gt;
-&lt;li&gt;基于 STM32 和 Arduino 实现电机与舵机控制。&lt;/li&gt;
-&lt;li&gt;完成功能样机及地面构型切换演示。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;构型切换原理&#34;&gt;构型切换原理
-&lt;/h2&gt;&lt;p&gt;核心机构通过绕线组件协调飞行器机架的张开与闭合。机架展开时对应固定翼飞行构型，收拢后向紧凑的飞艇构型切换。当前样机主要用于验证变胞结构和控制方案的可行性。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype.jpg&#34;
-	width=&#34;1201&#34;
-	height=&#34;1602&#34;
-	srcset=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype_hu9677849289250911092.jpg 480w, https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype_hu11538031209623093174.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;变胞飞行器结构样机&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;74&#34;
-		data-flex-basis=&#34;179px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;技术栈&#34;&gt;技术栈
-&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;模块&lt;/th&gt;
-&lt;th&gt;工具 / 方法&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;机械设计&lt;/td&gt;
-&lt;td&gt;SolidWorks、变胞结构、绕线机构&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;仿真环境&lt;/td&gt;
-&lt;td&gt;Gazebo、ROS 2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;飞行控制&lt;/td&gt;
-&lt;td&gt;Pixhawk、QGroundControl&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;嵌入式控制&lt;/td&gt;
-&lt;td&gt;STM32、Arduino、电机与舵机执行&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;样机验证&lt;/td&gt;
-&lt;td&gt;功能样机、地面构型切换演示&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;设计迭代&#34;&gt;设计迭代
-&lt;/h2&gt;&lt;p&gt;项目从结构图纸和机构方案逐步推进至实体样机。通过 CAD 设计与硬件装配之间的多轮迭代，重点解决绕线路径、机架同步、执行器行程以及构型切换重复性等问题。&lt;/p&gt;
-&lt;div class=&#34;project-image-pair&#34;&gt;
-  &lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/drawing-1.png&#34; alt=&#34;变胞飞行器结构设计图&#34;&gt;
-  &lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/detail-1.png&#34; alt=&#34;变形机构局部结构&#34;&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;专利与资助&#34;&gt;专利与资助
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;中国发明专利申请号 2026102057666，已获国家知识产权局受理；本人为共同发明人、第三发明人。&lt;/li&gt;
-&lt;li&gt;南方科技大学攀登计划科研资助：20,000 元。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STM32 on Ricardo</title><link>https://Ricardo-Guo.github.io/zh-cn/tags/stm32/</link><description>Recent content in STM32 on Ricardo</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Ricardo</copyright><lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/stm32/index.xml" rel="self" type="application/rss+xml"/><item><title>基于变胞结构的可变构飞行器</title><link>https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/zh-cn/projects/metamorphic-aircraft/</guid><description>&lt;img src="https://Ricardo-Guo.github.io/cover.png" alt="Featured image of post 基于变胞结构的可变构飞行器" />&lt;h2 id="项目概述">项目概述
+&lt;/h2>&lt;p>本项目面向长航时低空探索，研究一种能够改变自身结构的变胞飞行器。飞行器可在飞艇构型与双旋翼固定翼构型之间切换，并通过绕线机构控制机架的张开与闭合。&lt;/p>
+&lt;p>项目重点验证机械变形、飞控硬件与嵌入式执行系统如何集成到同一平台中。该项目获得南方科技大学攀登计划 20,000 元科研资助。&lt;/p>
+&lt;p>&lt;img src="https://Ricardo-Guo.github.io/cover.png"
+loading="lazy"
+alt="变胞飞行器概念与样机"
+>&lt;/p>
+&lt;h2 id="我完成的工作">我完成的工作
+&lt;/h2>&lt;ul>
+&lt;li>参与可变构机架与绕线变形机构的机械设计。&lt;/li>
+&lt;li>搭建用于构型切换的控制系统与机电执行系统。&lt;/li>
+&lt;li>建立 Gazebo 与 ROS 2 仿真环境。&lt;/li>
+&lt;li>调试 Pixhawk 与 QGroundControl 之间的通信。&lt;/li>
+&lt;li>基于 STM32 和 Arduino 实现电机与舵机控制。&lt;/li>
+&lt;li>完成功能样机及地面构型切换演示。&lt;/li>
+&lt;/ul>
+&lt;h2 id="构型切换原理">构型切换原理
+&lt;/h2>&lt;p>核心机构通过绕线组件协调飞行器机架的张开与闭合。机架展开时对应固定翼飞行构型，收拢后向紧凑的飞艇构型切换。当前样机主要用于验证变胞结构和控制方案的可行性。&lt;/p>
+&lt;p>&lt;img src="https://Ricardo-Guo.github.io/prototype.jpg"
+loading="lazy"
+alt="变胞飞行器结构样机"
+>&lt;/p>
+&lt;h2 id="技术栈">技术栈
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模块&lt;/th>
+&lt;th>工具 / 方法&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>机械设计&lt;/td>
+&lt;td>SolidWorks、变胞结构、绕线机构&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>仿真环境&lt;/td>
+&lt;td>Gazebo、ROS 2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>飞行控制&lt;/td>
+&lt;td>Pixhawk、QGroundControl&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>嵌入式控制&lt;/td>
+&lt;td>STM32、Arduino、电机与舵机执行&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>样机验证&lt;/td>
+&lt;td>功能样机、地面构型切换演示&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="设计迭代">设计迭代
+&lt;/h2>&lt;p>项目从结构图纸和机构方案逐步推进至实体样机。通过 CAD 设计与硬件装配之间的多轮迭代，重点解决绕线路径、机架同步、执行器行程以及构型切换重复性等问题。&lt;/p>
+&lt;div class="project-image-pair">
+&lt;img src="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/drawing-1.png" alt="变胞飞行器结构设计图">
+&lt;img src="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/detail-1.png" alt="变形机构局部结构">
+&lt;/div>
+&lt;h2 id="专利与资助">专利与资助
+&lt;/h2>&lt;ul>
+&lt;li>中国发明专利申请号 2026102057666，已获国家知识产权局受理；本人为共同发明人、第三发明人。&lt;/li>
+&lt;li>南方科技大学攀登计划科研资助：20,000 元。&lt;/li>
+&lt;/ul></description></item></channel></rss>

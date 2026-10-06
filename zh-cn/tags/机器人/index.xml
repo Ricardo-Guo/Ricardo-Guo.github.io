@@ -1,82 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>机器人 on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
-        <description>Recent content in 机器人 on Ricardo</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>Ricardo</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>8 足仿生机器人</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/projects/octopod-biomimetic-robot/</link>
-        <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/octopod-biomimetic-robot/</guid>
-        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover.jpg" alt="Featured image of post 8 足仿生机器人" /&gt;&lt;h2 id=&#34;项目概览&#34;&gt;项目概览
-&lt;/h2&gt;&lt;p&gt;这个项目是一个 8 足仿生机器人原型，目标是探索多足行走时的步态稳定性、机械传动节奏以及底层控制逻辑。当前版本优先让机器人能够稳定、重复地完成基础行走，再逐步加入更复杂的传感反馈和自主控制。&lt;/p&gt;
-&lt;p&gt;作为作品集项目，它能够直接展示机械结构、执行器协调和嵌入式控制之间的配合关系。通过视频和图片，读者可以很快理解核心问题：如何把重复的腿部运动组织成一个稳定的前进步态。&lt;/p&gt;
-&lt;h2 id=&#34;我完成的内容&#34;&gt;我完成的内容
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;搭建了 8 足行走机械结构，并完成基础腿部联动。&lt;/li&gt;
-&lt;li&gt;实现了可重复测试的步态时序和运动控制流程。&lt;/li&gt;
-&lt;li&gt;通过视频观察行走稳定性、机身振动和转向表现。&lt;/li&gt;
-&lt;li&gt;将项目整理为带媒体预览的 case study 页面，方便展示结果和技术细节。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover.jpg&#34;
-	width=&#34;4096&#34;
-	height=&#34;2304&#34;
-	srcset=&#34;https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover_hu16567464759201519712.jpg 480w, https://Ricardo-Guo.github.io/projects/octopod-biomimetic-robot/cover_hu16249452721357936274.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;8 足仿生机器人原型&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;技术栈&#34;&gt;技术栈
-&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;模块&lt;/th&gt;
-&lt;th&gt;方法 / 工具&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;机械设计&lt;/td&gt;
-&lt;td&gt;连杆结构、腿部布局、底盘集成&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;控制逻辑&lt;/td&gt;
-&lt;td&gt;步态时序、电机协调、基础参数调试&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;嵌入式系统&lt;/td&gt;
-&lt;td&gt;基于微控制器的执行器控制&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;测试验证&lt;/td&gt;
-&lt;td&gt;视频观察、步态迭代、稳定性检查&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;设计思路&#34;&gt;设计思路
-&lt;/h2&gt;&lt;p&gt;这个机器人的关键不是单个腿能不能动，而是八条腿之间能否形成稳定的节奏。步态需要保证足够多的接触点支撑机身，同时避免不同腿之间互相拖拽或抵消运动。&lt;/p&gt;
-&lt;p&gt;后续可以加入传感器反馈、闭环速度控制和更干净的转向策略，也可以在项目页面中对比不同步态模式的稳定性。&lt;/p&gt;
-&lt;h2 id=&#34;演示&#34;&gt;演示
-&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;video controls&gt;
-        &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
-        Your browser does not support the video tag.
-    &lt;/video&gt;
-&lt;/div&gt;
-
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器人 on Ricardo</title><link>https://Ricardo-Guo.github.io/zh-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</link><description>Recent content in 机器人 on Ricardo</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Ricardo</copyright><lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>8 足仿生机器人</title><link>https://Ricardo-Guo.github.io/zh-cn/projects/octopod-biomimetic-robot/</link><pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/zh-cn/projects/octopod-biomimetic-robot/</guid><description>&lt;img src="https://Ricardo-Guo.github.io/cover.jpg" alt="Featured image of post 8 足仿生机器人" />&lt;h2 id="项目概览">项目概览
+&lt;/h2>&lt;p>这个项目是一个 8 足仿生机器人原型，目标是探索多足行走时的步态稳定性、机械传动节奏以及底层控制逻辑。当前版本优先让机器人能够稳定、重复地完成基础行走，再逐步加入更复杂的传感反馈和自主控制。&lt;/p>
+&lt;p>作为作品集项目，它能够直接展示机械结构、执行器协调和嵌入式控制之间的配合关系。通过视频和图片，读者可以很快理解核心问题：如何把重复的腿部运动组织成一个稳定的前进步态。&lt;/p>
+&lt;h2 id="我完成的内容">我完成的内容
+&lt;/h2>&lt;ul>
+&lt;li>搭建了 8 足行走机械结构，并完成基础腿部联动。&lt;/li>
+&lt;li>实现了可重复测试的步态时序和运动控制流程。&lt;/li>
+&lt;li>通过视频观察行走稳定性、机身振动和转向表现。&lt;/li>
+&lt;li>将项目整理为带媒体预览的 case study 页面，方便展示结果和技术细节。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://Ricardo-Guo.github.io/cover.jpg"
+loading="lazy"
+alt="8 足仿生机器人原型"
+>&lt;/p>
+&lt;h2 id="技术栈">技术栈
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模块&lt;/th>
+&lt;th>方法 / 工具&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>机械设计&lt;/td>
+&lt;td>连杆结构、腿部布局、底盘集成&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>控制逻辑&lt;/td>
+&lt;td>步态时序、电机协调、基础参数调试&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>嵌入式系统&lt;/td>
+&lt;td>基于微控制器的执行器控制&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>测试验证&lt;/td>
+&lt;td>视频观察、步态迭代、稳定性检查&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="设计思路">设计思路
+&lt;/h2>&lt;p>这个机器人的关键不是单个腿能不能动，而是八条腿之间能否形成稳定的节奏。步态需要保证足够多的接触点支撑机身，同时避免不同腿之间互相拖拽或抵消运动。&lt;/p>
+&lt;p>后续可以加入传感器反馈、闭环速度控制和更干净的转向策略，也可以在项目页面中对比不同步态模式的稳定性。&lt;/p>
+&lt;h2 id="演示">演示
+&lt;/h2>&lt;div class="video-wrapper">
+&lt;video controls>
+&lt;source src="demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+&lt;/video>
+&lt;/div></description></item></channel></rss>

@@ -1,104 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>ROS 2 on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/tags/ros-2/</link>
-        <description>Recent content in ROS 2 on Ricardo</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>Ricardo</copyright>
-        <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/ros-2/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Metamorphic-Structure Reconfigurable Aircraft</title>
-        <link>https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/</link>
-        <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/</guid>
-        <description>&lt;img src="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png" alt="Featured image of post Metamorphic-Structure Reconfigurable Aircraft" /&gt;&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview
-&lt;/h2&gt;&lt;p&gt;This project investigates a metamorphic aircraft for long-endurance, low-altitude exploration. The vehicle switches between an airship configuration and a twin-rotor fixed-wing configuration, using a cable-driven winding mechanism to open and close the aircraft frame.&lt;/p&gt;
-&lt;p&gt;The prototype demonstrates how mechanical transformation, flight-control hardware, and embedded actuation can be integrated into one platform. The work received RMB 20,000 in research funding through the SUSTech Climbing Program.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover.png&#34;
-	width=&#34;1204&#34;
-	height=&#34;586&#34;
-	srcset=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover_hu3397321452867605892.png 480w, https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/cover_hu7017057831516779415.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Metamorphic aircraft concept and prototype&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;205&#34;
-		data-flex-basis=&#34;493px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;my-contribution&#34;&gt;My Contribution
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Participated in the mechanical design of the reconfigurable airframe and cable-driven transformation mechanism.&lt;/li&gt;
-&lt;li&gt;Built control and electromechanical actuation systems for configuration switching.&lt;/li&gt;
-&lt;li&gt;Created a Gazebo and ROS 2 simulation environment.&lt;/li&gt;
-&lt;li&gt;Debugged communication between Pixhawk and QGroundControl.&lt;/li&gt;
-&lt;li&gt;Implemented STM32- and Arduino-based motor and servo control.&lt;/li&gt;
-&lt;li&gt;Completed a functional prototype and ground configuration-switching demonstration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;transformation-concept&#34;&gt;Transformation Concept
-&lt;/h2&gt;&lt;p&gt;The central mechanism uses a winding assembly to coordinate the opening and closing of the airframe. In its expanded state, the structure supports the fixed-wing flight configuration; after folding, it transitions toward the compact airship configuration. The design focuses on proving the mechanical and control concept at prototype scale.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype.jpg&#34;
-	width=&#34;1201&#34;
-	height=&#34;1602&#34;
-	srcset=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype_hu9677849289250911092.jpg 480w, https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/prototype_hu11538031209623093174.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Structural prototype&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;74&#34;
-		data-flex-basis=&#34;179px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack
-&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Area&lt;/th&gt;
-&lt;th&gt;Tools / Methods&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Mechanical design&lt;/td&gt;
-&lt;td&gt;SolidWorks, metamorphic structure, cable-driven mechanism&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Simulation&lt;/td&gt;
-&lt;td&gt;Gazebo, ROS 2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Flight control&lt;/td&gt;
-&lt;td&gt;Pixhawk, QGroundControl&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Embedded control&lt;/td&gt;
-&lt;td&gt;STM32, Arduino, motor and servo actuation&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Validation&lt;/td&gt;
-&lt;td&gt;Functional prototype, ground transformation demo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;design-development&#34;&gt;Design Development
-&lt;/h2&gt;&lt;p&gt;The project progressed from structural drawings and mechanism studies to a physical prototype. Iterating between CAD design and hardware assembly helped expose constraints around cable routing, frame synchronization, actuation range, and repeatable configuration switching.&lt;/p&gt;
-&lt;div class=&#34;project-image-pair&#34;&gt;
-  &lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/drawing-1.png&#34; alt=&#34;Metamorphic aircraft structural drawing&#34;&gt;
-  &lt;img src=&#34;https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/detail-1.png&#34; alt=&#34;Detail of the transformation mechanism&#34;&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;recognition&#34;&gt;Recognition
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Chinese invention patent application No. 2026102057666, accepted by CNIPA; co-inventor, third listed.&lt;/li&gt;
-&lt;li&gt;SUSTech Climbing Program research grant: RMB 20,000.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ROS 2 on Ricardo</title><link>https://Ricardo-Guo.github.io/tags/ros-2/</link><description>Recent content in ROS 2 on Ricardo</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Ricardo</copyright><lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/ros-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Metamorphic-Structure Reconfigurable Aircraft</title><link>https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/</guid><description>&lt;img src="https://Ricardo-Guo.github.io/cover.png" alt="Featured image of post Metamorphic-Structure Reconfigurable Aircraft" />&lt;h2 id="project-overview">Project Overview
+&lt;/h2>&lt;p>This project investigates a metamorphic aircraft for long-endurance, low-altitude exploration. The vehicle switches between an airship configuration and a twin-rotor fixed-wing configuration, using a cable-driven winding mechanism to open and close the aircraft frame.&lt;/p>
+&lt;p>The prototype demonstrates how mechanical transformation, flight-control hardware, and embedded actuation can be integrated into one platform. The work received RMB 20,000 in research funding through the SUSTech Climbing Program.&lt;/p>
+&lt;p>&lt;img src="https://Ricardo-Guo.github.io/cover.png"
+loading="lazy"
+alt="Metamorphic aircraft concept and prototype"
+>&lt;/p>
+&lt;h2 id="my-contribution">My Contribution
+&lt;/h2>&lt;ul>
+&lt;li>Participated in the mechanical design of the reconfigurable airframe and cable-driven transformation mechanism.&lt;/li>
+&lt;li>Built control and electromechanical actuation systems for configuration switching.&lt;/li>
+&lt;li>Created a Gazebo and ROS 2 simulation environment.&lt;/li>
+&lt;li>Debugged communication between Pixhawk and QGroundControl.&lt;/li>
+&lt;li>Implemented STM32- and Arduino-based motor and servo control.&lt;/li>
+&lt;li>Completed a functional prototype and ground configuration-switching demonstration.&lt;/li>
+&lt;/ul>
+&lt;h2 id="transformation-concept">Transformation Concept
+&lt;/h2>&lt;p>The central mechanism uses a winding assembly to coordinate the opening and closing of the airframe. In its expanded state, the structure supports the fixed-wing flight configuration; after folding, it transitions toward the compact airship configuration. The design focuses on proving the mechanical and control concept at prototype scale.&lt;/p>
+&lt;p>&lt;img src="https://Ricardo-Guo.github.io/prototype.jpg"
+loading="lazy"
+alt="Structural prototype"
+>&lt;/p>
+&lt;h2 id="technical-stack">Technical Stack
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Area&lt;/th>
+&lt;th>Tools / Methods&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Mechanical design&lt;/td>
+&lt;td>SolidWorks, metamorphic structure, cable-driven mechanism&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Simulation&lt;/td>
+&lt;td>Gazebo, ROS 2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Flight control&lt;/td>
+&lt;td>Pixhawk, QGroundControl&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Embedded control&lt;/td>
+&lt;td>STM32, Arduino, motor and servo actuation&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Validation&lt;/td>
+&lt;td>Functional prototype, ground transformation demo&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="design-development">Design Development
+&lt;/h2>&lt;p>The project progressed from structural drawings and mechanism studies to a physical prototype. Iterating between CAD design and hardware assembly helped expose constraints around cable routing, frame synchronization, actuation range, and repeatable configuration switching.&lt;/p>
+&lt;div class="project-image-pair">
+&lt;img src="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/drawing-1.png" alt="Metamorphic aircraft structural drawing">
+&lt;img src="https://Ricardo-Guo.github.io/projects/metamorphic-aircraft/detail-1.png" alt="Detail of the transformation mechanism">
+&lt;/div>
+&lt;h2 id="recognition">Recognition
+&lt;/h2>&lt;ul>
+&lt;li>Chinese invention patent application No. 2026102057666, accepted by CNIPA; co-inventor, third listed.&lt;/li>
+&lt;li>SUSTech Climbing Program research grant: RMB 20,000.&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,2138 @@
+{
+  "records": [
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 192
+      },
+      "sourceSha256": "2be642f349e18d6fe5c74df82f5b3ffa3b02a2073294d9ac55f00502f04a9a60",
+      "webSha256": "8fe9bc818d9f92d51d921821b8ff4f2e0304fd125903f6e8e5068aeeae2471e4"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 192
+      },
+      "sourceSha256": "fcf6c640c42bed1a0c30dd61ca6f9dca33ade729b965a505f8386a0a176285b3",
+      "webSha256": "8fe9bc818d9f92d51d921821b8ff4f2e0304fd125903f6e8e5068aeeae2471e4"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_001-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "fcf6c640c42bed1a0c30dd61ca6f9dca33ade729b965a505f8386a0a176285b3",
+      "webSha256": "6d2c6526a4b214d4dfa3236f31319523b3251550363ed45e10058a3601b3b37d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          190,
+          360,
+          234,
+          424
+        ]
+      },
+      "sourceSha256": "2be642f349e18d6fe5c74df82f5b3ffa3b02a2073294d9ac55f00502f04a9a60",
+      "webSha256": "d2d9525280bc612bf4dcbadddb862d81609c2b20863ff2061b483c9a9e79cd92"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          190,
+          360,
+          234,
+          424
+        ]
+      },
+      "sourceSha256": "fcf6c640c42bed1a0c30dd61ca6f9dca33ade729b965a505f8386a0a176285b3",
+      "webSha256": "d2d9525280bc612bf4dcbadddb862d81609c2b20863ff2061b483c9a9e79cd92"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_001-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          190,
+          360,
+          234,
+          424
+        ]
+      },
+      "sourceSha256": "fcf6c640c42bed1a0c30dd61ca6f9dca33ade729b965a505f8386a0a176285b3",
+      "webSha256": "1c695edb4a116d1f0c07ecc2c329af03f76e98089bade88f3f9db04dbf3a581a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_001-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "2be642f349e18d6fe5c74df82f5b3ffa3b02a2073294d9ac55f00502f04a9a60",
+      "webSha256": "84420d23cca8c841a94bc00bc67805288f03d32cdbd5af164391666fa4903631"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000192.npy",
+      "web": "media/rrr/pink/refinement/object_001-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.6052086210250854,
+          3.0169377470016494
+        ],
+        "frame": 192
+      },
+      "sourceSha256": "8b2ba6e0539f07f2cee212a0068a52f1b451d658bc0b58ef74a033180d854d99",
+      "webSha256": "bc7918a42f8372dca8e1a60d4dfb50b5cb2b64459204ba97584b1fd9741306f5"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000192.npy",
+      "web": "media/rrr/pink/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          190,
+          360,
+          234,
+          424
+        ],
+        "frame": 192
+      },
+      "sourceSha256": "8b2ba6e0539f07f2cee212a0068a52f1b451d658bc0b58ef74a033180d854d99",
+      "webSha256": "8103a153a3719aa01f556da8850824c81fe9fa3ab4bc3356964a1b252ebf714d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          190,
+          360,
+          234,
+          424
+        ],
+        "frame": 192
+      },
+      "sourceSha256": "fcf6c640c42bed1a0c30dd61ca6f9dca33ade729b965a505f8386a0a176285b3",
+      "webSha256": "8103a153a3719aa01f556da8850824c81fe9fa3ab4bc3356964a1b252ebf714d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 5
+      },
+      "sourceSha256": "107d5b459122196ab54afb93b996d8bbcd401ce9ce0addde6d515ff32c61fd32",
+      "webSha256": "6dd449ae49b8b10443d2002b136fc8ad1ef1995190b3a25830cc0c9140458887"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 5
+      },
+      "sourceSha256": "69bdd51b4df7c5a1105b76b83817db4793dc5b19c2fc7c4203b0d9eaaabf53d5",
+      "webSha256": "6dd449ae49b8b10443d2002b136fc8ad1ef1995190b3a25830cc0c9140458887"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_002-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "69bdd51b4df7c5a1105b76b83817db4793dc5b19c2fc7c4203b0d9eaaabf53d5",
+      "webSha256": "039048d079a6a31d4c2cb77ab32901ee64e11a0c33477670df3a580f415a3ea4"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          108,
+          244,
+          388,
+          480
+        ]
+      },
+      "sourceSha256": "107d5b459122196ab54afb93b996d8bbcd401ce9ce0addde6d515ff32c61fd32",
+      "webSha256": "d03844e5e171b41ac3c2b5bc65dbe4c0180e30a47a26df7126bbf3e1cad5aab9"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          108,
+          244,
+          388,
+          480
+        ]
+      },
+      "sourceSha256": "69bdd51b4df7c5a1105b76b83817db4793dc5b19c2fc7c4203b0d9eaaabf53d5",
+      "webSha256": "d03844e5e171b41ac3c2b5bc65dbe4c0180e30a47a26df7126bbf3e1cad5aab9"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_002-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          108,
+          244,
+          388,
+          480
+        ]
+      },
+      "sourceSha256": "69bdd51b4df7c5a1105b76b83817db4793dc5b19c2fc7c4203b0d9eaaabf53d5",
+      "webSha256": "3baf030a7fbe64dc5c98cdf7e4a7872ff12c80c40f2fa7e5861958f322d3e0cf"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_002-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "107d5b459122196ab54afb93b996d8bbcd401ce9ce0addde6d515ff32c61fd32",
+      "webSha256": "e0a0ed0d5f1462f55ed68d48a62914146032d4c9a5676e6a6cce6f5916a9282a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000005.npy",
+      "web": "media/rrr/pink/refinement/object_002-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.7055684280395508,
+          3.2085843181610105
+        ],
+        "frame": 5
+      },
+      "sourceSha256": "aabc046102220469808aa2ef0d2ad29e3e30e804828d107d4883caf6e24fa6ed",
+      "webSha256": "82f605513babfa3e657e812ca2a8e3d20f03094b80e4a236a41630eb08dc191b"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000005.npy",
+      "web": "media/rrr/pink/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          108,
+          244,
+          388,
+          480
+        ],
+        "frame": 5
+      },
+      "sourceSha256": "aabc046102220469808aa2ef0d2ad29e3e30e804828d107d4883caf6e24fa6ed",
+      "webSha256": "9005f49976a08d4908cb05c89b7f0eadcd70bf580967d88b40d351b42a65a843"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          108,
+          244,
+          388,
+          480
+        ],
+        "frame": 5
+      },
+      "sourceSha256": "69bdd51b4df7c5a1105b76b83817db4793dc5b19c2fc7c4203b0d9eaaabf53d5",
+      "webSha256": "9005f49976a08d4908cb05c89b7f0eadcd70bf580967d88b40d351b42a65a843"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_003-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 30
+      },
+      "sourceSha256": "757af583701dfe089726ecee5aa38308518b6500eaade4be4d4a15c0d81779d1",
+      "webSha256": "27321a5cc104cb97bafd03729117dc0287e5d21042e37ad8d6a1d236c4706c6a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\attempts\\attempt_03\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_003-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 30
+      },
+      "sourceSha256": "9a10878a5476dee7e3bd7c35b5abc3059da59837eb01992b9b0b6d2702e5b8f7",
+      "webSha256": "27321a5cc104cb97bafd03729117dc0287e5d21042e37ad8d6a1d236c4706c6a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\attempts\\attempt_03\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_003-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "9a10878a5476dee7e3bd7c35b5abc3059da59837eb01992b9b0b6d2702e5b8f7",
+      "webSha256": "436c022ee8f35d2b2a912938b98e6190ece136597690bdb5eb55ddbfd9818ee6"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_003-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          203,
+          212,
+          636,
+          480
+        ]
+      },
+      "sourceSha256": "757af583701dfe089726ecee5aa38308518b6500eaade4be4d4a15c0d81779d1",
+      "webSha256": "52ab51ce1886aca23f36f1714a61642558e300162832fd4e01f7169d64e93723"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\attempts\\attempt_03\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_003-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          203,
+          212,
+          636,
+          480
+        ]
+      },
+      "sourceSha256": "9a10878a5476dee7e3bd7c35b5abc3059da59837eb01992b9b0b6d2702e5b8f7",
+      "webSha256": "52ab51ce1886aca23f36f1714a61642558e300162832fd4e01f7169d64e93723"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\attempts\\attempt_03\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_003-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          203,
+          212,
+          636,
+          480
+        ]
+      },
+      "sourceSha256": "9a10878a5476dee7e3bd7c35b5abc3059da59837eb01992b9b0b6d2702e5b8f7",
+      "webSha256": "6807848992d66568ea2c5546c94c1285cbf7a7e6aa15a062c62da3b00770e3af"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/pink/refinement/object_003-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "757af583701dfe089726ecee5aa38308518b6500eaade4be4d4a15c0d81779d1",
+      "webSha256": "13697ea7ed960826275ee87f9a124e6a61351c9c085431675635768842e62800"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000030.npy",
+      "web": "media/rrr/pink/refinement/object_003-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.6655554175376892,
+          3.0338144636154176
+        ],
+        "frame": 30
+      },
+      "sourceSha256": "694e06984dcca44f333856d2037891e75ccb408664579546d400dc88408a9ee7",
+      "webSha256": "19bd1f5c56149ce03731ba5890cf0af5225b06ef55ac1ae3bdac66fec1720836"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000030.npy",
+      "web": "media/rrr/pink/refinement/object_003-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          203,
+          212,
+          636,
+          480
+        ],
+        "frame": 30
+      },
+      "sourceSha256": "694e06984dcca44f333856d2037891e75ccb408664579546d400dc88408a9ee7",
+      "webSha256": "0f3681f4c45ab1f18bb770f82cf728537fd388f816d6cd48ff0ead332198afa9"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\attempts\\attempt_03\\mask.npy",
+      "web": "media/rrr/pink/refinement/object_003-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          203,
+          212,
+          636,
+          480
+        ],
+        "frame": 30
+      },
+      "sourceSha256": "9a10878a5476dee7e3bd7c35b5abc3059da59837eb01992b9b0b6d2702e5b8f7",
+      "webSha256": "0f3681f4c45ab1f18bb770f82cf728537fd388f816d6cd48ff0ead332198afa9"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/pink/refinement/object_001-turntable.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": null,
+        "duration": null,
+        "cropWHXY": null,
+        "maxWidth": 960
+      },
+      "sourceSha256": "256e10d953a51eace9f810d96f62cff74a7d1a1c6d98ac92a3563edd81afa3f2",
+      "webSha256": "397b7a35eaf4c7e0b0cee7518b02c2cc44d3830c4a434ff006ad3a46967363d5"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/pink/refinement/object_001-poster.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 1,
+        "cropXYWH": null,
+        "size": [
+          512,
+          512
+        ]
+      },
+      "sourceSha256": "256e10d953a51eace9f810d96f62cff74a7d1a1c6d98ac92a3563edd81afa3f2",
+      "webSha256": "392ed852e50889c1cb4be99d3dfe7cea88911cad5965777af121196d8517a0dc"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_001_geometry_summary.png",
+      "web": "media/rrr/pink/refinement/object_001-summary.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          1260,
+          670
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "2dabfcff7272dcf91f71147874609ddaa2613cc0fb7d07c0c4ca10fc98429983",
+      "webSha256": "38e519509d42a2f18585ef6577ce7e43ff0216d56b1c384239bbc52264e7733e"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_002_turntable.mp4",
+      "web": "media/rrr/pink/refinement/object_002-turntable.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": null,
+        "duration": null,
+        "cropWHXY": null,
+        "maxWidth": 960
+      },
+      "sourceSha256": "8ecfeb0f90cbd021819c5b088052461c7598c924651430b3cb2774bd3bd068fd",
+      "webSha256": "2e74cd0e74bdf4e061381b42c2b81b752e63473045969514d3bb77f5b38715e2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_002_turntable.mp4",
+      "web": "media/rrr/pink/refinement/object_002-poster.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 1,
+        "cropXYWH": null,
+        "size": [
+          512,
+          512
+        ]
+      },
+      "sourceSha256": "8ecfeb0f90cbd021819c5b088052461c7598c924651430b3cb2774bd3bd068fd",
+      "webSha256": "c3fd86ec7d83fc0cc8f758532c4e44aa7a5028a4bb356cbf9b2902741a1c3d20"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_002_geometry_summary.png",
+      "web": "media/rrr/pink/refinement/object_002-summary.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          1260,
+          670
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "6d09f139eebea875f7244fb90b8fe393c7287cd43e668aeb3489278a51e69076",
+      "webSha256": "b669fb56f3eeb88be842f5a2f7206822f6ef61888fd33e9ab26054e06c0dc86f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\rgb\\000000.png",
+      "web": "media/rrr/pink/refinement/frame-stack-0.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "67d044fe7408afa1f8e3a29062d896b3e02866be4bb7a1b452556567c1d43c60",
+      "webSha256": "bd505b5f8bc01ba143a36b4089d715c2f01c0de194a7363ce7c28895d7b09e82"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\rgb\\000099.png",
+      "web": "media/rrr/pink/refinement/frame-stack-1.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "22f98e0322f75f7cd666ab9af73254e26734539908d2eea45c6ecbbed7d99bc7",
+      "webSha256": "2d898ce41845a6c38d523acbcb39800a1f04d9ff5e1811d840c3dc7bb1064901"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\rgb\\000198.png",
+      "web": "media/rrr/pink/refinement/frame-stack-2.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "6bc3991cc9e280360281d09c4c93f569d6f772450c79d01558615ee3670bdacd",
+      "webSha256": "1b70dcd95e807775712bcaf34241bbb00320ed1d45e9749274df30ab86fdb741"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/car/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 20
+      },
+      "sourceSha256": "938d04b3a6cde88aaf63e25ee92394ba8e69b3f0fae371a977030bbcc90b8534",
+      "webSha256": "17310718f5415ed737aa4b2785ed96e95f8a654c9f819441c03de29b2346a55a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/car/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 20
+      },
+      "sourceSha256": "8c90a396464638e6090e6415127cc71ed5d45608a4e6260b35676e7bbeed1a9a",
+      "webSha256": "17310718f5415ed737aa4b2785ed96e95f8a654c9f819441c03de29b2346a55a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/car/refinement/object_001-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "8c90a396464638e6090e6415127cc71ed5d45608a4e6260b35676e7bbeed1a9a",
+      "webSha256": "bda341a3555cb4d31daf19918c8d8368b2ab68360fa9420e246aa298b63c4cdc"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/car/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          447,
+          376,
+          535,
+          436
+        ]
+      },
+      "sourceSha256": "938d04b3a6cde88aaf63e25ee92394ba8e69b3f0fae371a977030bbcc90b8534",
+      "webSha256": "f7b8a988ccf793905c480b4e55bfaf255a9ded78bd7f5e610e558b2a38793025"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/car/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          447,
+          376,
+          535,
+          436
+        ]
+      },
+      "sourceSha256": "8c90a396464638e6090e6415127cc71ed5d45608a4e6260b35676e7bbeed1a9a",
+      "webSha256": "f7b8a988ccf793905c480b4e55bfaf255a9ded78bd7f5e610e558b2a38793025"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/car/refinement/object_001-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          447,
+          376,
+          535,
+          436
+        ]
+      },
+      "sourceSha256": "8c90a396464638e6090e6415127cc71ed5d45608a4e6260b35676e7bbeed1a9a",
+      "webSha256": "7c48f2878b7d5ce0918e1c7454ba20538894a4862d3d96930f7d9a2379896860"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/car/refinement/object_001-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "938d04b3a6cde88aaf63e25ee92394ba8e69b3f0fae371a977030bbcc90b8534",
+      "webSha256": "f3708dcdf016f9ba9b7acd8946ad4545ed36d532f7d956e2e906a529f8a8e47e"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\pointmap\\000020.npy",
+      "web": "media/rrr/car/refinement/object_001-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.688711850643158,
+          3.1734730243682865
+        ],
+        "frame": 20
+      },
+      "sourceSha256": "4e859f549c5302ac7cb270c659ffe5bf3d14d075cce771248d4a8239099b0d22",
+      "webSha256": "b36104abfe5fc23e0daea3de7899ee7cb33e46c8bb31b2a8559028351720832f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\pointmap\\000020.npy",
+      "web": "media/rrr/car/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          447,
+          376,
+          535,
+          436
+        ],
+        "frame": 20
+      },
+      "sourceSha256": "4e859f549c5302ac7cb270c659ffe5bf3d14d075cce771248d4a8239099b0d22",
+      "webSha256": "d34901ee13fd144fe86595b07c446b17bf7d73ec255f938fed1fec7015ddf140"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/car/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          447,
+          376,
+          535,
+          436
+        ],
+        "frame": 20
+      },
+      "sourceSha256": "8c90a396464638e6090e6415127cc71ed5d45608a4e6260b35676e7bbeed1a9a",
+      "webSha256": "d34901ee13fd144fe86595b07c446b17bf7d73ec255f938fed1fec7015ddf140"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/car/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 6
+      },
+      "sourceSha256": "3340ff64b71cd6dbaa316015377c95cf2e0f79e8501978137b5c098d080f75df",
+      "webSha256": "b9e3c2a20ebf4b522bde46b7c8ac21eaaa49ae7005248f4bf5c6a152eea4b4b2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/car/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 6
+      },
+      "sourceSha256": "2f12819774e7842493106a741fbeda7d4c26be287d817b8c945b29460da9fb5d",
+      "webSha256": "b9e3c2a20ebf4b522bde46b7c8ac21eaaa49ae7005248f4bf5c6a152eea4b4b2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/car/refinement/object_002-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "2f12819774e7842493106a741fbeda7d4c26be287d817b8c945b29460da9fb5d",
+      "webSha256": "6b865f60c790b720d80f3420cd1e88c58f2aaffb7febf18f34a80d2e710e47d6"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/car/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          175,
+          233,
+          637,
+          480
+        ]
+      },
+      "sourceSha256": "3340ff64b71cd6dbaa316015377c95cf2e0f79e8501978137b5c098d080f75df",
+      "webSha256": "023fcc6e41bc5d023a98490ecbcc8f8df3112925fa48cc381fa451a88f6abc89"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/car/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          175,
+          233,
+          637,
+          480
+        ]
+      },
+      "sourceSha256": "2f12819774e7842493106a741fbeda7d4c26be287d817b8c945b29460da9fb5d",
+      "webSha256": "023fcc6e41bc5d023a98490ecbcc8f8df3112925fa48cc381fa451a88f6abc89"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/car/refinement/object_002-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          175,
+          233,
+          637,
+          480
+        ]
+      },
+      "sourceSha256": "2f12819774e7842493106a741fbeda7d4c26be287d817b8c945b29460da9fb5d",
+      "webSha256": "fee1f12a17cfe78f5639681eda2ecc64b8676855e07e1633373a2e53c82917eb"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/car/refinement/object_002-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "3340ff64b71cd6dbaa316015377c95cf2e0f79e8501978137b5c098d080f75df",
+      "webSha256": "f22ff774e8d86725f5835a4a849f9b3c91eb5af2b04267d4af328fb516ed373f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\pointmap\\000006.npy",
+      "web": "media/rrr/car/refinement/object_002-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.6630875313282013,
+          3.1705721521377566
+        ],
+        "frame": 6
+      },
+      "sourceSha256": "9496911cd22f63bdd741ddaa7a1a17dbc76c3d3eb7848f58c7176ca69ad338e5",
+      "webSha256": "65f32e6a5e9e17fa1e02a2797c09bc9e14a4b85e5e4b7ae5496b49c4f71e0190"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\pointmap\\000006.npy",
+      "web": "media/rrr/car/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          175,
+          233,
+          637,
+          480
+        ],
+        "frame": 6
+      },
+      "sourceSha256": "9496911cd22f63bdd741ddaa7a1a17dbc76c3d3eb7848f58c7176ca69ad338e5",
+      "webSha256": "158266ca761354405cbe83679d47651dd1a1a63d7afa1e2839e8bb7af2737b12"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/car/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          175,
+          233,
+          637,
+          480
+        ],
+        "frame": 6
+      },
+      "sourceSha256": "2f12819774e7842493106a741fbeda7d4c26be287d817b8c945b29460da9fb5d",
+      "webSha256": "158266ca761354405cbe83679d47651dd1a1a63d7afa1e2839e8bb7af2737b12"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/car/refinement/object_001-turntable.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": null,
+        "duration": null,
+        "cropWHXY": null,
+        "maxWidth": 960
+      },
+      "sourceSha256": "e0374140da0c5cedceef0ed357cfe9ff6de0bb677d1572021935dbf8ecede436",
+      "webSha256": "15168a5d5371d14bcafb6b87040fe5f8fc9486213c7f3c43b2df25e20daee93b"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/car/refinement/object_001-poster.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 1,
+        "cropXYWH": null,
+        "size": [
+          512,
+          512
+        ]
+      },
+      "sourceSha256": "e0374140da0c5cedceef0ed357cfe9ff6de0bb677d1572021935dbf8ecede436",
+      "webSha256": "dd4ee936490d7b41beb1e64940961b5fd6ba8b4ae203853851776cefa676bd7f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\diagnostics\\stage3\\object_001_geometry_summary.png",
+      "web": "media/rrr/car/refinement/object_001-summary.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          1260,
+          670
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "9b62d82493dd3bea41eb492abe096a326dab48894b31be036066b66a4d1ec29e",
+      "webSha256": "81ef7b339bbff776f485f604bc44b6e414e538b446200c1687da01b57a90065d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\rgb\\000000.png",
+      "web": "media/rrr/car/refinement/frame-stack-0.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "78570af57d527303dcf76f9cf0a6b276ca99fe9c4c4fd07bd7835c404b839629",
+      "webSha256": "4faebb7e8302a62fa858b8f5c05004c36d5367827cb7c8c224081d99f2a12ea4"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\rgb\\000115.png",
+      "web": "media/rrr/car/refinement/frame-stack-1.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "79acb94b16e8b3c38456b95024e0498b0d5ec9753f579e0b0c5d262ca7cdad8c",
+      "webSha256": "6591caaf78899165bdba0d6828c82dd7d2ed3364f74085d0cc436f48f002e581"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\rgb\\000230.png",
+      "web": "media/rrr/car/refinement/frame-stack-2.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "b807e40cdbf0f8d9af9648b9e4d6921b2b22a03675e933f87d14f2bf7e570f18",
+      "webSha256": "94c19c15877305dcb5545b57bd5c13c2cddfac8966eda12f85896e96a5292815"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 9
+      },
+      "sourceSha256": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+      "webSha256": "3aad5cc33decd22bd3df2d58e0f90198a1e2999b6e1ef7adab0eb4de1b888a67"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\attempts\\attempt_49\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 9
+      },
+      "sourceSha256": "2052a0698050911a7d1c9e664b74205730dcb8da4b70413198c771ac163e5050",
+      "webSha256": "3aad5cc33decd22bd3df2d58e0f90198a1e2999b6e1ef7adab0eb4de1b888a67"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\attempts\\attempt_49\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_001-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "2052a0698050911a7d1c9e664b74205730dcb8da4b70413198c771ac163e5050",
+      "webSha256": "4b00e13f6e9e944f26fb22cff790ed655143a0cad921c9a209f3768f123a5097"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          464,
+          273,
+          537,
+          349
+        ]
+      },
+      "sourceSha256": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+      "webSha256": "bbf6b0bde6f5497a3eb328dd5a2bb655e4bb29772d7521f2cbe2c3c53f28f02d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\attempts\\attempt_49\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          464,
+          273,
+          537,
+          349
+        ]
+      },
+      "sourceSha256": "2052a0698050911a7d1c9e664b74205730dcb8da4b70413198c771ac163e5050",
+      "webSha256": "bbf6b0bde6f5497a3eb328dd5a2bb655e4bb29772d7521f2cbe2c3c53f28f02d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\attempts\\attempt_49\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_001-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          464,
+          273,
+          537,
+          349
+        ]
+      },
+      "sourceSha256": "2052a0698050911a7d1c9e664b74205730dcb8da4b70413198c771ac163e5050",
+      "webSha256": "ee6e4f6c805e79ddb3f95bf628510298a8f5d6391093c10ee8bbe2cd65c640a5"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_001-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+      "webSha256": "e394429fafee68bc01e28672eb8a13e10bace4d45cd1fad9a7bc8b95458cbadc"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000009.npy",
+      "web": "media/rrr/flower/refinement/object_001-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.6367734408378601,
+          3.073276863098145
+        ],
+        "frame": 9
+      },
+      "sourceSha256": "026836a8dfe5ee99c4ca743abcfd1fda24428e44bd86cbdb099583a9ef426cd7",
+      "webSha256": "8613c228913c452649e0d08115b056bdaa2c9ceabd745cf335ae51b9b05e53f2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000009.npy",
+      "web": "media/rrr/flower/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          464,
+          273,
+          537,
+          349
+        ],
+        "frame": 9
+      },
+      "sourceSha256": "026836a8dfe5ee99c4ca743abcfd1fda24428e44bd86cbdb099583a9ef426cd7",
+      "webSha256": "89ad163c822655e7e0b4d193273c32f33fdd60676101488640e5a1b47a3ba09a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\attempts\\attempt_49\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          464,
+          273,
+          537,
+          349
+        ],
+        "frame": 9
+      },
+      "sourceSha256": "2052a0698050911a7d1c9e664b74205730dcb8da4b70413198c771ac163e5050",
+      "webSha256": "89ad163c822655e7e0b4d193273c32f33fdd60676101488640e5a1b47a3ba09a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 9
+      },
+      "sourceSha256": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+      "webSha256": "94590f7efd35b2375b0b676412937b789335e503a7ecdbf5727071f23cf82399"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 9
+      },
+      "sourceSha256": "140c0bfb6c76ffd0b3b269a74cbc818b3627c27d1869746dc56fc6c49472d54f",
+      "webSha256": "94590f7efd35b2375b0b676412937b789335e503a7ecdbf5727071f23cf82399"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_002-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "140c0bfb6c76ffd0b3b269a74cbc818b3627c27d1869746dc56fc6c49472d54f",
+      "webSha256": "3cee5cb6950b448b5f376febe0ee37448f4524cccc4b1e4f0ef71a2c9ba27b97"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          320,
+          345,
+          405,
+          418
+        ]
+      },
+      "sourceSha256": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+      "webSha256": "13ead1153e45a454bab0e00d2ebf3b676c99fd97c972f991b1b980e23b86efcb"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          320,
+          345,
+          405,
+          418
+        ]
+      },
+      "sourceSha256": "140c0bfb6c76ffd0b3b269a74cbc818b3627c27d1869746dc56fc6c49472d54f",
+      "webSha256": "13ead1153e45a454bab0e00d2ebf3b676c99fd97c972f991b1b980e23b86efcb"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_002-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          320,
+          345,
+          405,
+          418
+        ]
+      },
+      "sourceSha256": "140c0bfb6c76ffd0b3b269a74cbc818b3627c27d1869746dc56fc6c49472d54f",
+      "webSha256": "040d1078180f3f1c6c90b3df1efbec2ddcf9eaeabd849a616a8305ba4aa7cd62"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_002-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+      "webSha256": "e394429fafee68bc01e28672eb8a13e10bace4d45cd1fad9a7bc8b95458cbadc"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000009.npy",
+      "web": "media/rrr/flower/refinement/object_002-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.6367734408378601,
+          3.073276863098145
+        ],
+        "frame": 9
+      },
+      "sourceSha256": "026836a8dfe5ee99c4ca743abcfd1fda24428e44bd86cbdb099583a9ef426cd7",
+      "webSha256": "8613c228913c452649e0d08115b056bdaa2c9ceabd745cf335ae51b9b05e53f2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000009.npy",
+      "web": "media/rrr/flower/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          320,
+          345,
+          405,
+          418
+        ],
+        "frame": 9
+      },
+      "sourceSha256": "026836a8dfe5ee99c4ca743abcfd1fda24428e44bd86cbdb099583a9ef426cd7",
+      "webSha256": "2cf98ff2540b40852653531b96b032cc5dfbf0a5e5d0ba975bb6df27c5782753"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          320,
+          345,
+          405,
+          418
+        ],
+        "frame": 9
+      },
+      "sourceSha256": "140c0bfb6c76ffd0b3b269a74cbc818b3627c27d1869746dc56fc6c49472d54f",
+      "webSha256": "2cf98ff2540b40852653531b96b032cc5dfbf0a5e5d0ba975bb6df27c5782753"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_003-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 352
+      },
+      "sourceSha256": "1e115077ced89a131d02a59146134f6b4fe638d36a97c6c0a181e0da073175eb",
+      "webSha256": "30f7cd29da57dbaf49f73f404ed7d89e528b6b17420c09070fc07618b3110661"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_003-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 352
+      },
+      "sourceSha256": "747235a2e69be744855dd5069098a1f2af6e73997fe78298974765947beeee36",
+      "webSha256": "30f7cd29da57dbaf49f73f404ed7d89e528b6b17420c09070fc07618b3110661"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_003-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "747235a2e69be744855dd5069098a1f2af6e73997fe78298974765947beeee36",
+      "webSha256": "32f1293e41d80571e5745b592139c8ee42d58c8d873363d8de02b544de488241"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_003-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          182,
+          233,
+          640,
+          480
+        ]
+      },
+      "sourceSha256": "1e115077ced89a131d02a59146134f6b4fe638d36a97c6c0a181e0da073175eb",
+      "webSha256": "e14d9ae856e7ff07d9c79ab8e4bf659fd675628e3b3e1b84b8a109320f97cc9b"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_003-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          182,
+          233,
+          640,
+          480
+        ]
+      },
+      "sourceSha256": "747235a2e69be744855dd5069098a1f2af6e73997fe78298974765947beeee36",
+      "webSha256": "e14d9ae856e7ff07d9c79ab8e4bf659fd675628e3b3e1b84b8a109320f97cc9b"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_003-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          182,
+          233,
+          640,
+          480
+        ]
+      },
+      "sourceSha256": "747235a2e69be744855dd5069098a1f2af6e73997fe78298974765947beeee36",
+      "webSha256": "c8c5184e2a84f58d09e0725faa09570f2cf51055605cb9d4bf6967c64a397049"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/flower/refinement/object_003-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "1e115077ced89a131d02a59146134f6b4fe638d36a97c6c0a181e0da073175eb",
+      "webSha256": "1febab6df334575e42800f7af120d25b5129a6745f00b9e8832c3a2988b8608b"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000352.npy",
+      "web": "media/rrr/flower/refinement/object_003-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          0.5530791711807251,
+          2.916696662902835
+        ],
+        "frame": 352
+      },
+      "sourceSha256": "6a63b36d1c607a74dfa0194cac809f2a9281f67f7098b742bb5221d608530d2a",
+      "webSha256": "29018e87ac985ee3f634796d573ed0368734d82a8472a7708f6c48d58f2e32b2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000352.npy",
+      "web": "media/rrr/flower/refinement/object_003-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          182,
+          233,
+          640,
+          480
+        ],
+        "frame": 352
+      },
+      "sourceSha256": "6a63b36d1c607a74dfa0194cac809f2a9281f67f7098b742bb5221d608530d2a",
+      "webSha256": "dd6bfb6bfb57684fc6f1d3e9177ad0f995473b096c4f7c00bccb9b1b766b8217"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\attempts\\attempt_02\\mask.npy",
+      "web": "media/rrr/flower/refinement/object_003-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          182,
+          233,
+          640,
+          480
+        ],
+        "frame": 352
+      },
+      "sourceSha256": "747235a2e69be744855dd5069098a1f2af6e73997fe78298974765947beeee36",
+      "webSha256": "dd6bfb6bfb57684fc6f1d3e9177ad0f995473b096c4f7c00bccb9b1b766b8217"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/flower/refinement/object_001-turntable.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": null,
+        "duration": null,
+        "cropWHXY": null,
+        "maxWidth": 960
+      },
+      "sourceSha256": "5064a90abcb5e9d8afea88bae0f99b927cb855323a169d8c8f8d6e335dfb0b7d",
+      "webSha256": "5046e799e238225b5a0e85d264885b1ab7f32c8bb357235dfb37c0a1487b98a2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/flower/refinement/object_001-poster.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 1,
+        "cropXYWH": null,
+        "size": [
+          512,
+          512
+        ]
+      },
+      "sourceSha256": "5064a90abcb5e9d8afea88bae0f99b927cb855323a169d8c8f8d6e335dfb0b7d",
+      "webSha256": "2bc68515f588ceafca4bbcb685fe6677e9ba8e8326b1b05222a2ccf9dcc9a6d2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_001_geometry_summary.png",
+      "web": "media/rrr/flower/refinement/object_001-summary.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          1260,
+          670
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "9defe48fb6f5898c39581a048b83457267e02725ab7bbda8b3194514f3eea82e",
+      "webSha256": "49eddb0083abc3525f552ab6166a28e6aa36f1c34130012ce5053c5659f608c2"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_002_turntable.mp4",
+      "web": "media/rrr/flower/refinement/object_002-turntable.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": null,
+        "duration": null,
+        "cropWHXY": null,
+        "maxWidth": 960
+      },
+      "sourceSha256": "88d4ff72143b55933768eb3fc47be28134b367ff752b37be8907dd10bcb1d326",
+      "webSha256": "fa8f5f1e3e110c57707d539db9b924f2353caebe67da039496fac57bd5377deb"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_002_turntable.mp4",
+      "web": "media/rrr/flower/refinement/object_002-poster.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 1,
+        "cropXYWH": null,
+        "size": [
+          512,
+          512
+        ]
+      },
+      "sourceSha256": "88d4ff72143b55933768eb3fc47be28134b367ff752b37be8907dd10bcb1d326",
+      "webSha256": "1774465cd86ddf46a8dd3b1c3e67dc20d01de68bbaf4d6834a35643e3629b0fb"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_002_geometry_summary.png",
+      "web": "media/rrr/flower/refinement/object_002-summary.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          1260,
+          670
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "fd24f5cd991460640de80e5b3c78a1ac14bb8669873d563a38a0f8ca412f612e",
+      "webSha256": "da8fb6c60b1136ece8cf3ce55e5183c6ff964a98e20c4e5a757778c71051dd76"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\rgb\\000000.png",
+      "web": "media/rrr/flower/refinement/frame-stack-0.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "2294f971b0e2dac8ed652c3ed76ff664975781f1f6a19a17f30f1fd5cd825e17",
+      "webSha256": "9a2fb4ce9d295cbafe0c9a4c5d5a9b0723318abe4d0ea1c8729bb135f5818417"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\rgb\\000152.png",
+      "web": "media/rrr/flower/refinement/frame-stack-1.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "ae0edfb958affc17865fe34c500a2ce914f8e37145502a8467a34bcbe03b99d8",
+      "webSha256": "f0ceefde6c8e1b6ea16a93496752d0065b7928faf3daced441d9c99961795401"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\rgb\\000304.png",
+      "web": "media/rrr/flower/refinement/frame-stack-2.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "f3d99a4461b6999a4f2fe3baaa0a58ef82b986b31b4e10c3954ff13ce1bf5ecc",
+      "webSha256": "cbaeed3ce0ed49bfeb4de4e3c2d10ba2c5be39ce3cb2b05686f0f343432930d3"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 11
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "c5f84f8227032176648f123b6356bc237eee8bc4a01da59b9bf1859bcd9e5e29"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\attempts\\attempt_08\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_001-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 11
+      },
+      "sourceSha256": "c80f86898540dc9ead9003e1e2c0d9d07fa375db107bb0b48c7ad58d2fe534ca",
+      "webSha256": "c5f84f8227032176648f123b6356bc237eee8bc4a01da59b9bf1859bcd9e5e29"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\attempts\\attempt_08\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_001-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "c80f86898540dc9ead9003e1e2c0d9d07fa375db107bb0b48c7ad58d2fe534ca",
+      "webSha256": "e7c1ecffa7e327c9dc3c12eced04b0a115898f8da9114a5c29c30ca9e5957376"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          414,
+          204,
+          459,
+          277
+        ]
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "5142e1b4a46f114e04efe1024cddb8d5b79e9a1a3de3436516b1ab654e498d16"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\attempts\\attempt_08\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_001-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          414,
+          204,
+          459,
+          277
+        ]
+      },
+      "sourceSha256": "c80f86898540dc9ead9003e1e2c0d9d07fa375db107bb0b48c7ad58d2fe534ca",
+      "webSha256": "5142e1b4a46f114e04efe1024cddb8d5b79e9a1a3de3436516b1ab654e498d16"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\attempts\\attempt_08\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_001-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          414,
+          204,
+          459,
+          277
+        ]
+      },
+      "sourceSha256": "c80f86898540dc9ead9003e1e2c0d9d07fa375db107bb0b48c7ad58d2fe534ca",
+      "webSha256": "2e321eecbdb72bdccae3e8e73c5eff9b3d7e897ab1bf5a128ab275c6b90eb047"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_001-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "595a92069d60c5dc3913b6bea8975c2679fae74fcfbcea96af5e0693695c65b6"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\pointmap\\000011.npy",
+      "web": "media/rrr/real-match/refinement/object_001-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          2.221020746231079,
+          3.114699401855469
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "88c107beda0fe184f46c8877f82846d118096b119c670d1a6a24493592f4076e",
+      "webSha256": "8c76d65345c579a20ebfbba632a79547d688b9bdee3a0b77445b35c8c01558a7"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\pointmap\\000011.npy",
+      "web": "media/rrr/real-match/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          414,
+          204,
+          459,
+          277
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "88c107beda0fe184f46c8877f82846d118096b119c670d1a6a24493592f4076e",
+      "webSha256": "edce20fbf863f04134f54e82d40c57665d41589ae7c32c1d0faea1c75311bf6f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\attempts\\attempt_08\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_001-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          414,
+          204,
+          459,
+          277
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "c80f86898540dc9ead9003e1e2c0d9d07fa375db107bb0b48c7ad58d2fe534ca",
+      "webSha256": "edce20fbf863f04134f54e82d40c57665d41589ae7c32c1d0faea1c75311bf6f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 11
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "3074087365e385129cd0a230c87f17761b974e9cf1a15045281eeb5b9eccaa74"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_002-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 11
+      },
+      "sourceSha256": "5a125964cb65eaf5e1556380cf5bf8b5ad37abcb067bdd5b9960d4b8d8c88dd3",
+      "webSha256": "3074087365e385129cd0a230c87f17761b974e9cf1a15045281eeb5b9eccaa74"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_002-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "5a125964cb65eaf5e1556380cf5bf8b5ad37abcb067bdd5b9960d4b8d8c88dd3",
+      "webSha256": "bfd1f9bc5dd58a369640fbdb9da416d8bf8b45e8781feab3a8c97dcc4ab33f83"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          81,
+          68,
+          339,
+          413
+        ]
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "28c1b39173542c36b101c0fececda91fff92d274a44cbe42c5af118d20b3592d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_002-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          81,
+          68,
+          339,
+          413
+        ]
+      },
+      "sourceSha256": "5a125964cb65eaf5e1556380cf5bf8b5ad37abcb067bdd5b9960d4b8d8c88dd3",
+      "webSha256": "28c1b39173542c36b101c0fececda91fff92d274a44cbe42c5af118d20b3592d"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_002-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          81,
+          68,
+          339,
+          413
+        ]
+      },
+      "sourceSha256": "5a125964cb65eaf5e1556380cf5bf8b5ad37abcb067bdd5b9960d4b8d8c88dd3",
+      "webSha256": "f67a04c841c1116edfe0f50eddd03f40dd628ace5474e060ccc62869c0e815f1"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_002-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "595a92069d60c5dc3913b6bea8975c2679fae74fcfbcea96af5e0693695c65b6"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\pointmap\\000011.npy",
+      "web": "media/rrr/real-match/refinement/object_002-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          2.221020746231079,
+          3.114699401855469
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "88c107beda0fe184f46c8877f82846d118096b119c670d1a6a24493592f4076e",
+      "webSha256": "8c76d65345c579a20ebfbba632a79547d688b9bdee3a0b77445b35c8c01558a7"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\pointmap\\000011.npy",
+      "web": "media/rrr/real-match/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          81,
+          68,
+          339,
+          413
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "88c107beda0fe184f46c8877f82846d118096b119c670d1a6a24493592f4076e",
+      "webSha256": "197f56096cbc793fa95fe587da74bb4160740b3db4da47f79c602698bd0a53cb"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_002-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          81,
+          68,
+          339,
+          413
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "5a125964cb65eaf5e1556380cf5bf8b5ad37abcb067bdd5b9960d4b8d8c88dd3",
+      "webSha256": "197f56096cbc793fa95fe587da74bb4160740b3db4da47f79c602698bd0a53cb"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_003-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 11
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "e2aa2327b295654efa40b91f498a55ba5963d5a3251a78b7d59f27068287d418"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_003-selected.webp",
+      "transform": {
+        "type": "accepted mask context dim + boundary",
+        "frame": 11
+      },
+      "sourceSha256": "6027496e4adbb979a4b71a9ab06ebe60a1c8ccd7a1a96787f95a24f8c9cbcf69",
+      "webSha256": "e2aa2327b295654efa40b91f498a55ba5963d5a3251a78b7d59f27068287d418"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_003-mask.webp",
+      "transform": {
+        "type": "actual binary mask silhouette"
+      },
+      "sourceSha256": "6027496e4adbb979a4b71a9ab06ebe60a1c8ccd7a1a96787f95a24f8c9cbcf69",
+      "webSha256": "e4b11e978bb789017d9ba5f24cd0594477b7a8d322060778d6bc8591d3059d22"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_003-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          0,
+          0,
+          640,
+          464
+        ]
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "330fce232ffb079d06e663873164dcb91c16dfa20ab677ae23090b1805742c85"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_003-crop.webp",
+      "transform": {
+        "type": "mask-bound RGB crop",
+        "bbox": [
+          0,
+          0,
+          640,
+          464
+        ]
+      },
+      "sourceSha256": "6027496e4adbb979a4b71a9ab06ebe60a1c8ccd7a1a96787f95a24f8c9cbcf69",
+      "webSha256": "330fce232ffb079d06e663873164dcb91c16dfa20ab677ae23090b1805742c85"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_003-mask-crop.webp",
+      "transform": {
+        "type": "mask-bound binary silhouette crop",
+        "bbox": [
+          0,
+          0,
+          640,
+          464
+        ]
+      },
+      "sourceSha256": "6027496e4adbb979a4b71a9ab06ebe60a1c8ccd7a1a96787f95a24f8c9cbcf69",
+      "webSha256": "abdddf211e07bf92f4b5179660df1662cf53b9d80847d2a5ec0bf814c25bd7c6"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\accepted\\frame.png",
+      "web": "media/rrr/real-match/refinement/object_003-rgb.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+      "webSha256": "595a92069d60c5dc3913b6bea8975c2679fae74fcfbcea96af5e0693695c65b6"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\pointmap\\000011.npy",
+      "web": "media/rrr/real-match/refinement/object_003-metric.webp",
+      "transform": {
+        "type": "predicted metric pointmap Z",
+        "rangeMeters": [
+          2.221020746231079,
+          3.114699401855469
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "88c107beda0fe184f46c8877f82846d118096b119c670d1a6a24493592f4076e",
+      "webSha256": "8c76d65345c579a20ebfbba632a79547d688b9bdee3a0b77445b35c8c01558a7"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\pointmap\\000011.npy",
+      "web": "media/rrr/real-match/refinement/object_003-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          0,
+          0,
+          640,
+          464
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "88c107beda0fe184f46c8877f82846d118096b119c670d1a6a24493592f4076e",
+      "webSha256": "1e1c0cb3dcfa08626c9a0f03759c5256e22740dcbe8761fb17b57074854cb1a1"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\attempts\\attempt_01\\mask.npy",
+      "web": "media/rrr/real-match/refinement/object_003-metric-crop.webp",
+      "transform": {
+        "type": "mask-bound metric Z crop",
+        "bbox": [
+          0,
+          0,
+          640,
+          464
+        ],
+        "frame": 11
+      },
+      "sourceSha256": "6027496e4adbb979a4b71a9ab06ebe60a1c8ccd7a1a96787f95a24f8c9cbcf69",
+      "webSha256": "1e1c0cb3dcfa08626c9a0f03759c5256e22740dcbe8761fb17b57074854cb1a1"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/real-match/refinement/object_001-turntable.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": null,
+        "duration": null,
+        "cropWHXY": null,
+        "maxWidth": 960
+      },
+      "sourceSha256": "214484110469ef0235f5824ea8cc8fee5e11d95f91bcf2965ed78fcacc79e152",
+      "webSha256": "c1d270239f8984b526e484c16f012b452ae6d9a6ec0e9aadedaf4e3d1135e7a6"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_001_turntable.mp4",
+      "web": "media/rrr/real-match/refinement/object_001-poster.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 1,
+        "cropXYWH": null,
+        "size": [
+          512,
+          512
+        ]
+      },
+      "sourceSha256": "214484110469ef0235f5824ea8cc8fee5e11d95f91bcf2965ed78fcacc79e152",
+      "webSha256": "f5f14ddaee9fa9f7743da4b2f6496657d02945202be47dfba055c5d0c947b860"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_001_geometry_summary.png",
+      "web": "media/rrr/real-match/refinement/object_001-summary.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          1260,
+          670
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "c257cb2af3092b3dce7fd67cd5ecb74539f1d9b07c86a0168694907e0eb81b2c",
+      "webSha256": "86a84647814c299e295dabaaee656972d5e7e43dda4fcfc46eac0be76aff753a"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_002_turntable.mp4",
+      "web": "media/rrr/real-match/refinement/object_002-turntable.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": null,
+        "duration": null,
+        "cropWHXY": null,
+        "maxWidth": 960
+      },
+      "sourceSha256": "9c6152a8f55a6cd412c4380ddeb6924613522e33385009ac3f267e47edb656f6",
+      "webSha256": "ca7caf347028afdc8047ecbc1068bf753be07d52ded0f02633b6070fea44eeb5"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_002_turntable.mp4",
+      "web": "media/rrr/real-match/refinement/object_002-poster.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 1,
+        "cropXYWH": null,
+        "size": [
+          512,
+          512
+        ]
+      },
+      "sourceSha256": "9c6152a8f55a6cd412c4380ddeb6924613522e33385009ac3f267e47edb656f6",
+      "webSha256": "d41e7c9c3b80a5b7ce23b41737b00b539173198d70c673d13135b87b5ddbe1cc"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_002_geometry_summary.png",
+      "web": "media/rrr/real-match/refinement/object_002-summary.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          1260,
+          670
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "bf8e9efa35660e4c9c35f8e7341a9876bfb550ec9e47c0cc1b3ee16e1bdfbb80",
+      "webSha256": "1b87640416796c89b3785b1d6c7f20ea5ac6674fb0e1508afbfa5dd205bc2c99"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\rgb\\000000.png",
+      "web": "media/rrr/real-match/refinement/frame-stack-0.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "2e25f4a55d1f2da92efcb4b570cae2e44920fe64b143a797e7a9ea7a6aa5a9d4",
+      "webSha256": "efce98ac6e869a83ac5e1a0bf46bc07860e22066fc1ab36861057c22dd444238"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\rgb\\000193.png",
+      "web": "media/rrr/real-match/refinement/frame-stack-1.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "00878bedf3a3db5ffa70bd523ee480ccda58622d8762b7e00472e2f2d4ea59fd",
+      "webSha256": "d4fd9eb3a8e11d3dacb8fc2da0cf3618073c70eabcdb794650fc818b6ca4cdee"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\rgb\\000386.png",
+      "web": "media/rrr/real-match/refinement/frame-stack-2.webp",
+      "transform": {
+        "type": "lossless WebP",
+        "crop": null,
+        "size": [
+          640,
+          480
+        ],
+        "fit": "contain"
+      },
+      "sourceSha256": "4a8c56a8c1f7d2933aac672fc1c3aef8816072bf0c9b9136b85278985d322a62",
+      "webSha256": "e12c334461a1f24023de4b35c52cce955f30d67bb53df9025d3059d3bbab50a1"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/refinement/chapter-6.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 6.2,
+        "cropXYWH": null,
+        "size": [
+          1280,
+          720
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "9c385e0d54d19e293a404c551938fe72ba89f7d5dc65381497ee671769c5de4f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/refinement/chapter-10.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 10.2,
+        "cropXYWH": null,
+        "size": [
+          1280,
+          720
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "bba93b5101b5d94a81d2b0e7a80d3a162285693ddfaf5b9f2186b762f38c20b1"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/refinement/chapter-15.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 15.2,
+        "cropXYWH": null,
+        "size": [
+          1280,
+          720
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "d6c5c0983d4189d9971925bf45a996bb2eff949bbc28be81f68ba06993be222f"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/refinement/chapter-33.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 33.2,
+        "cropXYWH": null,
+        "size": [
+          1280,
+          720
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "8c993a0e27262698f45a45d12d7b8c6db061090ca630f5ef26ef8d1564a0b876"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/refinement/chapter-38.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 38.2,
+        "cropXYWH": null,
+        "size": [
+          1280,
+          720
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "28fdf0e8e15d21afc8bced84a08779a0539aec284eecfae6c536e32fa74dc986"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/refinement/chapter-51.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 51.2,
+        "cropXYWH": null,
+        "size": [
+          1280,
+          720
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "0582cf2ef891f70b0a6ddb9fe65d8695a84e58d3fcecb59ac1d548a6089858a0"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/refinement/chapter-55.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 55.2,
+        "cropXYWH": null,
+        "size": [
+          1280,
+          720
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "8720161e1b469177b4a2a087456671a8194b30e0641d6eb16d471ba6eaae1fad"
+    }
+  ],
+  "sources": {
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\accepted\\frame.png": "2be642f349e18d6fe5c74df82f5b3ffa3b02a2073294d9ac55f00502f04a9a60",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy": "fcf6c640c42bed1a0c30dd61ca6f9dca33ade729b965a505f8386a0a176285b3",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000192.npy": "8b2ba6e0539f07f2cee212a0068a52f1b451d658bc0b58ef74a033180d854d99",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\accepted\\frame.png": "107d5b459122196ab54afb93b996d8bbcd401ce9ce0addde6d515ff32c61fd32",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy": "69bdd51b4df7c5a1105b76b83817db4793dc5b19c2fc7c4203b0d9eaaabf53d5",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000005.npy": "aabc046102220469808aa2ef0d2ad29e3e30e804828d107d4883caf6e24fa6ed",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\accepted\\frame.png": "757af583701dfe089726ecee5aa38308518b6500eaade4be4d4a15c0d81779d1",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\segmentation\\object_003\\attempts\\attempt_03\\mask.npy": "9a10878a5476dee7e3bd7c35b5abc3059da59837eb01992b9b0b6d2702e5b8f7",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\pointmap\\000030.npy": "694e06984dcca44f333856d2037891e75ccb408664579546d400dc88408a9ee7",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_001_turntable.mp4": "256e10d953a51eace9f810d96f62cff74a7d1a1c6d98ac92a3563edd81afa3f2",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_001_geometry_summary.png": "2dabfcff7272dcf91f71147874609ddaa2613cc0fb7d07c0c4ca10fc98429983",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_002_turntable.mp4": "8ecfeb0f90cbd021819c5b088052461c7598c924651430b3cb2774bd3bd068fd",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick\\so101_episode_001347\\diagnostics\\stage3\\object_002_geometry_summary.png": "6d09f139eebea875f7244fb90b8fe393c7287cd43e668aeb3489278a51e69076",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\rgb\\000000.png": "67d044fe7408afa1f8e3a29062d896b3e02866be4bb7a1b452556567c1d43c60",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\rgb\\000099.png": "22f98e0322f75f7cd666ab9af73254e26734539908d2eea45c6ecbbed7d99bc7",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\cameras\\overhead\\rgb\\000198.png": "6bc3991cc9e280360281d09c4c93f569d6f772450c79d01558615ee3670bdacd",
+    "E:\\real2sim\\outputs\\pink_eraser_pick\\so101_pink_eraser_pick_dataset_unit\\so101_pink_eraser_pick_unit\\episodes\\so101_episode_001347\\robot\\state.npz": "eb387555aa589d9bf64b223481a0caf16865be010e0b809826b6392566a69f65",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\accepted\\frame.png": "938d04b3a6cde88aaf63e25ee92394ba8e69b3f0fae371a977030bbcc90b8534",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_001\\attempts\\attempt_02\\mask.npy": "8c90a396464638e6090e6415127cc71ed5d45608a4e6260b35676e7bbeed1a9a",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\pointmap\\000020.npy": "4e859f549c5302ac7cb270c659ffe5bf3d14d075cce771248d4a8239099b0d22",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\accepted\\frame.png": "3340ff64b71cd6dbaa316015377c95cf2e0f79e8501978137b5c098d080f75df",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy": "2f12819774e7842493106a741fbeda7d4c26be287d817b8c945b29460da9fb5d",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\pointmap\\000006.npy": "9496911cd22f63bdd741ddaa7a1a17dbc76c3d3eb7848f58c7176ca69ad338e5",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\diagnostics\\stage3\\object_001_turntable.mp4": "e0374140da0c5cedceef0ed357cfe9ff6de0bb677d1572021935dbf8ecede436",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_stage\\so101_episode_002986\\diagnostics\\stage3\\object_001_geometry_summary.png": "9b62d82493dd3bea41eb492abe096a326dab48894b31be036066b66a4d1ec29e",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\rgb\\000000.png": "78570af57d527303dcf76f9cf0a6b276ca99fe9c4c4fd07bd7835c404b839629",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\rgb\\000115.png": "79acb94b16e8b3c38456b95024e0498b0d5ec9753f579e0b0c5d262ca7cdad8c",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\cameras\\overhead\\rgb\\000230.png": "b807e40cdbf0f8d9af9648b9e4d6921b2b22a03675e933f87d14f2bf7e570f18",
+    "E:\\real2sim\\outputs\\move_grey_ty_car\\so101_grey_toy_car_move_dataset_unit\\so101_grey_toy_car_move_unit\\episodes\\so101_episode_002986\\robot\\state.npz": "083ea159eb1f162a29d95f5fd07d3d3a471c5ce6e038e493a888497aa40ba34e",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\accepted\\frame.png": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_001\\attempts\\attempt_49\\mask.npy": "2052a0698050911a7d1c9e664b74205730dcb8da4b70413198c771ac163e5050",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000009.npy": "026836a8dfe5ee99c4ca743abcfd1fda24428e44bd86cbdb099583a9ef426cd7",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\accepted\\frame.png": "d1d5ed8a8a8bcf44e5b4afa41170e9f16ba87c84b0aa63f8dc8706b78cf7b75e",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy": "140c0bfb6c76ffd0b3b269a74cbc818b3627c27d1869746dc56fc6c49472d54f",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\accepted\\frame.png": "1e115077ced89a131d02a59146134f6b4fe638d36a97c6c0a181e0da073175eb",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\segmentation\\object_003\\attempts\\attempt_02\\mask.npy": "747235a2e69be744855dd5069098a1f2af6e73997fe78298974765947beeee36",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\pointmap\\000352.npy": "6a63b36d1c607a74dfa0194cac809f2a9281f67f7098b742bb5221d608530d2a",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_001_turntable.mp4": "5064a90abcb5e9d8afea88bae0f99b927cb855323a169d8c8f8d6e335dfb0b7d",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_001_geometry_summary.png": "9defe48fb6f5898c39581a048b83457267e02725ab7bbda8b3194514f3eea82e",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_002_turntable.mp4": "88d4ff72143b55933768eb3fc47be28134b367ff752b37be8907dd10bcb1d326",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_stage\\so101_episode_002560\\diagnostics\\stage3\\object_002_geometry_summary.png": "fd24f5cd991460640de80e5b3c78a1ac14bb8669873d563a38a0f8ca412f612e",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\rgb\\000000.png": "2294f971b0e2dac8ed652c3ed76ff664975781f1f6a19a17f30f1fd5cd825e17",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\rgb\\000152.png": "ae0edfb958affc17865fe34c500a2ce914f8e37145502a8467a34bcbe03b99d8",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\cameras\\overhead\\rgb\\000304.png": "f3d99a4461b6999a4f2fe3baaa0a58ef82b986b31b4e10c3954ff13ce1bf5ecc",
+    "E:\\real2sim\\outputs\\flowerpot_next_to_black_tape\\so101_flower_pot_next_to_black_tape_dataset_unit\\so101_flower_pot_next_to_black_tape_unit\\episodes\\so101_episode_002560\\robot\\state.npz": "fd44fab3807f4d29fc97992538596a58065695aec336b146901ddf0d7ba7b6cf",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\accepted\\frame.png": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_001\\attempts\\attempt_08\\mask.npy": "c80f86898540dc9ead9003e1e2c0d9d07fa375db107bb0b48c7ad58d2fe534ca",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\pointmap\\000011.npy": "88c107beda0fe184f46c8877f82846d118096b119c670d1a6a24493592f4076e",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\accepted\\frame.png": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_002\\attempts\\attempt_01\\mask.npy": "5a125964cb65eaf5e1556380cf5bf8b5ad37abcb067bdd5b9960d4b8d8c88dd3",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\accepted\\frame.png": "c290d8d84d8195862dd822a829a5c3d6d591422aa5367207e40e4babcf4000df",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\segmentation\\object_003\\attempts\\attempt_01\\mask.npy": "6027496e4adbb979a4b71a9ab06ebe60a1c8ccd7a1a96787f95a24f8c9cbcf69",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_001_turntable.mp4": "214484110469ef0235f5824ea8cc8fee5e11d95f91bcf2965ed78fcacc79e152",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_001_geometry_summary.png": "c257cb2af3092b3dce7fd67cd5ecb74539f1d9b07c86a0168694907e0eb81b2c",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_002_turntable.mp4": "9c6152a8f55a6cd412c4380ddeb6924613522e33385009ac3f267e47edb656f6",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_stage\\red_block_demo\\so101_episode_000000\\diagnostics\\stage3\\object_002_geometry_summary.png": "bf8e9efa35660e4c9c35f8e7341a9876bfb550ec9e47c0cc1b3ee16e1bdfbb80",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\rgb\\000000.png": "2e25f4a55d1f2da92efcb4b570cae2e44920fe64b143a797e7a9ea7a6aa5a9d4",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\rgb\\000193.png": "00878bedf3a3db5ffa70bd523ee480ccda58622d8762b7e00472e2f2d4ea59fd",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\cameras\\third_person\\rgb\\000386.png": "4a8c56a8c1f7d2933aac672fc1c3aef8816072bf0c9b9136b85278985d322a62",
+    "E:\\real2sim\\outputs\\real_most_likely\\real_most_likely_dataset_unit\\so101_user_demo_red_block_into_gray_bin_unit\\episodes\\so101_episode_000000\\robot\\state.npz": "bf6c58f7184f8ba872ea237d0c9c6b215c85368414d27c1115c74a1a1a566934",
+    "E:\\real2sim\\outputs\\one_full.mp4": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69"
+  }
+}

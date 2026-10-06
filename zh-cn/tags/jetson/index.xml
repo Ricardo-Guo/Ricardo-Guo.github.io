@@ -1,66 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Jetson on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/tags/jetson/</link>
-        <description>Recent content in Jetson on Ricardo</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>Ricardo</copyright>
-        <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/jetson/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>基于强化学习的视觉灵巧手抓取</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/projects/dexterous-hand-grasping/</link>
-        <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/dexterous-hand-grasping/</guid>
-        <description>&lt;h2 id=&#34;项目概述&#34;&gt;项目概述
-&lt;/h2&gt;&lt;p&gt;本项目探索基于视觉感知的五指灵巧手抓取，并采用可重构掌面设计。项目希望将机械结构、RGB-D 感知、强化学习仿真和实机电机控制连接成一套完整系统。&lt;/p&gt;
-&lt;p&gt;我与四名团队成员共同推进项目，参与搭建基于 UniDexGrasp++ 的训练流程，并负责实机验证所需的感知处理与嵌入式控制工作。&lt;/p&gt;
-&lt;h2 id=&#34;我完成的工作&#34;&gt;我完成的工作
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;参与提出具有可重构掌面的五指灵巧手结构方案。&lt;/li&gt;
-&lt;li&gt;搭建用于抓取策略训练的 Isaac Gym 仿真环境。&lt;/li&gt;
-&lt;li&gt;处理 RGB-D 观测，并将深度图反投影为点云输入。&lt;/li&gt;
-&lt;li&gt;调试基于 Arduino 的多电机控制接口。&lt;/li&gt;
-&lt;li&gt;将训练策略部署至 Jetson Nano Super 进行实机验证。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;系统流程&#34;&gt;系统流程
-&lt;/h2&gt;&lt;p&gt;系统从 RGB-D 观测开始，将深度信息转换为空间点云表示，再输入强化学习抓取策略。策略输出随后映射至灵巧手的电机控制接口，用于仿真测试和实机验证。&lt;/p&gt;
-&lt;h2 id=&#34;技术栈&#34;&gt;技术栈
-&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;模块&lt;/th&gt;
-&lt;th&gt;工具 / 方法&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;学习算法&lt;/td&gt;
-&lt;td&gt;强化学习、UniDexGrasp++&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;仿真环境&lt;/td&gt;
-&lt;td&gt;Isaac Gym&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;视觉感知&lt;/td&gt;
-&lt;td&gt;RGB-D 处理、深度反投影、点云&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;嵌入式控制&lt;/td&gt;
-&lt;td&gt;Arduino、多电机控制&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;部署平台&lt;/td&gt;
-&lt;td&gt;Jetson Nano Super、PyTorch&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;项目状态&#34;&gt;项目状态
-&lt;/h2&gt;&lt;p&gt;项目于 2026 年获得国家级大学生创新创业训练计划支持。后续将补充项目图片、仿真录屏与实机抓取演示。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jetson on Ricardo</title><link>https://Ricardo-Guo.github.io/zh-cn/tags/jetson/</link><description>Recent content in Jetson on Ricardo</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Ricardo</copyright><lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/tags/jetson/index.xml" rel="self" type="application/rss+xml"/><item><title>基于强化学习的视觉灵巧手抓取</title><link>https://Ricardo-Guo.github.io/zh-cn/projects/dexterous-hand-grasping/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/zh-cn/projects/dexterous-hand-grasping/</guid><description>&lt;h2 id="项目概述">项目概述
+&lt;/h2>&lt;p>本项目探索基于视觉感知的五指灵巧手抓取，并采用可重构掌面设计。项目希望将机械结构、RGB-D 感知、强化学习仿真和实机电机控制连接成一套完整系统。&lt;/p>
+&lt;p>我与四名团队成员共同推进项目，参与搭建基于 UniDexGrasp++ 的训练流程，并负责实机验证所需的感知处理与嵌入式控制工作。&lt;/p>
+&lt;h2 id="我完成的工作">我完成的工作
+&lt;/h2>&lt;ul>
+&lt;li>参与提出具有可重构掌面的五指灵巧手结构方案。&lt;/li>
+&lt;li>搭建用于抓取策略训练的 Isaac Gym 仿真环境。&lt;/li>
+&lt;li>处理 RGB-D 观测，并将深度图反投影为点云输入。&lt;/li>
+&lt;li>调试基于 Arduino 的多电机控制接口。&lt;/li>
+&lt;li>将训练策略部署至 Jetson Nano Super 进行实机验证。&lt;/li>
+&lt;/ul>
+&lt;h2 id="系统流程">系统流程
+&lt;/h2>&lt;p>系统从 RGB-D 观测开始，将深度信息转换为空间点云表示，再输入强化学习抓取策略。策略输出随后映射至灵巧手的电机控制接口，用于仿真测试和实机验证。&lt;/p>
+&lt;h2 id="技术栈">技术栈
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模块&lt;/th>
+&lt;th>工具 / 方法&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>学习算法&lt;/td>
+&lt;td>强化学习、UniDexGrasp++&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>仿真环境&lt;/td>
+&lt;td>Isaac Gym&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>视觉感知&lt;/td>
+&lt;td>RGB-D 处理、深度反投影、点云&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>嵌入式控制&lt;/td>
+&lt;td>Arduino、多电机控制&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>部署平台&lt;/td>
+&lt;td>Jetson Nano Super、PyTorch&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="项目状态">项目状态
+&lt;/h2>&lt;p>项目于 2026 年获得国家级大学生创新创业训练计划支持。后续将补充项目图片、仿真录屏与实机抓取演示。&lt;/p></description></item></channel></rss>

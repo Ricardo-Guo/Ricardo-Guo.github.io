@@ -1,73 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Pages on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/page/</link>
-        <description>Recent content in Pages on Ricardo</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>Ricardo</copyright>
-        <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>关于我</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
-        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
-        <description>&lt;h2 id=&#34;个人简介&#34;&gt;个人简介
-&lt;/h2&gt;&lt;p&gt;我是郭一凡，南方科技大学机器人学本科生。目前的工作涵盖机器人感知、强化学习、嵌入式控制与机械样机设计。&lt;/p&gt;
-&lt;h2 id=&#34;教育背景&#34;&gt;教育背景
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;机器人学理学学士&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;南方科技大学，中国深圳&lt;/em&gt; | 预计 2027 年 6 月毕业&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GPA：3.77/4.00；平均分：90.87/100&lt;/li&gt;
-&lt;li&gt;相关课程：Machine Learning、Control Engineering、Robot Modeling and Control、Mechatronics&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;科研经历&#34;&gt;科研经历
-&lt;/h2&gt;&lt;h3 id=&#34;视觉-激光雷达融合的目标三维定位与运动估计&#34;&gt;视觉-激光雷达融合的目标三维定位与运动估计
-&lt;/h3&gt;&lt;p&gt;构建融合 YOLO、Livox 点云投影、聚类及 2D-3D 关联的同步感知流程。以动作捕捉系统为真值进行验证，5 米内 95% 的检测结果三维定位误差低于 10 厘米。&lt;/p&gt;
-&lt;h3 id=&#34;基于强化学习的视觉灵巧手抓取&#34;&gt;基于强化学习的视觉灵巧手抓取
-&lt;/h3&gt;&lt;p&gt;搭建基于 Isaac Gym 和 UniDexGrasp++ 的抓取训练流程，将 RGB-D 观测转换为点云输入，调试 Arduino 多电机控制，并将训练策略部署至 Jetson Nano Super。&lt;/p&gt;
-&lt;h3 id=&#34;基于变胞结构的可变构飞行器&#34;&gt;基于变胞结构的可变构飞行器
-&lt;/h3&gt;&lt;p&gt;参与可在飞艇与固定翼构型之间切换的飞行器机械与控制系统设计，搭建 Gazebo/ROS 2 仿真环境，并使用 Pixhawk、QGroundControl、STM32 与 Arduino 完成系统开发。&lt;/p&gt;
-&lt;h2 id=&#34;技术技能&#34;&gt;技术技能
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;编程：&lt;/strong&gt; C++、Python、Linux/Ubuntu、Git、Docker、PyTorch&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;机器人系统：&lt;/strong&gt; ROS 2、Gazebo、Isaac Gym、Pixhawk、QGroundControl、STM32、Arduino、NVIDIA Jetson&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;感知：&lt;/strong&gt; OpenCV、YOLO、RGB-D 处理、点云处理、LiDAR-相机标定、三维定位&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;学习与控制：&lt;/strong&gt; 强化学习、机器人抓取、嵌入式电机控制&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;设计：&lt;/strong&gt; SolidWorks&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;荣誉奖项与资助&#34;&gt;荣誉、奖项与资助
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;国家级大学生创新创业训练计划资助项目，2026 年&lt;/li&gt;
-&lt;li&gt;全国大学生机械创新设计大赛国家三等奖，2026 年&lt;/li&gt;
-&lt;li&gt;全国大学生机械创新设计大赛仿生蝴蝶赛道省级一等奖，2026 年&lt;/li&gt;
-&lt;li&gt;广东省工程创客大赛省级一等奖；团队在该类别总排名第二，2025 年&lt;/li&gt;
-&lt;li&gt;南方科技大学攀登计划科研资助 20,000 元，2025 年&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;专利申请&#34;&gt;专利申请
-&lt;/h2&gt;&lt;p&gt;变胞飞行器，中国发明专利申请号 2026102057666；共同发明人、第三发明人；已获国家知识产权局受理。&lt;/p&gt;
-&lt;h2 id=&#34;简历&#34;&gt;简历
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://Ricardo-Guo.github.io/resume-cn.pdf&#34; &gt;查看中文简历&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>搜索</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/zh-cn/search/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>项目</title>
-        <link>https://Ricardo-Guo.github.io/zh-cn/projects/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/zh-cn/projects/</guid>
-        <description>&lt;p&gt;这里汇总我的项目原型、技术栈和实现记录。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Ricardo</title><link>https://Ricardo-Guo.github.io/zh-cn/page/</link><description>Recent content in Pages on Ricardo</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Ricardo</copyright><lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于我</title><link>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</link><pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/zh-cn/%E5%85%B3%E4%BA%8E%E6%88%91/</guid><description>&lt;h2 id="个人简介">个人简介
+&lt;/h2>&lt;p>我是郭一凡，南方科技大学机器人学本科生。目前的工作涵盖机器人感知、强化学习、嵌入式控制与机械样机设计。&lt;/p>
+&lt;h2 id="教育背景">教育背景
+&lt;/h2>&lt;p>&lt;strong>机器人学理学学士&lt;/strong>&lt;br>
+&lt;em>南方科技大学，中国深圳&lt;/em> | 预计 2027 年 6 月毕业&lt;/p>
+&lt;ul>
+&lt;li>GPA：3.77/4.00；平均分：90.87/100&lt;/li>
+&lt;li>相关课程：Machine Learning、Control Engineering、Robot Modeling and Control、Mechatronics&lt;/li>
+&lt;/ul>
+&lt;h2 id="科研经历">科研经历
+&lt;/h2>&lt;h3 id="视觉-激光雷达融合的目标三维定位与运动估计">视觉-激光雷达融合的目标三维定位与运动估计
+&lt;/h3>&lt;p>构建融合 YOLO、Livox 点云投影、聚类及 2D-3D 关联的同步感知流程。以动作捕捉系统为真值进行验证，5 米内 95% 的检测结果三维定位误差低于 10 厘米。&lt;/p>
+&lt;h3 id="基于强化学习的视觉灵巧手抓取">基于强化学习的视觉灵巧手抓取
+&lt;/h3>&lt;p>搭建基于 Isaac Gym 和 UniDexGrasp++ 的抓取训练流程，将 RGB-D 观测转换为点云输入，调试 Arduino 多电机控制，并将训练策略部署至 Jetson Nano Super。&lt;/p>
+&lt;h3 id="基于变胞结构的可变构飞行器">基于变胞结构的可变构飞行器
+&lt;/h3>&lt;p>参与可在飞艇与固定翼构型之间切换的飞行器机械与控制系统设计，搭建 Gazebo/ROS 2 仿真环境，并使用 Pixhawk、QGroundControl、STM32 与 Arduino 完成系统开发。&lt;/p>
+&lt;h2 id="技术技能">技术技能
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>编程：&lt;/strong> C++、Python、Linux/Ubuntu、Git、Docker、PyTorch&lt;/li>
+&lt;li>&lt;strong>机器人系统：&lt;/strong> ROS 2、Gazebo、Isaac Gym、Pixhawk、QGroundControl、STM32、Arduino、NVIDIA Jetson&lt;/li>
+&lt;li>&lt;strong>感知：&lt;/strong> OpenCV、YOLO、RGB-D 处理、点云处理、LiDAR-相机标定、三维定位&lt;/li>
+&lt;li>&lt;strong>学习与控制：&lt;/strong> 强化学习、机器人抓取、嵌入式电机控制&lt;/li>
+&lt;li>&lt;strong>设计：&lt;/strong> SolidWorks&lt;/li>
+&lt;/ul>
+&lt;h2 id="荣誉奖项与资助">荣誉、奖项与资助
+&lt;/h2>&lt;ul>
+&lt;li>国家级大学生创新创业训练计划资助项目，2026 年&lt;/li>
+&lt;li>全国大学生机械创新设计大赛国家三等奖，2026 年&lt;/li>
+&lt;li>全国大学生机械创新设计大赛仿生蝴蝶赛道省级一等奖，2026 年&lt;/li>
+&lt;li>广东省工程创客大赛省级一等奖；团队在该类别总排名第二，2025 年&lt;/li>
+&lt;li>南方科技大学攀登计划科研资助 20,000 元，2025 年&lt;/li>
+&lt;/ul>
+&lt;h2 id="专利申请">专利申请
+&lt;/h2>&lt;p>变胞飞行器，中国发明专利申请号 2026102057666；共同发明人、第三发明人；已获国家知识产权局受理。&lt;/p>
+&lt;h2 id="简历">简历
+&lt;/h2>&lt;p>&lt;a class="link" href="https://Ricardo-Guo.github.io/resume-cn.pdf" >查看中文简历&lt;/a>&lt;/p></description></item><item><title>搜索</title><link>https://Ricardo-Guo.github.io/zh-cn/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/zh-cn/search/</guid><description/></item><item><title>项目</title><link>https://Ricardo-Guo.github.io/zh-cn/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/zh-cn/projects/</guid><description>&lt;p>这里汇总我的项目原型、技术栈和实现记录。&lt;/p></description></item></channel></rss>

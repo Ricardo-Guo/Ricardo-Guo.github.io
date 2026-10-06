@@ -1,0 +1,45 @@
+{
+  "records": [
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/clarity/hero-grasp-lift.mp4",
+      "transform": {
+        "type": "H.264 yuv420p faststart silent",
+        "start": 25.2,
+        "duration": 6,
+        "cropWHXY": [
+          780,
+          520,
+          50,
+          112
+        ],
+        "maxWidth": 960
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "8782c8fe58050722d251295e68e1e854d2fc5a97425cd956f0feada76fee8be1"
+    },
+    {
+      "source": "E:\\real2sim\\outputs\\one_full.mp4",
+      "web": "media/rrr/clarity/hero-grasp-lift.webp",
+      "transform": {
+        "type": "video poster",
+        "second": 27.6,
+        "cropXYWH": [
+          50,
+          112,
+          780,
+          520
+        ],
+        "size": [
+          780,
+          520
+        ]
+      },
+      "sourceSha256": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69",
+      "webSha256": "adc814ae80101a7d4f92feaa88a59fd14beed9d094da966453918d4564147f1d"
+    }
+  ],
+  "sources": {
+    "E:\\real2sim\\outputs\\one_full.mp4": "afce9d19cc7d05a5d1fcf8ff8cfde2aa61b8c198dff8513f8e47b6bee4ab1e69"
+  }
+}

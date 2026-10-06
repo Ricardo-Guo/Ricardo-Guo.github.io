@@ -1,66 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>YOLO on Ricardo</title>
-        <link>https://Ricardo-Guo.github.io/tags/yolo/</link>
-        <description>Recent content in YOLO on Ricardo</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <copyright>Ricardo</copyright>
-        <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/yolo/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Vision-LiDAR Fusion for 3D Target Localization</title>
-        <link>https://Ricardo-Guo.github.io/projects/vision-lidar-fusion/</link>
-        <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://Ricardo-Guo.github.io/projects/vision-lidar-fusion/</guid>
-        <description>&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview
-&lt;/h2&gt;&lt;p&gt;This project develops a vision-LiDAR fusion pipeline for locating spherical targets in 3D and estimating their motion. It combines image-space object detection with projected LiDAR measurements, turning complementary camera and depth observations into one spatial estimate.&lt;/p&gt;
-&lt;p&gt;The system is designed for real-time robotic perception rather than offline analysis. A global-shutter camera and Livox LiDAR are hardware-synchronized, while the processing pipeline runs and is tested on NVIDIA Jetson hardware.&lt;/p&gt;
-&lt;h2 id=&#34;what-i-built&#34;&gt;What I Built
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Integrated YOLO-based target detection with LiDAR point-cloud projection.&lt;/li&gt;
-&lt;li&gt;Implemented point-cloud clustering and 2D-3D association between image detections and LiDAR returns.&lt;/li&gt;
-&lt;li&gt;Hardware-synchronized a global-shutter camera and Livox LiDAR.&lt;/li&gt;
-&lt;li&gt;Built a motion-estimation stage from consecutive 3D target observations.&lt;/li&gt;
-&lt;li&gt;Validated localization results against motion-capture ground truth.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results
-&lt;/h2&gt;&lt;p&gt;For targets within 5 metres, 95% of detections achieved a 3D localization error below 10 cm when evaluated against motion-capture measurements.&lt;/p&gt;
-&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack
-&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Area&lt;/th&gt;
-&lt;th&gt;Tools / Methods&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Detection&lt;/td&gt;
-&lt;td&gt;YOLO, global-shutter camera&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3D perception&lt;/td&gt;
-&lt;td&gt;Livox LiDAR, point-cloud projection and clustering&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fusion&lt;/td&gt;
-&lt;td&gt;Camera-LiDAR calibration, 2D-3D association&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Deployment&lt;/td&gt;
-&lt;td&gt;NVIDIA Jetson, Python/C++, OpenCV&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Validation&lt;/td&gt;
-&lt;td&gt;Motion-capture ground truth&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps
-&lt;/h2&gt;&lt;p&gt;Project images, pipeline diagrams, and demonstration video will be added as the experimental setup is documented.&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YOLO on Ricardo</title><link>https://Ricardo-Guo.github.io/tags/yolo/</link><description>Recent content in YOLO on Ricardo</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Ricardo</copyright><lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Ricardo-Guo.github.io/tags/yolo/index.xml" rel="self" type="application/rss+xml"/><item><title>Vision-LiDAR Fusion for 3D Target Localization</title><link>https://Ricardo-Guo.github.io/projects/vision-lidar-fusion/</link><pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate><guid>https://Ricardo-Guo.github.io/projects/vision-lidar-fusion/</guid><description>&lt;h2 id="project-overview">Project Overview
+&lt;/h2>&lt;p>This project develops a vision-LiDAR fusion pipeline for locating spherical targets in 3D and estimating their motion. It combines image-space object detection with projected LiDAR measurements, turning complementary camera and depth observations into one spatial estimate.&lt;/p>
+&lt;p>The system is designed for real-time robotic perception rather than offline analysis. A global-shutter camera and Livox LiDAR are hardware-synchronized, while the processing pipeline runs and is tested on NVIDIA Jetson hardware.&lt;/p>
+&lt;h2 id="what-i-built">What I Built
+&lt;/h2>&lt;ul>
+&lt;li>Integrated YOLO-based target detection with LiDAR point-cloud projection.&lt;/li>
+&lt;li>Implemented point-cloud clustering and 2D-3D association between image detections and LiDAR returns.&lt;/li>
+&lt;li>Hardware-synchronized a global-shutter camera and Livox LiDAR.&lt;/li>
+&lt;li>Built a motion-estimation stage from consecutive 3D target observations.&lt;/li>
+&lt;li>Validated localization results against motion-capture ground truth.&lt;/li>
+&lt;/ul>
+&lt;h2 id="results">Results
+&lt;/h2>&lt;p>For targets within 5 metres, 95% of detections achieved a 3D localization error below 10 cm when evaluated against motion-capture measurements.&lt;/p>
+&lt;h2 id="technical-stack">Technical Stack
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Area&lt;/th>
+&lt;th>Tools / Methods&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Detection&lt;/td>
+&lt;td>YOLO, global-shutter camera&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3D perception&lt;/td>
+&lt;td>Livox LiDAR, point-cloud projection and clustering&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Fusion&lt;/td>
+&lt;td>Camera-LiDAR calibration, 2D-3D association&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Deployment&lt;/td>
+&lt;td>NVIDIA Jetson, Python/C++, OpenCV&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Validation&lt;/td>
+&lt;td>Motion-capture ground truth&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="next-steps">Next Steps
+&lt;/h2>&lt;p>Project images, pipeline diagrams, and demonstration video will be added as the experimental setup is documented.&lt;/p></description></item></channel></rss>
