@@ -8,9 +8,7 @@
 &lt;li>相关课程：Machine Learning、Control Engineering、Robot Modeling and Control、Mechatronics&lt;/li>
 &lt;/ul>
 &lt;h2 id="科研经历">科研经历
-&lt;/h2>&lt;h3 id="视觉-激光雷达融合的目标三维定位与运动估计">视觉-激光雷达融合的目标三维定位与运动估计
-&lt;/h3>&lt;p>构建融合 YOLO、Livox 点云投影、聚类及 2D-3D 关联的同步感知流程。以动作捕捉系统为真值进行验证，5 米内 95% 的检测结果三维定位误差低于 10 厘米。&lt;/p>
-&lt;h3 id="基于强化学习的视觉灵巧手抓取">基于强化学习的视觉灵巧手抓取
+&lt;/h2>&lt;h3 id="基于强化学习的视觉灵巧手抓取">基于强化学习的视觉灵巧手抓取
 &lt;/h3>&lt;p>搭建基于 Isaac Gym 和 UniDexGrasp++ 的抓取训练流程，将 RGB-D 观测转换为点云输入，调试 Arduino 多电机控制，并将训练策略部署至 Jetson Nano Super。&lt;/p>
 &lt;h3 id="基于变胞结构的可变构飞行器">基于变胞结构的可变构飞行器
 &lt;/h3>&lt;p>参与可在飞艇与固定翼构型之间切换的飞行器机械与控制系统设计，搭建 Gazebo/ROS 2 仿真环境，并使用 Pixhawk、QGroundControl、STM32 与 Arduino 完成系统开发。&lt;/p>

@@ -8,9 +8,7 @@
 &lt;li>Relevant coursework: Machine Learning, Control Engineering, Robot Modeling and Control, Mechatronics&lt;/li>
 &lt;/ul>
 &lt;h2 id="research-experience">Research Experience
-&lt;/h2>&lt;h3 id="vision-lidar-fusion-for-3d-target-localization">Vision-LiDAR Fusion for 3D Target Localization
-&lt;/h3>&lt;p>Built a synchronized perception pipeline combining YOLO, Livox point-cloud projection, clustering, and 2D-3D association. Validation against motion-capture ground truth showed that 95% of detections within 5 m had 3D localization error below 10 cm.&lt;/p>
-&lt;h3 id="vision-based-dexterous-hand-grasping">Vision-Based Dexterous-Hand Grasping
+&lt;/h2>&lt;h3 id="vision-based-dexterous-hand-grasping">Vision-Based Dexterous-Hand Grasping
 &lt;/h3>&lt;p>Built an Isaac Gym and UniDexGrasp++-based grasp-training pipeline, processed RGB-D observations into point-cloud inputs, debugged Arduino multi-motor control, and deployed trained policies on Jetson Nano Super.&lt;/p>
 &lt;h3 id="metamorphic-structure-reconfigurable-aircraft">Metamorphic-Structure Reconfigurable Aircraft
 &lt;/h3>&lt;p>Participated in the mechanical and control design of an aircraft that switches between airship and fixed-wing configurations. Built the Gazebo/ROS 2 simulation environment and worked with Pixhawk, QGroundControl, STM32, and Arduino.&lt;/p>
